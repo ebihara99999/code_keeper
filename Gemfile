@@ -9,4 +9,11 @@ gem "rake", "~> 13.0"
 
 gem "rspec", "~> 3.0"
 
-gem "rubocop", "~> 0.80"
+gem "rubocop"
+
+gem "rubocop-ast"
+
+group :development do
+  gem 'pry'
+  gem 'pry-nav'
+end
