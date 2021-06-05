@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CodeKeeper
   # Caluculate cyclomatic complexity
   class CyclomaticComplexity
@@ -14,15 +16,10 @@ module CodeKeeper
     # returns score of cyclomatic complexity
     def score
       @body.each_node(:lvasgn, *CONSIDERED_NODES).reduce(1) do |score, node|
-        if !iterating_block?(node)
-          next score
-        elsif node.csend_type? && discount_for_repeated_csend?(node)
-          next score
-        elsif node.lvasgn_type?
-          next score
-        else
-          next 1 + score
-        end
+        next score if !iterating_block?(node) || node.lvasgn_type?
+        next score if node.csend_type? && discount_for_repeated_csend?(node)
+
+        next 1 + score
       end
     end
   end

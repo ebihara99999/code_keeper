@@ -7,4 +7,3 @@ require 'code_keeper/cyclomatic_complexity'
 module CodeKeeper
   class Error < StandardError; end
 end
-

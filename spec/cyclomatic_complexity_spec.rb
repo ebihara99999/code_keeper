@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe "CyclomaticComplexity" do
   describe "#score" do
     let(:source) { "def hoge;[100, 200, 300].each { |num| puts num  if num == 200 };end" }
