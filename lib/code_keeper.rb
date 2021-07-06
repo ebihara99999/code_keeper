@@ -7,4 +7,5 @@ require 'code_keeper/parser'
 
 module CodeKeeper
   class Error < StandardError; end
+  class TargetFileNotFoundError < StandardError; end
 end
