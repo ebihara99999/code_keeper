@@ -26,6 +26,7 @@ RSpec.describe CodeKeeper::Parser do
 
   describe '.parse' do
     it 'returns RuboCop::AST::ProcessedSource instance' do
+      expect(CodeKeeper::Parser.parse('./spec/fixtures/target_sample.rb')).to be_a(::RuboCop::AST::ProcessedSource)
     end
   end
 end

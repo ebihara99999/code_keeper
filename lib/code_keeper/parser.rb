@@ -10,5 +10,12 @@ module CodeKeeper
     rescue Errno::ENOENT
       raise TargetFileNotFoundError, "The target file does not exist. Check the file path: #{file_path}."
     end
+
+    class << self
+      def parse(file_path)
+        parser = new(file_path)
+        parser.processed_source
+      end
+    end
   end
 end
