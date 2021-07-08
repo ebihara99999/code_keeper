@@ -8,8 +8,8 @@ module CodeKeeper
 
     CONSIDERED_NODES = %i[if while until for csend block block_pass rescue when and or or_asgnand_asgn].freeze
 
-    def initialize(source)
-      ps = ::RuboCop::AST::ProcessedSource.new(source, 3.0)
+    def initialize(file_path)
+      ps = Parser.parse(file_path)
       @body = ps.ast.body
     end
 
