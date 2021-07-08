@@ -19,7 +19,9 @@ RSpec.describe CodeKeeper::Parser do
 
     context 'File does not exsit' do
       it 'raises TargetFileNotFoundError' do
-        expect { CodeKeeper::Parser.new('./spec/fixtures/no_file.rb') }.to raise_error CodeKeeper::TargetFileNotFoundError
+        expect do
+          CodeKeeper::Parser.new('./spec/fixtures/no_file.rb')
+        end.to raise_error CodeKeeper::TargetFileNotFoundError
       end
     end
   end
