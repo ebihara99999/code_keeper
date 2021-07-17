@@ -5,6 +5,7 @@ require "rubocop"
 require 'code_keeper/cyclomatic_complexity'
 require 'code_keeper/parser'
 require 'code_keeper/finder'
+require 'code_keeper/cli'
 
 module CodeKeeper
   class Error < StandardError; end
