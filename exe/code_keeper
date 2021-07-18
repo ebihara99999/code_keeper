@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+#!/usr/bin/env ruby
+
+require 'code_keeper'
+
+result = CodeKeeper::Cli.run(ARGV)
+puts result
