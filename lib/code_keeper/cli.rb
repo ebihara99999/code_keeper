@@ -8,7 +8,7 @@ module CodeKeeper
       Finder.new(paths).file_paths.each do |path|
         result[path] = CyclomaticComplexity.new(path).score
       end
-      result
+      ::CodeKeeper::Formatter.format(result)
     end
   end
 end
