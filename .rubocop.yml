@@ -26,6 +26,9 @@ Layout/HeredocIndentation:
     - spec/code_keeper/formatter_spec.rb
     - lib/code_keeper/formatter.rb
 
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
 Metrics/MethodLength:
   Exclude:
     - lib/code_keeper/formatter.rb # because uses here doc
