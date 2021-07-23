@@ -21,7 +21,7 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
 
-Layout\HeredocIndentation:
+Layout/HeredocIndentation:
   Exclude:
     - spec/code_keeper/formatter_spec.rb
     - lib/code_keeper/formatter.rb
