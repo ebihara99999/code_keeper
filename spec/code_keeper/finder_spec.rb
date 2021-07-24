@@ -15,4 +15,19 @@ RSpec.describe CodeKeeper::Finder do
       expect { CodeKeeper::Finder.new(relative_paths_including_unexisted) }.to raise_error CodeKeeper::TargetFileNotFoundError
     end
   end
+
+  context 'the argument includes a path to a flat directory' do
+  end
+
+  context 'the argument includes a path to a nested directory' do
+  end
+
+  context 'the argument includes two different directories' do
+  end
+
+  context 'the argument includes a parent directory and the sub directory' do
+  end
+
+  context 'the argument includes a directory and a file' do
+  end
 end
