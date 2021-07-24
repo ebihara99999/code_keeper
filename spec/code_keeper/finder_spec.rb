@@ -10,10 +10,9 @@ RSpec.describe CodeKeeper::Finder do
     expect(finder.file_paths).to match_array(absolute_and_unique_paths)
   end
 
-  context 'the argument has unexisted_path'
-  it 'raises CodeKeeper::TargetFileNotFoundError' do
-    expect { CodeKeeper::Finder.new(relative_paths_including_unexisted) }.to raise_error CodeKeeper::TargetFileNotFoundError
+  context 'the argument has unexisted path' do
+    it 'raises CodeKeeper::TargetFileNotFoundError' do
+      expect { CodeKeeper::Finder.new(relative_paths_including_unexisted) }.to raise_error CodeKeeper::TargetFileNotFoundError
+    end
   end
-
-  # TODO: It needs to store results, which has keys as file names and values as points
 end
