@@ -1,18 +1,29 @@
 # frozen_string_literal: true
 
 RSpec.describe CodeKeeper::Finder do
-  let(:duplicated_relative_paths) { ['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/branch_in_loop.rb', './spec/fixtures/target_sample.rb'] }
-  let(:relative_paths_including_unexisted) { ['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/not_existed.rb'] }
-  let(:absolute_and_unique_paths) { [File.expand_path('./spec/fixtures/branch_in_loop.rb'), File.expand_path('./spec/fixtures/target_sample.rb')] }
+  context 'the argument includes files one of which is dupulicated' do
+    before do
+      @duplicated_relative_paths = ['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/branch_in_loop.rb', './spec/fixtures/target_sample.rb']
+    end
 
-  it 'stores absolute paths and remove dupulicated one' do
-    finder = CodeKeeper::Finder.new(duplicated_relative_paths)
-    expect(finder.file_paths).to match_array(absolute_and_unique_paths)
+    it 'stores absolute paths and remove dupulicated one' do
+      expected_paths = [
+        File.expand_path('./spec/fixtures/branch_in_loop.rb'),
+        File.expand_path('./spec/fixtures/target_sample.rb')
+      ]
+
+      finder = CodeKeeper::Finder.new(@duplicated_relative_paths)
+      expect(finder.file_paths).to match_array(expected_paths)
+    end
   end
 
   context 'the argument has unexisted path' do
+    before do
+      @relative_paths_including_unexisted = ['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/not_existed.rb']
+    end
+
     it 'raises CodeKeeper::TargetFileNotFoundError' do
-      expect { CodeKeeper::Finder.new(relative_paths_including_unexisted) }.to raise_error CodeKeeper::TargetFileNotFoundError
+      expect { CodeKeeper::Finder.new(@relative_paths_including_unexisted) }.to raise_error CodeKeeper::TargetFileNotFoundError
     end
   end
 
