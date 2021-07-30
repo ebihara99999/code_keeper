@@ -23,7 +23,7 @@ RSpec.describe CodeKeeper::Finder do
     end
 
     it 'raises CodeKeeper::TargetFileNotFoundError' do
-      expect { CodeKeeper::Finder.new(@relative_paths_including_unexisted) }.to raise_error CodeKeeper::TargetFileNotFoundError
+      expect { CodeKeeper::Finder.new(@relative_paths_including_unexisted) }.to raise_error(::CodeKeeper::TargetFileNotFoundError)
     end
   end
 
