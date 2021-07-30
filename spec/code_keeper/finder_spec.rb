@@ -6,10 +6,10 @@ RSpec.describe CodeKeeper::Finder do
       @duplicated_relative_paths = ['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/branch_in_loop.rb', './spec/fixtures/target_sample.rb']
     end
 
-    it 'stores absolute paths and remove dupulicated one' do
+    it 'stores paths and remove dupulicated one' do
       expected_paths = [
-        File.expand_path('./spec/fixtures/branch_in_loop.rb'),
-        File.expand_path('./spec/fixtures/target_sample.rb')
+        './spec/fixtures/branch_in_loop.rb',
+        './spec/fixtures/target_sample.rb'
       ]
 
       finder = CodeKeeper::Finder.new(@duplicated_relative_paths)
