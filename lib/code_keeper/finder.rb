@@ -5,12 +5,31 @@ module CodeKeeper
   class Finder
     attr_reader :file_paths
 
-    def initialize(file_paths)
-      @file_paths = file_paths.uniq.map do |path|
-        absolute_path = File.expand_path(path)
-        next absolute_path if File.exist? absolute_path
+    def initialize(paths)
+      @file_paths = search_recursively(paths.uniq).map do |path|
+        raise ::CodeKeeper::TargetFileNotFoundError.new(path) unless File.exist?(path)
 
-        raise TargetFileNotFoundError, "The target file does not exist. Check the file path: #{absolute_path}."
+        path if FileTest.file?(path)
+      end.compact
+    end
+
+    private
+
+    def search_recursively(file_or_dir_paths)
+      checked = {}
+
+      file_or_dir_paths.each do |edge|
+        next if checked[:"#{edge}"]
+
+        checked[:"#{edge}"] = true
+
+        if FileTest.file?(edge)
+          file_or_dir_paths << edge unless file_or_dir_paths.include?(edge)
+        else
+          Dir.glob(("#{edge}/**/*")).each do |path|
+            file_or_dir_paths << path unless file_or_dir_paths.include?(path)
+          end
+        end
       end
     end
   end
