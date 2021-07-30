@@ -33,3 +33,7 @@ Metrics/MethodLength:
   Max: 20
   Exclude:
     - lib/code_keeper/formatter.rb # because uses here doc
+
+# Because TargetFileNotFoundError needs to be passed an argument to initializer.
+Style/RaiseArgs:
+  Enabled: false 
