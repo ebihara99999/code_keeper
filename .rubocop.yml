@@ -30,5 +30,6 @@ Naming/HeredocDelimiterNaming:
   Enabled: false
 
 Metrics/MethodLength:
+  Max: 20
   Exclude:
     - lib/code_keeper/formatter.rb # because uses here doc
