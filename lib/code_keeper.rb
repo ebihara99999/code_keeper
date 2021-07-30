@@ -10,5 +10,12 @@ require 'code_keeper/formatter'
 
 module CodeKeeper
   class Error < StandardError; end
-  class TargetFileNotFoundError < StandardError; end
+
+  # Raised when a file does not exist
+  class TargetFileNotFoundError < StandardError
+    def initialize(path)
+      msg = "The target file does not exist. Check the file path: #{path}."
+      super(msg)
+    end
+  end
 end
