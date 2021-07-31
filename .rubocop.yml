@@ -37,3 +37,7 @@ Metrics/MethodLength:
 # Because TargetFileNotFoundError needs to be passed an argument to initializer.
 Style/RaiseArgs:
   Enabled: false 
+
+Style/Documentation:
+  Exclude:
+    - lib/code_keeper.rb # Does not need documentation.
