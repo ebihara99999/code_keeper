@@ -4,4 +4,4 @@
 require 'code_keeper'
 
 result = CodeKeeper::Cli.run(ARGV)
-puts result
+exit result
