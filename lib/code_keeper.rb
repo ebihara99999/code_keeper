@@ -7,9 +7,18 @@ require 'code_keeper/parser'
 require 'code_keeper/finder'
 require 'code_keeper/cli'
 require 'code_keeper/formatter'
+require 'code_keeper/config'
 
 module CodeKeeper
-  class Error < StandardError; end
+  class << self
+    def configure
+      yield config
+    end
+
+    def config
+      @config ||= Config.new
+    end
+  end
 
   # Raised when a file does not exist
   class TargetFileNotFoundError < StandardError
