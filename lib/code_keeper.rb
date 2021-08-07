@@ -8,6 +8,7 @@ require 'code_keeper/finder'
 require 'code_keeper/cli'
 require 'code_keeper/formatter'
 require 'code_keeper/config'
+require 'code_keeper/scorer'
 
 module CodeKeeper
   class << self
