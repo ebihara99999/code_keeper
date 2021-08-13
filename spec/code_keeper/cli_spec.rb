@@ -6,8 +6,10 @@ RSpec.describe CodeKeeper::Cli do
       it 'outputs scores to stdout' do
         expected_output = <<~EOS
           Scores:
-          filename: ./spec/fixtures/branch_in_loop.rb
-          score: 2
+
+          Metric: cyclomatic_complexity
+          Filename: ./spec/fixtures/branch_in_loop.rb
+          Score: 2
           ---
         EOS
 
