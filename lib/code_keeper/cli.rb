@@ -9,10 +9,7 @@ module CodeKeeper
     INTERRUPTION_CODE = 128 + Signal.list['INT']
 
     def self.run(paths)
-      result = {}
-      Finder.new(paths).file_paths.each do |path|
-        result[path] = CyclomaticComplexity.new(path).score
-      end
+      result = CodeKeeper::Scorer.keep(paths)
 
       puts ::CodeKeeper::Formatter.format(result)
       SUCCESS_CODE
