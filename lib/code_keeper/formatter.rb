@@ -5,16 +5,20 @@ module CodeKeeper
   class Formatter
     class << self
       def format(result)
-        title = "Scores:\n"
+        title = "Scores:\n\n"
         formatted_result = +title
-        result.each do |k, v|
-          formatted_result.concat(
-            <<~EOS
-              filename: #{k}
-              score: #{v}
-              ---
-            EOS
-          )
+
+        result.scores.each_key do |metric|
+          result.scores[metric].each do |k, v|
+            formatted_result.concat(
+              <<~EOS
+                Metric: #{metric}
+                Filename: #{k}
+                Score: #{v}
+                ---
+              EOS
+            )
+          end
         end
         formatted_result
       end
