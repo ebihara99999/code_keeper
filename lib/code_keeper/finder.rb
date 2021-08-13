@@ -9,7 +9,7 @@ module CodeKeeper
       @file_paths = search_recursively(paths.uniq).map do |path|
         raise ::CodeKeeper::TargetFileNotFoundError.new(path) unless File.exist?(path)
 
-        path if FileTest.file?(path)
+        path if FileTest.file?(path) && File.extname(path) == '.rb'
       end.compact
     end
 

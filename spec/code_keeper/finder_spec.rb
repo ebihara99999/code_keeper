@@ -17,6 +17,19 @@ RSpec.describe CodeKeeper::Finder do
     end
   end
 
+  context 'An extension is not .rb' do
+    before do
+      @paths_including_js = ['./spec/fixtures/sample.js', './spec/fixtures/branch_in_loop.rb']
+    end
+
+    it 'does not store the extension except .rb' do
+      expected_paths = ['./spec/fixtures/branch_in_loop.rb']
+
+      finder = CodeKeeper::Finder.new(@paths_including_js)
+      expect(finder.file_paths).to match_array(expected_paths)
+    end
+  end
+
   context 'the argument has unexisted path' do
     before do
       @relative_paths_including_unexisted = ['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/not_existed.rb']
