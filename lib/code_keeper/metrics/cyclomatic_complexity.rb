@@ -11,7 +11,7 @@ module CodeKeeper
 
       def initialize(file_path)
         ps = Parser.parse(file_path)
-        @body = ps.ast.body
+        @body = ps.ast
       end
 
       # returns score of cyclomatic complexity
