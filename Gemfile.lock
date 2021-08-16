@@ -54,6 +54,7 @@ PLATFORMS
 
 DEPENDENCIES
   code_keeper!
+  parallel
   pry
   pry-nav
   rake (~> 13.0)

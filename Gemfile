@@ -13,6 +13,8 @@ gem "rubocop"
 
 gem "rubocop-ast"
 
+gem "parallel"
+
 group :development do
   gem 'pry'
   gem 'pry-nav'

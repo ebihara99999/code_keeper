@@ -7,8 +7,9 @@ module CodeKeeper
       def keep(paths)
         result = CodeKeeper::Result.new
         metrics = result.scores.keys
+        ruby_file_paths = Finder.new(paths).file_paths
 
-        Finder.new(paths).file_paths.each do |path|
+        Parallel.map(ruby_file_paths, in_threads: 2) do |path|
           metrics.each do |metric|
             result.add(:cyclomatic_complexity, path, ::CodeKeeper::Metrics::MAPPINGS[metric].new(path).score)
           end
