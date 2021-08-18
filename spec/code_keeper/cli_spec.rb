@@ -24,6 +24,19 @@ RSpec.describe CodeKeeper::Cli do
       end
     end
 
+    context 'No argument is specified' do
+      it 'returns 2' do
+        expect(CodeKeeper::Cli.run([])).to eq 2
+      end
+
+      it 'outputs an error message' do
+        expected_output = "Specify at least one argument, a file or a directory.\n"
+        expect do
+          CodeKeeper::Cli.run([])
+        end.to output(expected_output).to_stdout
+      end
+    end
+
     context 'CodeKeeper::TargetFileNotFoundError is raised' do
       before do
         allow(CodeKeeper::Finder).to receive(:new).and_raise CodeKeeper::TargetFileNotFoundError.new('./spec/fixtures/branch_in_loop.rb')
