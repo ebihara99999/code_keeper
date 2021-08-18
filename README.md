@@ -42,11 +42,6 @@ Score: 23
 To measure metrics of all the ruby files recursively in the current directory, run
 
 ```rb
-$ bundle exec code_keeper
-```
-or
-
-```rb
 $ bundle exec code_keeper ./
 ```
 
