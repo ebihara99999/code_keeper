@@ -2,6 +2,9 @@ PATH
   remote: .
   specs:
     code_keeper (0.1.0)
+      parallel
+      rubocop
+      rubocop-ast
 
 GEM
   remote: https://rubygems.org/
