@@ -41,3 +41,6 @@ Style/RaiseArgs:
 Style/Documentation:
   Exclude:
     - lib/code_keeper.rb # Does not need documentation.
+
+Metrics/AbcSize:
+  Max: 25
