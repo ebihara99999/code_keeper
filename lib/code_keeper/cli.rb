@@ -9,6 +9,11 @@ module CodeKeeper
     INTERRUPTION_CODE = 128 + Signal.list['INT']
 
     def self.run(paths)
+      if paths.empty?
+        puts 'Specify at least one argument, a file or a directory.'
+        return ERROR_CODE
+      end
+
       result = CodeKeeper::Scorer.keep(paths)
 
       puts ::CodeKeeper::Formatter.format(result)
