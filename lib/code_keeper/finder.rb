@@ -16,13 +16,7 @@ module CodeKeeper
     private
 
     def search_recursively(file_or_dir_paths)
-      checked = {}
-
       file_or_dir_paths.each do |edge|
-        next if checked[:"#{edge}"]
-
-        checked[:"#{edge}"] = true
-
         if FileTest.file?(edge)
           file_or_dir_paths << edge unless file_or_dir_paths.include?(edge)
         else
