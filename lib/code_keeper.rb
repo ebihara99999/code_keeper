@@ -11,6 +11,7 @@ require 'code_keeper/scorer'
 require 'code_keeper/result'
 require 'code_keeper/metrics'
 require 'code_keeper/metrics/cyclomatic_complexity'
+require 'code_keeper/metrics/abc_metric'
 
 module CodeKeeper
   class << self
