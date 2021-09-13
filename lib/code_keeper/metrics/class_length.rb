@@ -2,7 +2,7 @@
 
 module CodeKeeper
   module Metrics
-    # Caluculate Method Length.
+    # Caluculate Class Length.
     class ClassLength
       def initialize(file_path)
         @ps = Parser.parse(file_path)
