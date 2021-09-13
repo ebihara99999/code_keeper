@@ -2,6 +2,12 @@
 
 RSpec.describe CodeKeeper::Cli do
   describe '.run' do
+    before do
+      CodeKeeper.configure do |config|
+        config.metrics = [:cyclomatic_complexity]
+      end
+    end
+
     context 'normal cases' do
       it 'outputs scores to stdout' do
         expected_output = <<~EOS
