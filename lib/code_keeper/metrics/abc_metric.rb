@@ -9,6 +9,7 @@ module CodeKeeper
 
       def initialize(file_path)
         ps = Parser.parse(file_path)
+        @path = file_path
         @body = ps.ast
         @assignments = 0
         @branches = 0
@@ -22,7 +23,8 @@ module CodeKeeper
         @conditionals = caluculator.instance_variable_get('@condition')
         @branches = caluculator.instance_variable_get('@branch')
 
-        Math.sqrt(@assignments**2 + @branches**2 + @conditionals**2).round(4)
+        value = Math.sqrt(@assignments**2 + @branches**2 + @conditionals**2).round(4)
+        { "#{@path}": value }
       end
     end
   end
