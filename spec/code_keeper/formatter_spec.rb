@@ -24,7 +24,7 @@ RSpec.describe CodeKeeper::Formatter do
         end
 
         @result = CodeKeeper::Result.new
-        
+        @result.add(:cyclomatic_complexity, '/foo/bar/code_keeper/spec/fixtures/branch_in_loop.rb', 2)
         @result.add(:cyclomatic_complexity, '/foo/bar/code_keeper/spec/fixtures/target_sample.rb', 1)
       end
 
