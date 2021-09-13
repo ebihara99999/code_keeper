@@ -19,8 +19,12 @@ RSpec.describe CodeKeeper::Formatter do
       end
 
       before do
+        CodeKeeper.configure do |config|
+          config.metrics = [:cyclomatic_complexity]
+        end
+
         @result = CodeKeeper::Result.new
-        @result.add(:cyclomatic_complexity, '/foo/bar/code_keeper/spec/fixtures/branch_in_loop.rb', 2)
+        
         @result.add(:cyclomatic_complexity, '/foo/bar/code_keeper/spec/fixtures/target_sample.rb', 1)
       end
 
@@ -46,6 +50,10 @@ RSpec.describe CodeKeeper::Formatter do
       end
 
       before do
+        CodeKeeper.configure do |config|
+          config.metrics = [:class_length]
+        end
+
         @result = CodeKeeper::Result.new
         @result.add(:class_length, 'SimpleClass', 2)
         @result.add(:class_length, 'NameSpaceClass', 3)
