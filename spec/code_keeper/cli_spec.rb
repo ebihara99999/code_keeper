@@ -5,19 +5,13 @@ RSpec.describe CodeKeeper::Cli do
     before do
       CodeKeeper.configure do |config|
         config.metrics = [:cyclomatic_complexity]
+        config.format = :json
       end
     end
 
     context 'normal cases' do
       it 'outputs scores to stdout' do
-        expected_output = <<~EOS
-          Scores:
-
-          Metric: cyclomatic_complexity
-          Filename: ./spec/fixtures/branch_in_loop.rb
-          Score: 2
-          ---
-        EOS
+        expected_output = %({"cyclomatic_complexity":{"./spec/fixtures/branch_in_loop.rb":2}}\n)
 
         expect do
           CodeKeeper::Cli.run(['./spec/fixtures/branch_in_loop.rb'])
