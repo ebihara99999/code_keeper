@@ -2,7 +2,7 @@
 
 ## Unrelease
 
-## 0.2.0 (2021-09-15)
+## 0.3.0 (2021-09-15)
 
 ### New features
 - [#26](https://github.com/ebihara99999/code_keeper/pull/26): Support an ABC software metric.
