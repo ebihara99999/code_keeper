@@ -37,7 +37,6 @@ module CodeKeeper
             # Similarly the block node is `:X` as follows if node is Y.
             next unless block_node.respond_to?(:class_definition?) && block_node.class_definition?
 
-
             # if the parent is an assignment_type or the parent of the parent is a masgn_type,
             klass ||= node.loc.name.source.to_sym
 
