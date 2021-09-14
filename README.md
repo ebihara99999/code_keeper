@@ -3,7 +3,7 @@ The CodeKeeper measures metrics especially about complexity and size of Ruby fil
 
 Mesuring metrics leads to keep codebase simple and clean, and I name the gem CodeKeeper.
 
-Now CodeKeeper supports the cyclomatic complexity of a file, the ABC software metric of a file, and class length. The scores are output to stdout.
+Now CodeKeeper supports the cyclomatic complexity of a file, the ABC software metric of a file, and class length. The scores are output to stdout of a json or csv format.
 
 ## Installation
 
@@ -25,18 +25,11 @@ Or install it yourself as:
 Run CodeKeeper and you get scores of metrics from stdout like 
 
 ```rb
-$ bundle exec code_keeper ./app/models
-Scores:
-
-Metric: cyclomatic_complexity
-Filename: app/models/admin.rb
-Score: 1
----
-Metric: cyclomatic_complexity
-Filename: app/models/user.rb
-Score: 23
----
+$ bundle exec code_keeper app/models/user.rb app/models/admin.rb > metrics.json
+$ cat metrics.json
+{"cyclomatic_complexity":{"app/models/admin.rb":9,"app/models/user.rb":23},"class_length":{"Admin":86,"User":1475},"abc_metric":{"app/models/admin.rb":76.909,"app/models/user.rb":1546.4155}}
 ```
+If you need a csv format, change the configuration as explained later.
 
 ### Run CodeKeeper
 To measure metrics of all the ruby files recursively in the current directory, run
@@ -55,9 +48,11 @@ CodeKeeper makes you configure the following way:
 ```rb
 CodeKeeper.configure do |config|
   # If you choose metrics, specify as follows:
-  config.metrics = [:cyclomatic_complexity]
+  config.metrics = %i(cyclomatic_complexity abc_metric class_length)
   # The number of threads. The default is 2. Executed sequentially if you set 1.
   config.number_of_threads = 4
+  # The default is json
+  config.format = :json
 end
 ```
 
