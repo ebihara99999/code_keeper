@@ -9,8 +9,8 @@ module CodeKeeper
       @scores = CodeKeeper.config.metrics.map { |key| [key, {}] }.to_h
     end
 
-    def add(metric, path, score)
-      scores[:"#{metric}"].store(path, score)
+    def add(metric, klass_or_path, score)
+      scores[:"#{metric}"].store(klass_or_path, score)
     end
   end
 end

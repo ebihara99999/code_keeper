@@ -44,3 +44,16 @@ Style/Documentation:
 
 Metrics/AbcSize:
   Max: 25
+  Exclude:
+    # It's hard to control.
+    - lib/code_keeper/metrics/class_length.rb
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    # It's hard to control.
+    - lib/code_keeper/metrics/class_length.rb 
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    # It's hard to control.
+    - lib/code_keeper/metrics/class_length.rb 

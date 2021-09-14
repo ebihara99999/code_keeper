@@ -3,7 +3,7 @@ The CodeKeeper measures metrics especially about complexity and size of Ruby fil
 
 Mesuring metrics leads to keep codebase simple and clean, and I name the gem CodeKeeper.
 
-Now CodeKeeper supports the cyclomatic complexity. The scores are output to stdout.
+Now CodeKeeper supports the cyclomatic complexity of a file, the ABC software metric of a file, and class length. The scores are output to stdout.
 
 ## Installation
 

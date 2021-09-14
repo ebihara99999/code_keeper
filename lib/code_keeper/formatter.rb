@@ -10,10 +10,16 @@ module CodeKeeper
 
         result.scores.each_key do |metric|
           result.scores[metric].each do |k, v|
+            klass_or_file_key = if metric == :class_length
+                                  'Class'
+                                else
+                                  'Filename'
+                                end
+
             formatted_result.concat(
               <<~EOS
                 Metric: #{metric}
-                Filename: #{k}
+                #{klass_or_file_key}: #{k}
                 Score: #{v}
                 ---
               EOS
