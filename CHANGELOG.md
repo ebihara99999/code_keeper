@@ -1,6 +1,7 @@
 # Change log
 
 ## Unrelease
+- [#30](https://github.com/ebihara99999/code_keeper/pull/30): Support CSV and JSON format.
 
 ## 0.3.0 (2021-09-15)
 
