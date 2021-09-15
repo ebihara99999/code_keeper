@@ -1,6 +1,9 @@
 # Change log
 
 ## Unrelease
+
+## 0.5.0 (2021-09-16)
+### Changes
 - [32](https://github.com/ebihara99999/code_keeper/pull/32): Specify dependency versions and loosen the supported ruby version.
 
 ## 0.4.0 (2021-09-15)
