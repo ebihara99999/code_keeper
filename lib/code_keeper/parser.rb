@@ -7,7 +7,7 @@ module CodeKeeper
 
     def initialize(file_path)
       source = File.read(File.expand_path(file_path))
-      @processed_source = ::RuboCop::AST::ProcessedSource.new(source, 3.0)
+      @processed_source = ::RuboCop::AST::ProcessedSource.new(source, RUBY_VERSION.to_f)
     rescue Errno::ENOENT
       raise TargetFileNotFoundError, "The target file does not exist. Check the file path: #{file_path}."
     end
