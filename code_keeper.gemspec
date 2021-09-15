@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = "The CodeKeeper measures metrics especially about complexity and size of Ruby files, aiming to be a Ruby version of gmetrics."
   spec.homepage      = "https://github.com/ebihara99999/code_keeper"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/ebihara99999/code_keeper/"
@@ -28,9 +28,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency "parallel"
-  spec.add_dependency "rubocop"
-  spec.add_dependency "rubocop-ast"
+  spec.add_dependency "parallel", '~> 1.20.1'
+  spec.add_dependency "rubocop", '~> 1.13.0'
+  spec.add_dependency "rubocop-ast", '~> 1.4.1'
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
