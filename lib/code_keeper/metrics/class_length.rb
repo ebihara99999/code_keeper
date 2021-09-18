@@ -14,13 +14,13 @@ module CodeKeeper
       def score
         @body.each_node(:class, :casgn, :module) do |node|
           if node.class_type? || node.module_type?
-            _key = node.loc.name.source.to_sym
             @score_hash.store(build_namespace(node), calculate(node))
           elsif node.casgn_type?
             parent = node.parent
 
             if parent&.assignment?
               block_node = node.children[2]
+              klass = node.loc.name.source.to_sym
             elsif parent&.parent&.masgn_type?
               # In the case where `A, B = Struct.new(:a, :b)`,
               # B is always nil.
@@ -28,8 +28,9 @@ module CodeKeeper
               next unless node.loc.name.source == assigned
 
               block_node = parent.parent.children[1]
+              klass = node.loc.name.source.to_sym
             else
-              _scope, _klass, block_node = *node
+              _scope, klass, block_node = *node
             end
 
             # This is not to raise error on dynamic assignments like `X = Y = Z = Class.new`.
@@ -41,7 +42,11 @@ module CodeKeeper
             # if the parent is an assignment_type or the parent of the parent is a masgn_type,
             #klass ||= @klass_ns_mapping[node.loc.name.source.to_sym]
 
-            @score_hash.store(build_namespace(block_node), calculate(block_node))
+            if klass
+              @score_hash.store(klass, calculate(block_node)) if klass
+            else
+              @score_hash.store(build_namespace(block_node), calculate(block_node))
+            end
           end
         end
         @score_hash
@@ -92,7 +97,7 @@ module CodeKeeper
         # The latter condition considers a class ouside or above the node.
         comment_lines.select { |cl| !descendant_class_lines(node).include?(cl) && node_range.include?(cl) }.count
       end
- 
+
       def build_namespace(node)
         self_name = name_with_ns(node)
 
