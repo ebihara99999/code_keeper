@@ -54,20 +54,36 @@ module CodeKeeper
 
       def calculate(node)
         # node.body.line_count doesn't include comments after definition of a class.
-        count = node.nonempty_line_count - 2
-        count - line_count_of_inner_nodes(node) - comment_line_count(node)
+        # Don't use nonempty_lines. Empty lines are considered on only the node.
+        count = node.line_count - 2
+
+        count - line_count_of_inner_nodes(node) - comment_line_count(node) - empty_line_count(node)
+      end
+
+      def body_lines(node)
+        descendant_class_lines = []
+        # A class may have multiple inner classes seperately.
+        # So it needs to store all descendant classes line ranges.
+        node.each_descendant(:class, :module) do |desendant|
+          # To make easier to compare and consider inner nodes, change array of line range into an array of line numbers.
+          descendant_class_lines << (desendant.first_line..desendant.last_line).to_a
+        end
+
+        # To make easier to compare, change array of line range into an array of line numbers.
+        (node.first_line..node.last_line).to_a - descendant_class_lines.flatten.uniq
+      end
+
+      def empty_line_count(node)
+        empty_lines = @ps.lines.filter_map.with_index { |line, i| i + 1 if line.empty? }
+        (empty_lines & body_lines(node)).size
       end
 
       def line_count_of_inner_nodes(node)
-        count = 0
-        node.each_descendant(:class, :module).with_index do |klass_or_module_node, i|
-          # Doesn't count inner nodes of the first inner node.
-          # It's double counting.
-          break unless i.zero?
+        line_numbers = node.each_descendant(:class, :module).map do |descendant|
+          (descendant.first_line..descendant.last_line).to_a
+        end.flatten.uniq
 
-          count += klass_or_module_node.nonempty_line_count
-        end
-        count
+        line_numbers.size
       end
 
       # Only counts the comment of the class or module of a node.
@@ -90,7 +106,7 @@ module CodeKeeper
         # The latter condition considers a class ouside or above the node.
         comment_lines.select { |cl| !lines.include?(cl) && node_range.include?(cl) }.count
       end
-
+ 
       def build_namespace(node)
         ns = node.children.first&.namespace&.source
         self_name = if ns.nil?
