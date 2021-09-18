@@ -1,4 +1,5 @@
 class RootClass
+  r = 4
   class NameSpaceClass
     class A
     # A comment
@@ -10,7 +11,6 @@ class RootClass
     n = 1
     n = 2
     n = 3
-    n = 4
   end
   # RootClass comment
   r = 1

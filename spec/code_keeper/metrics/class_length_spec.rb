@@ -5,16 +5,25 @@ RSpec.describe CodeKeeper::Metrics::ClassLength do
     # This context also has a view of testing counting a comment just after class definition precisely.
     context 'A file has one class, in which there is a comment, an empty line' do
       it 'returns a hash with the value 1' do
+        expected = {}
+        expected.store('SimpleClass', 2)
         cl = CodeKeeper::Metrics::ClassLength.new('spec/fixtures/class_samples/simple_class.rb')
-        expect(cl.score).to eq({ SimpleClass: 2 })
+        expect(cl.score).to eq(expected)
       end
     end
 
     context 'A file has 3 classes, which are a namespace class and a inner class, and a class in a namespace module' do
       it 'returns a hash with scores of 3 classes' do
-        expected_hash = { NameSpaceClass: 4, A: 2, B: 3 }
+        expected = {}
+        expected.store('RootClass', 4)
+        expected.store('RootClass::NameSpaceClass', 3)
+        expected.store('RootClass::NameSpaceClass::A', 2)
+        expected.store('RootModule', 3)
+        expected.store('RootModule::NameSpaceModule', 2)
+        expected.store('RootModule::NameSpaceModule::B', 4)
+        expected.store('C::D::E', 2)
         cl = CodeKeeper::Metrics::ClassLength.new('spec/fixtures/class_samples/namespace.rb')
-        expect(cl.score).to eq(expected_hash)
+        expect(cl.score).to eq(expected)
       end
     end
 
