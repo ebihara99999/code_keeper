@@ -3,6 +3,7 @@ class RootClass
   class NameSpaceClass
     class A
     # A comment
+
       a = 1
       a = 2
     end
@@ -14,6 +15,13 @@ class RootClass
   end
   # RootClass comment
   r = 1
+
+  class SeperateClass
+    # Descirbes a class written seperately instead of inner class.
+
+    s = 1
+  end
+
   r = 2
   r = 3
 end
