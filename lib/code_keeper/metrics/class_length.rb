@@ -61,16 +61,16 @@ module CodeKeeper
       end
 
       def body_lines(node)
-        descendant_class_lines = []
+        (node.first_line..node.last_line).to_a - descendant_class_lines(node)
+      end
+
+      def descendant_class_lines(node)
         # A class may have multiple inner classes seperately.
         # So it needs to store all descendant classes line ranges.
-        node.each_descendant(:class, :module) do |desendant|
+        node.each_descendant(:class, :module).map do |desendant|
           # To make easier to compare and consider inner nodes, change array of line range into an array of line numbers.
-          descendant_class_lines << (desendant.first_line..desendant.last_line).to_a
-        end
-
-        # To make easier to compare, change array of line range into an array of line numbers.
-        (node.first_line..node.last_line).to_a - descendant_class_lines.flatten.uniq
+          (desendant.first_line..desendant.last_line).to_a
+        end.flatten.uniq
       end
 
       def empty_line_count(node)
@@ -92,19 +92,8 @@ module CodeKeeper
       def comment_line_count(node)
         node_range = node.first_line...node.last_line
         comment_lines = @ps.comments.map { |comment| comment.loc.line }
-        descendant_class_lines = []
-        # A class may have multiple inner classes seperately.
-        # So it needs to store all descendant classes line ranges.
-        node.each_descendant(:class, :module) do |desendant|
-          # To make easier to compare and consider inner nodes, change array of line range into an array of line numbers.
-          descendant_class_lines << (desendant.first_line..desendant.last_line).to_a
-        end
-
-        # To make easier to compare, change array of line range into an array of line numbers.
-        lines = descendant_class_lines.flatten.uniq
-
         # The latter condition considers a class ouside or above the node.
-        comment_lines.select { |cl| !lines.include?(cl) && node_range.include?(cl) }.count
+        comment_lines.select { |cl| !descendant_class_lines(node).include?(cl) && node_range.include?(cl) }.count
       end
  
       def build_namespace(node)
