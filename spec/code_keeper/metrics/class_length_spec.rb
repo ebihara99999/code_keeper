@@ -18,6 +18,7 @@ RSpec.describe CodeKeeper::Metrics::ClassLength do
         expected.store('RootClass', 4)
         expected.store('RootClass::NameSpaceClass', 3)
         expected.store('RootClass::NameSpaceClass::A', 2)
+        expected.store('RootClass::SeperateClass', 1)
         expected.store('RootModule', 3)
         expected.store('RootModule::NameSpaceModule', 2)
         expected.store('RootModule::NameSpaceModule::B', 4)
