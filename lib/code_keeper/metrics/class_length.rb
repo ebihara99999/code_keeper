@@ -40,9 +40,8 @@ module CodeKeeper
             # Similarly the block node is `:X` as follows if node is Y.
             next unless block_node.respond_to?(:class_definition?) && block_node.class_definition?
 
-            # if the parent is an assignment_type or the parent of the parent is a masgn_type,
-            #klass ||= @klass_ns_mapping[node.loc.name.source.to_sym]
-
+            # NOTE: klass doesn't have a namespace.
+            # Only supports namepaces in `class A; end` case.
             if klass
               @score_hash.store(klass, calculate(block_node)) if klass
             else
