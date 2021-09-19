@@ -56,3 +56,6 @@ Metrics/PerceivedComplexity:
   Exclude:
     # It's hard to control.
     - lib/code_keeper/metrics/class_length.rb 
+
+Metrics/MethodLength:
+  Max: 40
