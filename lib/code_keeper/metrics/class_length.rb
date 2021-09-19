@@ -20,7 +20,7 @@ module CodeKeeper
 
             if parent&.assignment?
               block_node = node.children[2]
-              klass = node.loc.name.source.to_sym
+              klass = node.loc.name.source
             elsif parent&.parent&.masgn_type?
               # In the case where `A, B = Struct.new(:a, :b)`,
               # B is always nil.
@@ -28,9 +28,10 @@ module CodeKeeper
               next unless node.loc.name.source == assigned
 
               block_node = parent.parent.children[1]
-              klass = node.loc.name.source.to_sym
+              klass = node.loc.name.source
             else
               _scope, klass, block_node = *node
+              klass = klass.to_s
             end
 
             # This is not to raise error on dynamic assignments like `X = Y = Z = Class.new`.
