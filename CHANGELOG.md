@@ -1,6 +1,7 @@
 # Change log
 
 ## Unrelease
+- [34](https://github.com/ebihara99999/code_keeper/pull/34): A result of the class_length doesn't show namespaces, and the class_length doesn't count comments of inner classes correctly.
 
 ## 0.5.0 (2021-09-16)
 ### Changes
