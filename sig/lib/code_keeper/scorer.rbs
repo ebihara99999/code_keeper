@@ -1,0 +1,10 @@
+module CodeKeeper
+  # Run and store score of metrics.
+  class Scorer
+    def self.keep: (untyped paths) -> untyped
+
+    private
+
+    def self.calculate_score: (untyped metric, untyped path, untyped result) -> untyped
+  end
+end

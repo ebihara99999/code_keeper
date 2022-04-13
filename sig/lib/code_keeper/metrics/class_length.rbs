@@ -1,0 +1,32 @@
+module CodeKeeper
+  module Metrics
+    # Caluculate Class Length.
+    class ClassLength
+      def initialize: (untyped file_path) -> void
+
+      # NOTE: This doesn't exclude foldale sources like Array, Hash and Heredoc.
+      def score: () -> untyped
+
+      private
+
+      def calculate: (untyped node) -> untyped
+
+      def body_lines: (untyped node) -> untyped
+
+      def descendant_class_lines: (untyped node) -> untyped
+
+      def empty_line_count: (untyped node) -> untyped
+
+      def line_count_of_inner_nodes: (untyped node) -> untyped
+
+      # Only counts the comment of the class or module of a node.
+      # Because `#line_count_of_inner_nodes` only considers the first inner node,
+      # the second or later inner nodes' commments are not necesarry to be counted.
+      def comment_line_count: (untyped node) -> untyped
+
+      def build_namespace: (untyped node) -> untyped
+
+      def name_with_ns: (untyped node) -> untyped
+    end
+  end
+end

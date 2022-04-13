@@ -1,0 +1,10 @@
+module CodeKeeper
+  # Search and parse ruby file
+  class Parser
+    attr_reader processed_source: untyped
+
+    def initialize: (untyped file_path) -> void
+
+    def self.parse: (untyped file_path) -> untyped
+  end
+end

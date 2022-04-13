@@ -1,0 +1,12 @@
+module CodeKeeper
+  # Find ruby files and manage the list of files.
+  class Finder
+    attr_reader file_paths: untyped
+
+    def initialize: (untyped paths) -> void
+
+    private
+
+    def search_recursively: (untyped file_or_dir_paths) -> untyped
+  end
+end

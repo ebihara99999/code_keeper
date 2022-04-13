@@ -1,0 +1,6 @@
+module CodeKeeper
+  # Manage config values of metrics and the correspond classes
+  module Metrics
+    MAPPINGS: { abc_metric: untyped, cyclomatic_complexity: untyped, class_length: untyped }
+  end
+end

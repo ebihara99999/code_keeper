@@ -1,0 +1,10 @@
+module CodeKeeper
+  # Store results of each score.
+  class Result
+    attr_reader scores: untyped
+
+    def initialize: () -> void
+
+    def add: (untyped metric, untyped klass_or_path, untyped score) -> untyped
+  end
+end

@@ -1,0 +1,6 @@
+module CodeKeeper
+  # Format a result and make it human-readable.
+  class Formatter
+    def self.format: (untyped result) -> untyped
+  end
+end

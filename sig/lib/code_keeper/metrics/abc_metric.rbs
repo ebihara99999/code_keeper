@@ -1,0 +1,14 @@
+module CodeKeeper
+  module Metrics
+    # Caluculate cyclomatic complexity
+    class AbcMetric
+      include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
+
+      include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
+
+      def initialize: (untyped file_path) -> void
+
+      def score: () -> ::Hash[::Symbol, untyped]
+    end
+  end
+end

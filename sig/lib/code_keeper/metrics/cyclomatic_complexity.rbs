@@ -1,0 +1,17 @@
+module CodeKeeper
+  module Metrics
+    # Caluculate cyclomatic complexity
+    class CyclomaticComplexity
+      include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
+
+      include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
+
+      CONSIDERED_NODES: ::Array[:if | :while | :until | :for | :csend | :block | :block_pass | :rescue | :when | :and | :or | :or_asgnand_asgn]
+
+      def initialize: (untyped file_path) -> void
+
+      # returns score of cyclomatic complexity
+      def score: () -> ::Hash[::Symbol, untyped]
+    end
+  end
+end

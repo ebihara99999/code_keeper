@@ -1,0 +1,14 @@
+module CodeKeeper
+  # Offers cli interface and execute measurement.
+  class Cli
+    SUCCESS_CODE: 0
+
+    GENERAL_ERROR_CODE: 1
+
+    ERROR_CODE: 2
+
+    INTERRUPTION_CODE: untyped
+
+    def self.run: (untyped paths) -> untyped
+  end
+end

@@ -1,0 +1,12 @@
+module CodeKeeper
+  # Provide configuration
+  class Config
+    attr_accessor metrics: untyped
+
+    attr_accessor number_of_threads: untyped
+
+    attr_accessor format: untyped
+
+    def initialize: () -> void
+  end
+end

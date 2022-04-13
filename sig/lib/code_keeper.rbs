@@ -1,0 +1,10 @@
+module CodeKeeper
+  def self.configure: () { (untyped) -> untyped } -> untyped
+
+  def self.config: () -> untyped
+
+  # Raised when a file does not exist
+  class TargetFileNotFoundError < StandardError
+    def initialize: (untyped path) -> void
+  end
+end
