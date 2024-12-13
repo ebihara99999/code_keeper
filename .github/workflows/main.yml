@@ -17,6 +17,5 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
     - name: Run the default task
       run: |
-        gem install bundler -v 2.5.23
         bundle install
         bundle exec rake
