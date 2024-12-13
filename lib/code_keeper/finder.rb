@@ -20,7 +20,7 @@ module CodeKeeper
         if FileTest.file?(edge)
           file_or_dir_paths << edge unless file_or_dir_paths.include?(edge)
         else
-          Dir.glob(("#{edge}/**/*")).each do |path|
+          Dir.glob("#{edge}/**/*").each do |path|
             file_or_dir_paths << path unless file_or_dir_paths.include?(path)
           end
         end
