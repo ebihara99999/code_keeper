@@ -1,7 +1,9 @@
 # Change log
 
-## Unrelease
-
+## 0.6.1 (2024-12-15)
+### Changes
+- [Stop supporting Ruby 2.7 and 3.0 because of EOL.](https://github.com/ebihara99999/code_keeper/pull/37)
+- [Relax parallel gem version](https://github.com/ebihara99999/code_keeper/pull/36)
 ## 0.6.0 (2022-03-27)
 ### New features
 - [35](https://github.com/ebihara99999/code_keeper/pull/35): Support Ruby 3.1.
