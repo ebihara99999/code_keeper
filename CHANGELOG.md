@@ -1,5 +1,7 @@
 # Change log
-
+## 0.6.2 (2025-01-11)
+### Changes
+- [Support Ruby 3.4.](https://github.com/ebihara99999/code_keeper/pull/38)
 ## 0.6.1 (2024-12-15)
 ### Changes
 - [Stop supporting Ruby 2.7 and 3.0 because of EOL.](https://github.com/ebihara99999/code_keeper/pull/37)
