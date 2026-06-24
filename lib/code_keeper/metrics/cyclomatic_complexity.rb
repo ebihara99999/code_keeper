@@ -7,12 +7,6 @@ module CodeKeeper
       include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
       include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
 
-      COUNTED_NODES =
-        if defined?(::RuboCop::Cop::Metrics::CyclomaticComplexity::COUNTED_NODES)
-          ::RuboCop::Cop::Metrics::CyclomaticComplexity::COUNTED_NODES
-        else
-          %i[if while until for csend block block_pass rescue when and or or_asgn and_asgn].freeze
-        end
       LEGACY_CONSIDERED_NODES = %i[if while until for csend block block_pass rescue when and or or_asgnand_asgn].freeze
 
       def self.measure(source_file)
@@ -57,24 +51,7 @@ module CodeKeeper
       end
 
       def calculate(body)
-        reset_repeated_csend
-        return 1 unless body
-
-        body.each_node(:lvasgn, *COUNTED_NODES).reduce(1) do |score, node|
-          if node.lvasgn_type?
-            reset_on_lvasgn(node)
-            score
-          else
-            score + complexity_score_for(node)
-          end
-        end
-      end
-
-      def complexity_score_for(node)
-        return 0 if iterating_block?(node) == false
-        return 0 if node.csend_type? && discount_for_repeated_csend?(node)
-
-        1
+        RuboCopMetricCalculator.cyclomatic_complexity(body)
       end
 
       def legacy_score

@@ -46,14 +46,7 @@ module CodeKeeper
       end
 
       def calculate(node)
-        return 0 unless node
-
-        calculator = ::RuboCop::Cop::Metrics::Utils::AbcSizeCalculator
-        value, = calculator.calculate(node, discount_repeated_attributes: false)
-        value
-      rescue ArgumentError
-        value, = calculator.calculate(node)
-        value
+        RuboCopMetricCalculator.abc_size(node)
       end
 
       def legacy_score

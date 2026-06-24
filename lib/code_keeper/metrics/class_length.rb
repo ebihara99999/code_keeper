@@ -64,12 +64,7 @@ module CodeKeeper
       end
 
       def calculate(node)
-        ::RuboCop::Cop::Metrics::Utils::CodeLengthCalculator.new(
-          node,
-          @ps,
-          count_comments: false,
-          foldable_types: []
-        ).calculate
+        RuboCopMetricCalculator.class_length(node, @ps)
       end
 
       def class_definition_expression(node)
