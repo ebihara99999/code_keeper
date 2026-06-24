@@ -2,6 +2,12 @@
 
 RSpec.describe CodeKeeper::Metrics::ClassLength do
   describe "#score" do
+    before do
+      CodeKeeper.configure do |config|
+        config.metrics_engine = :legacy
+      end
+    end
+
     # This context also has a view of testing counting a comment just after class definition precisely.
     context 'A file has one class, in which there is a comment, an empty line' do
       it 'returns a hash with the value 1' do
@@ -55,6 +61,22 @@ RSpec.describe CodeKeeper::Metrics::ClassLength do
         cl = CodeKeeper::Metrics::ClassLength.new('spec/fixtures/class_samples/struct.rb')
         expect(cl.score).to eq(expected)
       end
+    end
+  end
+
+  describe '.measure' do
+    it 'returns measurements by class scope' do
+      source_file = CodeKeeper::Parser.source_file('spec/fixtures/class_samples/simple_class.rb')
+      measurement = CodeKeeper::Metrics::ClassLength.measure(source_file).first
+
+      expect(measurement.scope_name).to eq 'SimpleClass'
+    end
+
+    it 'uses RuboCop-style code length calculation' do
+      source_file = CodeKeeper::Parser.source_file('spec/fixtures/class_samples/simple_class.rb')
+      measurement = CodeKeeper::Metrics::ClassLength.measure(source_file).first
+
+      expect(measurement.value).to eq 3
     end
   end
 end

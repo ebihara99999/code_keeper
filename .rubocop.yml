@@ -1,4 +1,6 @@
 AllCops:
+  NewCops: disable
+  SuggestExtensions: false
   Exclude:
     - spec/fixtures/**/*.rb
 
@@ -29,7 +31,7 @@ Naming/HeredocDelimiterNaming:
   Enabled: false
 
 Metrics/MethodLength:
-  Max: 20
+  Max: 40
   Exclude:
     - lib/code_keeper/formatter.rb # because uses here doc
 
@@ -56,6 +58,3 @@ Metrics/PerceivedComplexity:
   Exclude:
     # It's hard to control.
     - lib/code_keeper/metrics/class_length.rb 
-
-Metrics/MethodLength:
-  Max: 40

@@ -1,9 +1,15 @@
 # CodeKeeper
-The CodeKeeper measures metrics especially about complexity and size of Ruby files, aiming to be a Ruby version of [gmetrics](https://github.com/dx42/gmetrics)
+CodeKeeper emits Ruby code metric snapshots for periodic code quality reviews.
 
-Mesuring metrics leads to keep codebase simple and clean, and I name the gem CodeKeeper.
+RuboCop is excellent at reporting offenses, but teams can silence offenses, exclude files, or relax thresholds. CodeKeeper is built for a different job: it keeps measuring code metrics independently from RuboCop offense configuration so humans and AI agents can use the numbers as review signals.
 
-Now CodeKeeper supports the cyclomatic complexity of a file, the ABC software metric of a file, and class length. The scores are output to stdout of a json or csv format.
+CodeKeeper currently supports ABC size, cyclomatic complexity, and class length. Each metric is measured at its natural scope:
+
+- `abc_metric`: method, singleton method, and `define_method` block
+- `cyclomatic_complexity`: method, singleton method, and `define_method` block
+- `class_length`: class, module, singleton class, and class-like constant assignment
+
+CodeKeeper does not read `.rubocop.yml`, `rubocop:disable`, `Max`, `AllowedMethods`, `AllowedPatterns`, or `Exclude`. RuboCop is used for Ruby parsing and metric calculation behavior, not for offense filtering.
 
 ## Installation
 
@@ -22,14 +28,15 @@ Or install it yourself as:
     $ gem install code_keeper
 
 ## Usage
-Run CodeKeeper and you get scores of metrics from stdout like 
+Run CodeKeeper and you get a metric snapshot from stdout.
 
 ```rb
 $ bundle exec code_keeper app/models/user.rb app/models/admin.rb > metrics.json
 $ cat metrics.json
-{"cyclomatic_complexity":{"app/models/admin.rb":9,"app/models/user.rb":23},"class_length":{"Admin":86,"User":1475},"abc_metric":{"app/models/admin.rb":76.909,"app/models/user.rb":1546.4155}}
+{"summary":{"metrics":{"abc_metric":{"count":2,"max":18.2,"top_hotspots":[{"metric":"abc_metric","scope_type":"method","scope_name":"User#save!","path":"app/models/user.rb","start_line":42,"end_line":80,"value":18.2}]}}},"measurements":[{"metric":"abc_metric","scope_type":"method","scope_name":"User#save!","path":"app/models/user.rb","start_line":42,"end_line":80,"value":18.2}]}
 ```
-If you need a csv format, change the configuration as explained later.
+
+The `summary` section is intended for quick review. The `measurements` section keeps the metric-native values that support deeper analysis.
 
 ### Run CodeKeeper
 To measure metrics of all the ruby files recursively in the current directory, run
@@ -51,9 +58,56 @@ CodeKeeper.configure do |config|
   config.metrics = %i(cyclomatic_complexity abc_metric class_length)
   # The number of threads. The default is 2. Executed sequentially if you set 1.
   config.number_of_threads = 4
+  # The default engine uses RuboCop-standard metric definitions and ignores RuboCop offense config.
+  config.metrics_engine = :rubocop_standard
   # The default is json
   config.format = :json
 end
+```
+
+### Output formats
+
+The default `json` format returns the new snapshot schema.
+
+```rb
+CodeKeeper.configure do |config|
+  config.format = :json
+end
+```
+
+For existing integrations, legacy formats remain available.
+
+```rb
+CodeKeeper.configure do |config|
+  config.metrics_engine = :legacy
+  config.format = :legacy_json
+end
+```
+
+`config.format = :csv` keeps the existing CSV format. `config.format = :legacy_csv` is an explicit alias for that behavior.
+
+## Using CodeKeeper with AI review workflows
+
+CodeKeeper is designed to provide structured metric data for recurring AI-assisted reviews. A typical workflow is:
+
+1. Run CodeKeeper on the target codebase.
+2. Save the JSON snapshot.
+3. Ask an AI agent to analyze hotspots, group measurements by file or domain, and suggest focused refactoring candidates.
+4. Use the metrics as review signals, not as automatic pass/fail thresholds.
+
+Example prompt:
+
+```text
+Analyze this CodeKeeper JSON snapshot.
+
+Focus on:
+- the highest ABC and cyclomatic complexity measurements
+- classes or modules with unusually large length
+- files or domains that contain multiple hotspots
+- refactoring candidates that reduce risk without broad rewrites
+
+Do not treat these metrics as hard pass/fail thresholds.
+Use them as signals for code quality review.
 ```
 
 ## Development

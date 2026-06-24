@@ -31,4 +31,10 @@ RSpec.describe CodeKeeper::Parser do
       expect(CodeKeeper::Parser.parse('./spec/fixtures/target_sample.rb')).to be_a(::RuboCop::AST::ProcessedSource)
     end
   end
+
+  describe '.source_file' do
+    it 'returns CodeKeeper::SourceFile instance' do
+      expect(CodeKeeper::Parser.source_file('./spec/fixtures/target_sample.rb')).to be_a(CodeKeeper::SourceFile)
+    end
+  end
 end

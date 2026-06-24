@@ -1,15 +1,26 @@
 # frozen_string_literal: true
 
 require 'csv'
+require 'json'
 
 module CodeKeeper
   # Format a result and make it human-readable.
   class Formatter
     class << self
       def format(result)
-        return result.scores.to_json if CodeKeeper.config.format == :json
+        case CodeKeeper.config.format
+        when :json
+          result.snapshot.to_h.to_json
+        when :legacy_json
+          result.scores.to_json
+        when :csv, :legacy_csv
+          legacy_csv(result)
+        end
+      end
 
-        # csv is supported besides json
+      private
+
+      def legacy_csv(result)
         csv_array = []
         result.scores.each_key do |metric|
           result.scores[metric].each { |k, v| csv_array << [metric, k, v] }

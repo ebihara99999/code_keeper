@@ -1,0 +1,13 @@
+Metrics/AbcSize:
+  AllowedMethods:
+    - complex_method
+  Max: 999
+
+Metrics/CyclomaticComplexity:
+  AllowedMethods:
+    - complex_method
+  Max: 999
+
+AllCops:
+  Exclude:
+    - sample.rb

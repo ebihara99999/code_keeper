@@ -2,28 +2,68 @@
 
 module CodeKeeper
   module Metrics
-    # Caluculate cyclomatic complexity
+    # Calculates ABC size at the method scope.
     class AbcMetric
-      include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
-      include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
+      def self.measure(source_file)
+        new(source_file, engine: :rubocop_standard).measure
+      end
 
-      def initialize(file_path)
-        ps = Parser.parse(file_path)
-        @path = file_path
-        @body = ps.ast
-        @assignments = 0
-        @branches = 0
-        @conditionals = 0
+      def initialize(source_or_path, engine: CodeKeeper.config.metrics_engine)
+        @source_file = source_or_path.is_a?(SourceFile) ? source_or_path : Parser.source_file(source_or_path)
+        @path = @source_file.path
+        @body = @source_file.ast
+        @engine = engine
       end
 
       def score
-        caluculator = ::RuboCop::Cop::Metrics::Utils::AbcSizeCalculator.new(@body)
-        caluculator.calculate
-        @assignments = caluculator.instance_variable_get('@assignment')
-        @conditionals = caluculator.instance_variable_get('@condition')
-        @branches = caluculator.instance_variable_get('@branch')
+        return legacy_score if @engine == :legacy
 
-        value = Math.sqrt(@assignments**2 + @branches**2 + @conditionals**2).round(4)
+        measure.to_h { |measurement| [measurement.legacy_key, measurement.value] }
+      end
+
+      def measure
+        return [] unless @body
+
+        method_nodes.map do |node|
+          Measurement.new(
+            metric: :abc_metric,
+            scope_type: :method,
+            scope_name: ScopeName.method_name(node),
+            path: @path,
+            start_line: node.first_line,
+            end_line: node.last_line,
+            value: calculate(node.body)
+          )
+        end
+      end
+
+      private
+
+      def method_nodes
+        @body.each_node(:def, :defs, :block, :numblock, :itblock).select do |node|
+          node.def_type? || node.defs_type? || ScopeName.define_method?(node)
+        end
+      end
+
+      def calculate(node)
+        return 0 unless node
+
+        calculator = ::RuboCop::Cop::Metrics::Utils::AbcSizeCalculator
+        value, = calculator.calculate(node, discount_repeated_attributes: false)
+        value
+      rescue ArgumentError
+        value, = calculator.calculate(node)
+        value
+      end
+
+      def legacy_score
+        calculator = ::RuboCop::Cop::Metrics::Utils::AbcSizeCalculator.new(@body)
+        calculator.calculate
+        assignments = calculator.instance_variable_get('@assignment')
+        conditionals = calculator.instance_variable_get('@condition')
+        branches = calculator.instance_variable_get('@branch')
+
+        value = Math.sqrt(assignments**2 + branches**2 + conditionals**2).round(4)
         { "#{@path}": value }
       end
     end

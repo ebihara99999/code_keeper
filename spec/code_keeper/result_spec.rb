@@ -23,4 +23,23 @@ RSpec.describe CodeKeeper::Result do
       expect(@result.scores).to eq expected_hash
     end
   end
+
+  describe '#add_measurement' do
+    it 'stores measurement in snapshot' do
+      result = CodeKeeper::Result.new
+      measurement = CodeKeeper::Measurement.new(
+        metric: :abc_metric,
+        scope_type: :method,
+        scope_name: 'A#b',
+        path: 'a.rb',
+        start_line: 1,
+        end_line: 3,
+        value: 2.0
+      )
+
+      result.add_measurement(measurement)
+
+      expect(result.snapshot.measurements).to eq [measurement]
+    end
+  end
 end
