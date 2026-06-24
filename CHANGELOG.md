@@ -1,4 +1,13 @@
 # Change log
+## 1.0.0 (Unreleased)
+### Changes
+- Make JSON output a metric snapshot with summaries and measurements.
+- Measure metrics at their natural scope instead of treating files as the primary scope.
+- Use RuboCop metric calculation behavior through CodeKeeper adapters.
+- Remove legacy metric engine and legacy output format aliases.
+- Remove direct `parallel` and `rubocop-ast` runtime dependencies.
+- Support Ruby 3.3 and later.
+
 ## 0.6.2 (2025-01-11)
 ### Changes
 - [Support Ruby 3.4.](https://github.com/ebihara99999/code_keeper/pull/38)

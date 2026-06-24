@@ -101,8 +101,6 @@ CodeKeeper.configure do |config|
   config.metrics = %i(cyclomatic_complexity abc_metric class_length)
   # The number of threads. The default is 2. Executed sequentially if you set 1.
   config.number_of_threads = 4
-  # The default engine uses RuboCop-standard metric definitions through CodeKeeper adapters.
-  config.metrics_engine = :rubocop_standard
   # The default is json
   config.format = :json
 end
@@ -118,18 +116,7 @@ CodeKeeper.configure do |config|
 end
 ```
 
-For existing integrations, legacy formats remain available.
-
-```rb
-CodeKeeper.configure do |config|
-  config.metrics_engine = :legacy
-  config.format = :legacy_json
-end
-```
-
-`config.format = :csv` keeps the existing CSV format. `config.format = :legacy_csv` is an explicit alias for that behavior.
-
-The legacy engine keeps historical CodeKeeper behavior for migration. New integrations should use the default `:rubocop_standard` engine.
+`config.format = :csv` returns a compatibility-oriented table derived from the same measurements.
 
 ## Using CodeKeeper with AI review workflows
 

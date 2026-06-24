@@ -5,21 +5,18 @@ module CodeKeeper
     # Calculates class-like code length at the class/module scope.
     class ClassLength
       def self.measure(source_file)
-        new(source_file, engine: :rubocop_standard).measure
+        new(source_file).measure
       end
 
-      def initialize(source_or_path, engine: CodeKeeper.config.metrics_engine)
+      def initialize(source_or_path)
         @source_file = source_or_path.is_a?(SourceFile) ? source_or_path : Parser.source_file(source_or_path)
         @path = @source_file.path
         @ps = @source_file.processed_source
         @body = @source_file.ast
-        @engine = engine
       end
 
       def score
-        return LegacyClassLength.new(@source_file).score if @engine == :legacy
-
-        measure.to_h { |measurement| [measurement.legacy_key, measurement.value] }
+        measure.to_h { |measurement| [measurement.score_key, measurement.value] }
       end
 
       def measure

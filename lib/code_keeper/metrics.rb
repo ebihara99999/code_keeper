@@ -2,7 +2,6 @@
 
 require 'code_keeper/metrics/scope_name'
 require 'code_keeper/metrics/rubocop_metric_calculator'
-require 'code_keeper/metrics/legacy_class_length'
 require 'code_keeper/metrics/abc_metric'
 require 'code_keeper/metrics/cyclomatic_complexity'
 require 'code_keeper/metrics/class_length'

@@ -6,7 +6,7 @@ RSpec.describe CodeKeeper::Scorer do
       expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb'])).to be_a CodeKeeper::Result
     end
 
-    it 'stores measurements with the standard engine' do
+    it 'stores metric measurements' do
       CodeKeeper.configure do |config|
         config.metrics = [:cyclomatic_complexity]
       end
@@ -14,13 +14,20 @@ RSpec.describe CodeKeeper::Scorer do
       expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb']).snapshot.measurements.size).to eq 1
     end
 
-    it 'stores legacy scores with the legacy engine' do
+    it 'stores parallel measurements in input order' do
       CodeKeeper.configure do |config|
         config.metrics = [:cyclomatic_complexity]
-        config.metrics_engine = :legacy
+        config.number_of_threads = 2
       end
 
-      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb']).scores[:cyclomatic_complexity].values).to eq [2]
+      result = CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/target_sample.rb'])
+
+      expect(result.snapshot.measurements.map { |measurement| [measurement.path, measurement.scope_name] }).to eq(
+        [
+          ['./spec/fixtures/branch_in_loop.rb', 'two_hundred'],
+          ['./spec/fixtures/target_sample.rb', 'TargetSample#hello']
+        ]
+      )
     end
   end
 end

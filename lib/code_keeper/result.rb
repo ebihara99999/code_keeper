@@ -16,7 +16,7 @@ module CodeKeeper
 
     def add_measurement(measurement)
       snapshot.add(measurement)
-      add(measurement.metric, measurement.legacy_key, measurement.value)
+      add(measurement.metric, measurement.score_key, measurement.value)
     end
   end
 end

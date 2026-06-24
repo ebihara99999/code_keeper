@@ -32,34 +32,6 @@ RSpec.describe CodeKeeper::Formatter do
       end
     end
 
-    context 'legacy csv format' do
-      before do
-        CodeKeeper.configure do |config|
-          config.format = :legacy_csv
-        end
-      end
-
-      it 'returns a csv string' do
-        expect(CodeKeeper::Formatter.format(@result)).to start_with "metric,file,score\n"
-      end
-    end
-
-    context 'legacy json format' do
-      before do
-        CodeKeeper.configure do |config|
-          config.format = :legacy_json
-        end
-      end
-
-      let(:expected_string) do
-        %({\"cyclomatic_complexity\":{\"/foo/bar/code_keeper/spec/fixtures/branch_in_loop.rb\":2,\"/foo/bar/code_keeper/spec/fixtures/target_sample.rb\":1}})
-      end
-
-      it 'returns a legacy json string' do
-        expect(CodeKeeper::Formatter.format(@result)).to eq expected_string
-      end
-    end
-
     context 'json format' do
       before do
         CodeKeeper.configure do |config|

@@ -2,7 +2,7 @@
 
 module CodeKeeper
   module Metrics
-    # Centralizes RuboCop metric calculation details used by the standard engine.
+    # Centralizes RuboCop metric calculation details.
     module RuboCopMetricCalculator
       module_function
 

@@ -7,23 +7,18 @@ module CodeKeeper
       include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
       include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
 
-      LEGACY_CONSIDERED_NODES = %i[if while until for csend block block_pass rescue when and or or_asgnand_asgn].freeze
-
       def self.measure(source_file)
-        new(source_file, engine: :rubocop_standard).measure
+        new(source_file).measure
       end
 
-      def initialize(source_or_path, engine: CodeKeeper.config.metrics_engine)
+      def initialize(source_or_path)
         @source_file = source_or_path.is_a?(SourceFile) ? source_or_path : Parser.source_file(source_or_path)
         @path = @source_file.path
         @body = @source_file.ast
-        @engine = engine
       end
 
       def score
-        return legacy_score if @engine == :legacy
-
-        measure.to_h { |measurement| [measurement.legacy_key, measurement.value] }
+        measure.to_h { |measurement| [measurement.score_key, measurement.value] }
       end
 
       def measure
@@ -52,16 +47,6 @@ module CodeKeeper
 
       def calculate(body)
         RuboCopMetricCalculator.cyclomatic_complexity(body)
-      end
-
-      def legacy_score
-        final_score = @body.each_node(:lvasgn, *LEGACY_CONSIDERED_NODES).reduce(1) do |score, node|
-          next score if !iterating_block?(node) || node.lvasgn_type?
-          next score if node.csend_type? && discount_for_repeated_csend?(node)
-
-          next 1 + score
-        end
-        { "#{@path}": final_score }
       end
     end
   end

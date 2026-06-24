@@ -11,16 +11,14 @@ module CodeKeeper
         case CodeKeeper.config.format
         when :json
           result.snapshot.to_h.to_json
-        when :legacy_json
-          result.scores.to_json
-        when :csv, :legacy_csv
-          legacy_csv(result)
+        when :csv
+          csv(result)
         end
       end
 
       private
 
-      def legacy_csv(result)
+      def csv(result)
         csv_array = []
         result.scores.each_key do |metric|
           result.scores[metric].each { |k, v| csv_array << [metric, k, v] }

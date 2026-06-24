@@ -2,16 +2,16 @@
 
 RSpec.describe CodeKeeper::Metrics::AbcMetric do
   describe "#score" do
-    before do
-      CodeKeeper.configure do |config|
-        config.metrics_engine = :legacy
-      end
-    end
-
-    it "returns a hash of a filename and a score, 3.7417, which is the four decimal point" do
-      expected_hash = { 'spec/fixtures/branch_in_loop.rb': 3.7417 }
+    it 'returns RuboCop ABC values by method scope' do
+      source_file = CodeKeeper::Parser.source_file('spec/fixtures/branch_in_loop.rb')
+      method_node = source_file.ast.each_node(:def).first
+      rubocop_value, = RuboCop::Cop::Metrics::Utils::AbcSizeCalculator.calculate(
+        method_node.body,
+        discount_repeated_attributes: false
+      )
       abc_metric = CodeKeeper::Metrics::AbcMetric.new('spec/fixtures/branch_in_loop.rb')
-      expect(abc_metric.score).to eq expected_hash
+
+      expect(abc_metric.score).to eq('spec/fixtures/branch_in_loop.rb:two_hundred' => rubocop_value)
     end
   end
 
@@ -21,6 +21,18 @@ RSpec.describe CodeKeeper::Metrics::AbcMetric do
       measurement = CodeKeeper::Metrics::AbcMetric.measure(source_file).first
 
       expect(measurement.scope_name).to eq 'two_hundred'
+    end
+
+    it 'matches RuboCop ABC calculation' do
+      source_file = CodeKeeper::Parser.source_file('spec/fixtures/branch_in_loop.rb')
+      method_node = source_file.ast.each_node(:def).first
+      rubocop_value, = RuboCop::Cop::Metrics::Utils::AbcSizeCalculator.calculate(
+        method_node.body,
+        discount_repeated_attributes: false
+      )
+      measurement = CodeKeeper::Metrics::AbcMetric.measure(source_file).first
+
+      expect(measurement.value).to eq rubocop_value
     end
 
     it 'does not suppress measurements with RuboCop comments or config' do
