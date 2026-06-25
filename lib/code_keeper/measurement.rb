@@ -23,13 +23,13 @@ module CodeKeeper
 
     def to_h
       {
-        metric: metric,
-        scope_type: scope_type,
-        scope_name: scope_name,
-        path: path,
-        start_line: start_line,
-        end_line: end_line,
-        value: value
+        metric:,
+        scope_type:,
+        scope_name:,
+        path:,
+        start_line:,
+        end_line:,
+        value:
       }
     end
   end
