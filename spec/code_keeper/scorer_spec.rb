@@ -11,7 +11,7 @@ RSpec.describe CodeKeeper::Scorer do
         config.metrics = [:cyclomatic_complexity]
       end
 
-      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb']).snapshot.measurements.size).to eq 1
+      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb']).metric_report.measurements.size).to eq 1
     end
 
     it 'stores parallel measurements in input order' do
@@ -22,7 +22,7 @@ RSpec.describe CodeKeeper::Scorer do
 
       result = CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/target_sample.rb'])
 
-      expect(result.snapshot.measurements.map { |measurement| [measurement.path, measurement.scope_name] }).to eq(
+      expect(result.metric_report.measurements.map { |measurement| [measurement.path, measurement.scope_name] }).to eq(
         [
           ['./spec/fixtures/branch_in_loop.rb', 'two_hundred'],
           ['./spec/fixtures/target_sample.rb', 'TargetSample#hello']

@@ -39,7 +39,7 @@ RSpec.describe CodeKeeper::Formatter do
         end
       end
 
-      it 'returns snapshot json' do
+      it 'returns metric report json' do
         @result.add_measurement(
           CodeKeeper::Measurement.new(
             metric: :cyclomatic_complexity,

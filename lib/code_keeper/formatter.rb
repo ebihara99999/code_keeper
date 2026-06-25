@@ -10,7 +10,7 @@ module CodeKeeper
       def format(result)
         case CodeKeeper.config.format
         when :json
-          result.snapshot.to_h.to_json
+          result.metric_report.to_h.to_json
         when :csv
           csv(result)
         end

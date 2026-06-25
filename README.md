@@ -1,9 +1,9 @@
 # CodeKeeper
-CodeKeeper emits Ruby code metric snapshots for periodic code quality reviews.
+CodeKeeper emits Ruby code metric reports for periodic code quality reviews.
 
 It is not a RuboCop replacement. RuboCop is excellent at reporting style and metric offenses, but offense reporting is intentionally configurable: projects can disable cops, exclude files, allow specific methods, or relax thresholds. CodeKeeper is built for a different job. It keeps measuring metric values even when RuboCop offense reporting has been silenced or loosened.
 
-The intended use is recurring code quality review. Run CodeKeeper, hand the structured snapshot to a human or AI agent, and use the metric values as review signals.
+The intended use is recurring code quality review. Run CodeKeeper, hand the structured metric report to a human or AI agent, and use the metric values as review signals.
 
 ## Design
 
@@ -40,7 +40,7 @@ Or install it yourself as:
     $ gem install code_keeper
 
 ## Usage
-Run CodeKeeper and you get a metric snapshot from stdout.
+Run CodeKeeper and you get a metric report from stdout.
 
 ```rb
 $ bundle exec code_keeper app/models/user.rb app/models/admin.rb > metrics.json
@@ -108,7 +108,7 @@ end
 
 ### Output formats
 
-The default `json` format returns the new snapshot schema.
+The default `json` format returns the metric report schema.
 
 ```rb
 CodeKeeper.configure do |config|
@@ -123,14 +123,14 @@ end
 CodeKeeper is designed to provide structured metric data for recurring AI-assisted reviews. A typical workflow is:
 
 1. Run CodeKeeper on the target codebase.
-2. Save the JSON snapshot.
+2. Save the JSON metric report.
 3. Ask an AI agent to analyze hotspots, group measurements by file, directory, domain, or owner, and suggest focused refactoring candidates.
 4. Use the metrics as review signals, not as automatic pass/fail thresholds.
 
 Example prompt:
 
 ```text
-Analyze this CodeKeeper JSON snapshot.
+Analyze this CodeKeeper JSON metric report.
 
 Focus on:
 - the highest ABC and cyclomatic complexity measurements

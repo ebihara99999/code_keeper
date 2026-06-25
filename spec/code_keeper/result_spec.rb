@@ -25,7 +25,7 @@ RSpec.describe CodeKeeper::Result do
   end
 
   describe '#add_measurement' do
-    it 'stores measurement in snapshot' do
+    it 'stores measurement in the metric report' do
       result = CodeKeeper::Result.new
       measurement = CodeKeeper::Measurement.new(
         metric: :abc_metric,
@@ -39,7 +39,7 @@ RSpec.describe CodeKeeper::Result do
 
       result.add_measurement(measurement)
 
-      expect(result.snapshot.measurements).to eq [measurement]
+      expect(result.metric_report.measurements).to eq [measurement]
     end
   end
 end

@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-RSpec.describe CodeKeeper::Snapshot do
+RSpec.describe CodeKeeper::MetricReport do
   describe '#to_h' do
     it 'summarizes measurements by metric' do
-      snapshot = CodeKeeper::Snapshot.new
-      snapshot.add(
+      metric_report = CodeKeeper::MetricReport.new
+      metric_report.add(
         CodeKeeper::Measurement.new(
           metric: :abc_metric,
           scope_type: :method,
@@ -16,7 +16,7 @@ RSpec.describe CodeKeeper::Snapshot do
         )
       )
 
-      expect(snapshot.to_h[:summary][:metrics][:abc_metric][:max]).to eq 2.0
+      expect(metric_report.to_h[:summary][:metrics][:abc_metric][:max]).to eq 2.0
     end
   end
 end

@@ -20,7 +20,7 @@ RSpec.describe CodeKeeper::Cli do
     end
 
     context 'normal cases' do
-      it 'outputs snapshot to stdout' do
+      it 'outputs metric report to stdout' do
         expect do
           CodeKeeper::Cli.run(['./spec/fixtures/branch_in_loop.rb'])
         end.to output(/"summary"/).to_stdout

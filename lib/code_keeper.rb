@@ -4,7 +4,7 @@ require_relative "code_keeper/version"
 require "rubocop"
 require 'code_keeper/source_file'
 require 'code_keeper/measurement'
-require 'code_keeper/snapshot'
+require 'code_keeper/metric_report'
 require 'code_keeper/parser'
 require 'code_keeper/finder'
 require 'code_keeper/cli'

@@ -2,7 +2,7 @@
 
 module CodeKeeper
   # Stores metric-native measurements and derives a compact review summary.
-  class Snapshot
+  class MetricReport
     attr_reader :measurements
 
     def initialize(measurements = [])
