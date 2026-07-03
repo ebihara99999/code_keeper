@@ -32,6 +32,9 @@ module CodeKeeper
 
       private
 
+      # Kept identical to CyclomaticComplexity#method_nodes on purpose.
+      # Extract a shared method-scope enumerator when a third method-scope
+      # metric is added.
       def method_nodes
         @body.each_node(:def, :defs, :block, :numblock, :itblock).select do |node|
           node.def_type? || node.defs_type? || ScopeName.define_method?(node)
