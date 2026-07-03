@@ -1,19 +1,15 @@
 # frozen_string_literal: true
 
 module CodeKeeper
-  # Run and store score of metrics.
+  # Runs metrics and builds the metric report.
   class Scorer
     class << self
       def keep(paths)
-        result = CodeKeeper::Result.new
-        metrics = result.scores.keys
+        metrics = CodeKeeper.config.metrics.uniq
         ruby_file_paths = Finder.new(paths).file_paths
         num_threads = CodeKeeper.config.number_of_threads
 
-        measurements = measure_files(ruby_file_paths, metrics, num_threads)
-        measurements.each { |measurement| result.add_measurement(measurement) }
-
-        result
+        MetricReport.new(measure_files(ruby_file_paths, metrics, num_threads))
       end
 
       private

@@ -14,9 +14,9 @@ module CodeKeeper
         return ERROR_CODE
       end
 
-      result = CodeKeeper::Scorer.keep(paths)
+      metric_report = CodeKeeper::Scorer.keep(paths)
 
-      puts ::CodeKeeper::Formatter.format(result)
+      puts ::CodeKeeper::Formatter.format(metric_report)
       SUCCESS_CODE
     rescue Interrupt
       puts 'Exiting...'

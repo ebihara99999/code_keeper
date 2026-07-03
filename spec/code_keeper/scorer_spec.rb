@@ -2,8 +2,8 @@
 
 RSpec.describe CodeKeeper::Scorer do
   describe '.keep' do
-    it 'returns an instance of CodeKeeper::Result' do
-      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb'])).to be_a CodeKeeper::Result
+    it 'returns an instance of CodeKeeper::MetricReport' do
+      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb'])).to be_a CodeKeeper::MetricReport
     end
 
     it 'stores metric measurements' do
@@ -11,7 +11,15 @@ RSpec.describe CodeKeeper::Scorer do
         config.metrics = [:cyclomatic_complexity]
       end
 
-      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb']).metric_report.measurements.size).to eq 1
+      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb']).measurements.size).to eq 1
+    end
+
+    it 'measures duplicated configured metrics once' do
+      CodeKeeper.configure do |config|
+        config.metrics = %i[cyclomatic_complexity cyclomatic_complexity]
+      end
+
+      expect(CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb']).measurements.size).to eq 1
     end
 
     it 'stores parallel measurements in input order' do
@@ -20,9 +28,9 @@ RSpec.describe CodeKeeper::Scorer do
         config.number_of_threads = 2
       end
 
-      result = CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/target_sample.rb'])
+      metric_report = CodeKeeper::Scorer.keep(['./spec/fixtures/branch_in_loop.rb', './spec/fixtures/target_sample.rb'])
 
-      expect(result.metric_report.measurements.map { |measurement| [measurement.path, measurement.scope_name] }).to eq(
+      expect(metric_report.measurements.map { |measurement| [measurement.path, measurement.scope_name] }).to eq(
         [
           ['./spec/fixtures/branch_in_loop.rb', 'two_hundred'],
           ['./spec/fixtures/target_sample.rb', 'TargetSample#hello']

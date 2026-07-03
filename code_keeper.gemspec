@@ -28,7 +28,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency "csv"
   spec.add_dependency "rubocop", '>= 1.88.0'
 
   # For more information and examples about making a new gem, checkout our

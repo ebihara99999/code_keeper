@@ -15,12 +15,6 @@ module CodeKeeper
       @value = attributes.fetch(:value)
     end
 
-    def score_key
-      return scope_name if %i[class module singleton_class].include?(scope_type)
-
-      "#{path}:#{scope_name}"
-    end
-
     def to_h
       {
         metric:,

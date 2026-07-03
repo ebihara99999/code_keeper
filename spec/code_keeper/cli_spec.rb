@@ -15,7 +15,6 @@ RSpec.describe CodeKeeper::Cli do
     before do
       CodeKeeper.configure do |config|
         config.metrics = [:cyclomatic_complexity]
-        config.format = :json
       end
     end
 

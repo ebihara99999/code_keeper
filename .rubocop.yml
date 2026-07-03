@@ -22,18 +22,11 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
 
-Layout/HeredocIndentation:
-  Exclude:
-    - spec/code_keeper/formatter_spec.rb
-    - lib/code_keeper/formatter.rb
-
 Naming/HeredocDelimiterNaming:
   Enabled: false
 
 Metrics/MethodLength:
   Max: 40
-  Exclude:
-    - lib/code_keeper/formatter.rb # because uses here doc
 
 # Because TargetFileNotFoundError needs to be passed an argument to initializer.
 Style/RaiseArgs:

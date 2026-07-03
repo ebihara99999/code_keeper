@@ -81,7 +81,7 @@ $ cat metrics.json
 }
 ```
 
-The `summary` section is intended for quick review. `top_hotspots` contains up to five measurements per metric, ordered by descending value. The `measurements` section contains the metric-native values that support deeper analysis.
+The `summary` section is intended for quick review. `top_hotspots` contains up to five measurements per metric, ordered by descending value. The `measurements` section contains the metric-native values that support deeper analysis. If you need a tabular view such as CSV, derive it from the `measurements` array.
 
 ### Run CodeKeeper
 To measure metrics of all the ruby files recursively in the current directory, run
@@ -103,22 +103,8 @@ CodeKeeper.configure do |config|
   config.metrics = %i(cyclomatic_complexity abc_metric class_length)
   # The number of threads. The default is 2. Executed sequentially if you set 1.
   config.number_of_threads = 4
-  # The default is json
-  config.format = :json
 end
 ```
-
-### Output formats
-
-The default `json` format returns the metric report schema.
-
-```rb
-CodeKeeper.configure do |config|
-  config.format = :json
-end
-```
-
-`config.format = :csv` returns a compatibility-oriented table derived from the same measurements.
 
 ## Using CodeKeeper with AI review workflows
 
