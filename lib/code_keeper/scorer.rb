@@ -54,7 +54,7 @@ module CodeKeeper
       end
 
       def measure_file(path, metrics)
-        source_file = Parser.source_file(path)
+        source_file = SourceFile.new(path)
 
         metrics.flat_map do |metric|
           ::CodeKeeper::Metrics::MAPPINGS[metric].measure(source_file)

@@ -4,9 +4,6 @@ module CodeKeeper
   module Metrics
     # Calculates cyclomatic complexity at the method scope.
     class CyclomaticComplexity
-      include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
-      include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
-
       def self.measure(source_file)
         new(source_file).measure
       end
@@ -15,10 +12,6 @@ module CodeKeeper
         @source_file = source_file
         @path = @source_file.path
         @body = @source_file.ast
-      end
-
-      def score
-        measure.to_h { |measurement| [measurement.score_key, measurement.value] }
       end
 
       def measure

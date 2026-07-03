@@ -9,10 +9,10 @@ module CodeKeeper
       def abc_size(node)
         return 0 unless node
 
-        value, = abc_calculator.calculate(node, discount_repeated_attributes: false)
-        value
-      rescue ArgumentError
-        value, = abc_calculator.calculate(node)
+        value, = ::RuboCop::Cop::Metrics::Utils::AbcSizeCalculator.calculate(
+          node,
+          discount_repeated_attributes: false
+        )
         value
       end
 
@@ -31,10 +31,6 @@ module CodeKeeper
           count_comments: false,
           foldable_types: []
         ).calculate
-      end
-
-      def abc_calculator
-        ::RuboCop::Cop::Metrics::Utils::AbcSizeCalculator
       end
     end
   end

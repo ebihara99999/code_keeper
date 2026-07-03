@@ -15,10 +15,6 @@ module CodeKeeper
         @body = @source_file.ast
       end
 
-      def score
-        measure.to_h { |measurement| [measurement.score_key, measurement.value] }
-      end
-
       def measure
         return [] unless @body
 
