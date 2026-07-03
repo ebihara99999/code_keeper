@@ -81,7 +81,7 @@ $ cat metrics.json
 }
 ```
 
-The `summary` section is intended for quick review. The `measurements` section contains the metric-native values that support deeper analysis.
+The `summary` section is intended for quick review. `top_hotspots` contains up to five measurements per metric, ordered by descending value. The `measurements` section contains the metric-native values that support deeper analysis.
 
 ### Run CodeKeeper
 To measure metrics of all the ruby files recursively in the current directory, run

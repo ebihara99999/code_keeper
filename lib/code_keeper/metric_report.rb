@@ -3,6 +3,8 @@
 module CodeKeeper
   # Stores metric-native measurements and derives a compact review summary.
   class MetricReport
+    TOP_HOTSPOTS_LIMIT = 5
+
     attr_reader :measurements
 
     def initialize(measurements = [])
@@ -31,9 +33,16 @@ module CodeKeeper
         {
           count: group.size,
           max: max_value,
-          top_hotspots: group.select { |measurement| measurement.value == max_value }.map(&:to_h)
+          top_hotspots: top_hotspots(group)
         }
       end
+    end
+
+    def top_hotspots(measurements)
+      measurements
+        .sort_by { |measurement| [-measurement.value, measurement.path, measurement.start_line, measurement.scope_name] }
+        .first(TOP_HOTSPOTS_LIMIT)
+        .map(&:to_h)
     end
   end
 end
