@@ -29,17 +29,25 @@ RSpec.describe CodeKeeper::MetricReport do
       expect(metric_report.to_h[:summary][:metrics][:abc_metric][:top_hotspots].map { |hotspot| hotspot[:value] }).to eq [6, 5, 4, 3, 2]
     end
 
-    it 'orders hotspot ties by path and start line' do
+    it 'orders hotspot ties by path, start line, and scope name' do
       metric_report = CodeKeeper::MetricReport.new(
         [
           measurement(path: 'b.rb', start_line: 1, scope_name: 'B#b'),
           measurement(path: 'a.rb', start_line: 2, scope_name: 'A#b'),
+          measurement(path: 'a.rb', start_line: 1, scope_name: 'A#b'),
           measurement(path: 'a.rb', start_line: 1, scope_name: 'A#a')
         ]
       )
 
-      expect(metric_report.to_h[:summary][:metrics][:abc_metric][:top_hotspots].map { |hotspot| [hotspot[:path], hotspot[:start_line]] }).to eq(
-        [['a.rb', 1], ['a.rb', 2], ['b.rb', 1]]
+      expect(metric_report.to_h[:summary][:metrics][:abc_metric][:top_hotspots].map do |hotspot|
+        [hotspot[:path], hotspot[:start_line], hotspot[:scope_name]]
+      end).to eq(
+        [
+          ['a.rb', 1, 'A#a'],
+          ['a.rb', 1, 'A#b'],
+          ['a.rb', 2, 'A#b'],
+          ['b.rb', 1, 'B#b']
+        ]
       )
     end
   end

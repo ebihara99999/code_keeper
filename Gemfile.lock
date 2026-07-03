@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     code_keeper (1.0.0)
+      csv
       rubocop (>= 1.88.0)
 
 GEM
