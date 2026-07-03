@@ -8,8 +8,8 @@ module CodeKeeper
         new(source_file).measure
       end
 
-      def initialize(source_or_path)
-        @source_file = source_or_path.is_a?(SourceFile) ? source_or_path : Parser.source_file(source_or_path)
+      def initialize(source_file)
+        @source_file = source_file
         @path = @source_file.path
         @body = @source_file.ast
       end

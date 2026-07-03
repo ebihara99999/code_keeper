@@ -13,6 +13,8 @@ CodeKeeper uses RuboCop as a Ruby analysis foundation, not as an offense policy 
 - Standard metric values are calculated through RuboCop metric calculators or RuboCop metric cop behavior behind CodeKeeper adapters.
 - RuboCop project configuration is not applied to measurement.
 
+RuboCop's output is threshold-gated offense reporting, not a metric inventory. Values below configured limits are not emitted as metric facts. Even aggressive RuboCop metric settings still remain policy-filtered by inline disable comments, excludes, disabled cops, allowed methods, and relaxed thresholds.
+
 CodeKeeper does not read `.rubocop.yml`, `rubocop:disable`, `Max`, `AllowedMethods`, `AllowedPatterns`, or `Exclude`. Those settings control RuboCop offense reporting, but CodeKeeper's purpose is to keep the underlying measurements visible.
 
 Each metric is measured at its natural scope:

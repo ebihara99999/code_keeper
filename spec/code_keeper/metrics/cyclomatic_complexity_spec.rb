@@ -7,7 +7,7 @@ RSpec.describe CodeKeeper::Metrics::CyclomaticComplexity do
       method_node = source_file.ast.each_node(:def).first
       rubocop_cop = RuboCop::Cop::Metrics::CyclomaticComplexity.new
       rubocop_cop.send(:reset_repeated_csend)
-      complexity = CodeKeeper::Metrics::CyclomaticComplexity.new('spec/fixtures/branch_in_loop.rb')
+      complexity = CodeKeeper::Metrics::CyclomaticComplexity.new(source_file)
 
       expect(complexity.score).to eq(
         'spec/fixtures/branch_in_loop.rb:two_hundred' => rubocop_cop.send(:complexity, method_node.body)
@@ -29,7 +29,7 @@ RSpec.describe CodeKeeper::Metrics::CyclomaticComplexity do
     it 'does not suppress measurements with RuboCop comments or config' do
       source_file = CodeKeeper::Parser.source_file('spec/fixtures/rubocop_config/sample.rb')
 
-      expect(CodeKeeper::Metrics::CyclomaticComplexity.measure(source_file).size).to eq 1
+      expect(CodeKeeper::Metrics::CyclomaticComplexity.measure(source_file).map(&:scope_name)).to eq ['ConfigIgnoredSample#complex_method']
     end
   end
 end

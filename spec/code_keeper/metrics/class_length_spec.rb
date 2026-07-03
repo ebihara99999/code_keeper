@@ -11,7 +11,7 @@ RSpec.describe CodeKeeper::Metrics::ClassLength do
         count_comments: false,
         foldable_types: []
       ).calculate
-      class_length = CodeKeeper::Metrics::ClassLength.new('spec/fixtures/class_samples/simple_class.rb')
+      class_length = CodeKeeper::Metrics::ClassLength.new(source_file)
 
       expect(class_length.score).to eq('SimpleClass' => rubocop_value)
     end
