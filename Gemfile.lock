@@ -60,7 +60,6 @@ PLATFORMS
 
 DEPENDENCIES
   code_keeper!
-  csv
   rake (~> 13.0)
   rspec (~> 3.0)
 
