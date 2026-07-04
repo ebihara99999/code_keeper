@@ -17,5 +17,21 @@ RSpec.describe CodeKeeper::Metrics::CyclomaticComplexity do
 
       expect(CodeKeeper::Metrics::CyclomaticComplexity.measure(source_file).map(&:scope_name)).to eq ['ConfigIgnoredSample#complex_method']
     end
+
+    it 'names methods in singleton class scopes as singleton methods' do
+      source_file = CodeKeeper::SourceFile.new('spec/fixtures/class_samples/singleton_scope.rb')
+
+      expect(CodeKeeper::Metrics::CyclomaticComplexity.measure(source_file).map(&:scope_name)).to eq(
+        [
+          'SingletonScopeSample.module_singleton_method',
+          'SingletonScopeOwner.class_singleton_method',
+          'SingletonScopeOwner.defined_singleton_method',
+          'SingletonScopeOwner.build_helper',
+          'SingletonScopeOwner#built_instance_method',
+          'SingletonScopeRuntime#attach',
+          'self.tag'
+        ]
+      )
+    end
   end
 end

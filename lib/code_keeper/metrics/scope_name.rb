@@ -9,6 +9,9 @@ module CodeKeeper
       def method_name(node)
         case node.type
         when :def
+          sclass = enclosing_sclass(node)
+          return join_singleton_method(sclass_receiver_name(sclass), node.method_name) if sclass
+
           join_instance_method(owner_name(node), node.method_name)
         when :defs
           join_singleton_method(singleton_receiver_name(node), node.method_name)
@@ -20,7 +23,7 @@ module CodeKeeper
       def class_name(node)
         case node.type
         when :sclass
-          "class << #{node.children.first.source}"
+          "class << #{sclass_receiver_name(node)}"
         else
           join_const_name(owner_name(node), node.children.first&.source)
         end
@@ -49,12 +52,38 @@ module CodeKeeper
         send_node = node.children.first
         name = literal_value(send_node.arguments.first)
 
+        sclass = enclosing_sclass(node)
+        return join_singleton_method(sclass_receiver_name(sclass), name) if sclass
+
         join_instance_method(owner_name(node), name)
+      end
+
+      # A def or define_method belongs to the singleton class only when it sits
+      # directly in the sclass body; a def/defs/block in between changes self.
+      def enclosing_sclass(node)
+        scope = node.each_ancestor(:def, :defs, :block, :numblock, :itblock, :sclass, :class, :module).first
+        scope if scope&.sclass_type?
+      end
+
+      def sclass_receiver_name(node)
+        receiver = node.children.first
+        return receiver.source unless receiver.self_type?
+        return 'self' unless static_self_scope?(node)
+
+        owner = owner_name(node)
+        owner.empty? ? 'self' : owner
+      end
+
+      # In method bodies and blocks, self is the runtime receiver, not the
+      # lexically enclosing constant, so it must not be resolved statically.
+      def static_self_scope?(node)
+        scope = node.each_ancestor(:def, :defs, :block, :numblock, :itblock, :sclass, :class, :module).first
+        scope.nil? || scope.class_type? || scope.module_type?
       end
 
       def owner_name(node)
         node.each_ancestor(:class, :module).to_a.reverse.filter_map do |ancestor|
-          class_name(ancestor)
+          ancestor.children.first&.source
         end.join('::')
       end
 
