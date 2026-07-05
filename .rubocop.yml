@@ -1,4 +1,6 @@
 AllCops:
+  NewCops: disable
+  SuggestExtensions: false
   Exclude:
     - spec/fixtures/**/*.rb
 
@@ -20,18 +22,11 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
 
-Layout/HeredocIndentation:
-  Exclude:
-    - spec/code_keeper/formatter_spec.rb
-    - lib/code_keeper/formatter.rb
-
 Naming/HeredocDelimiterNaming:
   Enabled: false
 
 Metrics/MethodLength:
-  Max: 20
-  Exclude:
-    - lib/code_keeper/formatter.rb # because uses here doc
+  Max: 40
 
 # Because TargetFileNotFoundError needs to be passed an argument to initializer.
 Style/RaiseArgs:
@@ -56,6 +51,3 @@ Metrics/PerceivedComplexity:
   Exclude:
     # It's hard to control.
     - lib/code_keeper/metrics/class_length.rb 
-
-Metrics/MethodLength:
-  Max: 40

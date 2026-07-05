@@ -1,32 +1,38 @@
 # frozen_string_literal: true
 
+require 'stringio'
+
 RSpec.describe CodeKeeper::Cli do
+  def run_silently(paths)
+    original_stdout = $stdout
+    $stdout = StringIO.new
+    CodeKeeper::Cli.run(paths)
+  ensure
+    $stdout = original_stdout
+  end
+
   describe '.run' do
     before do
       CodeKeeper.configure do |config|
         config.metrics = [:cyclomatic_complexity]
-        config.format = :json
       end
     end
 
     context 'normal cases' do
-      it 'outputs scores to stdout' do
-        expected_output = %({"cyclomatic_complexity":{"./spec/fixtures/branch_in_loop.rb":2}}\n)
-
+      it 'outputs metric report to stdout' do
         expect do
           CodeKeeper::Cli.run(['./spec/fixtures/branch_in_loop.rb'])
-        end.to output(expected_output).to_stdout
+        end.to output(/"summary"/).to_stdout
       end
 
       it 'returns 0' do
-        ret = CodeKeeper::Cli.run(['./spec/fixtures/branch_in_loop.rb'])
-        expect(ret).to eq 0
+        expect(run_silently(['./spec/fixtures/branch_in_loop.rb'])).to eq 0
       end
     end
 
     context 'No argument is specified' do
       it 'returns 2' do
-        expect(CodeKeeper::Cli.run([])).to eq 2
+        expect(run_silently([])).to eq 2
       end
 
       it 'outputs an error message' do
@@ -53,8 +59,7 @@ RSpec.describe CodeKeeper::Cli do
       end
 
       it 'returns 2' do
-        ret = CodeKeeper::Cli.run(['./spec/fixtures/branch_in_loop.rb'])
-        expect(ret).to eq 2
+        expect(run_silently(['./spec/fixtures/branch_in_loop.rb'])).to eq 2
       end
     end
 
@@ -71,8 +76,7 @@ RSpec.describe CodeKeeper::Cli do
       end
 
       it 'returns 1' do
-        ret = CodeKeeper::Cli.run(['./spec/fixtures/branch_in_loop.rb'])
-        expect(ret).to eq 1
+        expect(run_silently(['./spec/fixtures/branch_in_loop.rb'])).to eq 1
       end
     end
   end

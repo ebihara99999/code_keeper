@@ -2,14 +2,18 @@
 
 require_relative "code_keeper/version"
 require "rubocop"
-require 'code_keeper/parser'
+require 'code_keeper/source_file'
+require 'code_keeper/measurement'
+require 'code_keeper/metric_report'
 require 'code_keeper/finder'
 require 'code_keeper/cli'
 require 'code_keeper/formatter'
 require 'code_keeper/config'
 require 'code_keeper/scorer'
-require 'code_keeper/result'
 require 'code_keeper/metrics'
+require 'code_keeper/metrics/scope_name'
+require 'code_keeper/metrics/constant_assignment'
+require 'code_keeper/metrics/rubocop_metric_calculator'
 require 'code_keeper/metrics/abc_metric'
 require 'code_keeper/metrics/cyclomatic_complexity'
 require 'code_keeper/metrics/class_length'

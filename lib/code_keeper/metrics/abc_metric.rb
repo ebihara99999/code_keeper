@@ -2,29 +2,47 @@
 
 module CodeKeeper
   module Metrics
-    # Caluculate cyclomatic complexity
+    # Calculates ABC size at the method scope.
     class AbcMetric
-      include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
-      include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
-
-      def initialize(file_path)
-        ps = Parser.parse(file_path)
-        @path = file_path
-        @body = ps.ast
-        @assignments = 0
-        @branches = 0
-        @conditionals = 0
+      def self.measure(source_file)
+        new(source_file).measure
       end
 
-      def score
-        caluculator = ::RuboCop::Cop::Metrics::Utils::AbcSizeCalculator.new(@body)
-        caluculator.calculate
-        @assignments = caluculator.instance_variable_get('@assignment')
-        @conditionals = caluculator.instance_variable_get('@condition')
-        @branches = caluculator.instance_variable_get('@branch')
+      def initialize(source_file)
+        @source_file = source_file
+        @path = @source_file.path
+        @body = @source_file.ast
+      end
 
-        value = Math.sqrt(@assignments**2 + @branches**2 + @conditionals**2).round(4)
-        { "#{@path}": value }
+      def measure
+        return [] unless @body
+
+        method_nodes.map do |node|
+          Measurement.new(
+            metric: :abc_metric,
+            scope_type: :method,
+            scope_name: ScopeName.method_name(node),
+            path: @path,
+            start_line: node.first_line,
+            end_line: node.last_line,
+            value: calculate(node.body)
+          )
+        end
+      end
+
+      private
+
+      # Kept identical to CyclomaticComplexity#method_nodes on purpose.
+      # Extract a shared method-scope enumerator when a third method-scope
+      # metric is added.
+      def method_nodes
+        @body.each_node(:def, :defs, :block, :numblock, :itblock).select do |node|
+          node.def_type? || node.defs_type? || ScopeName.define_method?(node)
+        end
+      end
+
+      def calculate(node)
+        RuboCopMetricCalculator.abc_size(node)
       end
     end
   end

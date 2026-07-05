@@ -2,28 +2,47 @@
 
 module CodeKeeper
   module Metrics
-    # Caluculate cyclomatic complexity
+    # Calculates cyclomatic complexity at the method scope.
     class CyclomaticComplexity
-      include ::RuboCop::Cop::Metrics::Utils::IteratingBlock
-      include ::RuboCop::Cop::Metrics::Utils::RepeatedCsendDiscount
-
-      CONSIDERED_NODES = %i[if while until for csend block block_pass rescue when and or or_asgnand_asgn].freeze
-
-      def initialize(file_path)
-        @path = file_path
-        ps = Parser.parse(@path)
-        @body = ps.ast
+      def self.measure(source_file)
+        new(source_file).measure
       end
 
-      # returns score of cyclomatic complexity
-      def score
-        final_score = @body.each_node(:lvasgn, *CONSIDERED_NODES).reduce(1) do |score, node|
-          next score if !iterating_block?(node) || node.lvasgn_type?
-          next score if node.csend_type? && discount_for_repeated_csend?(node)
+      def initialize(source_file)
+        @source_file = source_file
+        @path = @source_file.path
+        @body = @source_file.ast
+      end
 
-          next 1 + score
+      def measure
+        return [] unless @body
+
+        method_nodes.map do |node|
+          Measurement.new(
+            metric: :cyclomatic_complexity,
+            scope_type: :method,
+            scope_name: ScopeName.method_name(node),
+            path: @path,
+            start_line: node.first_line,
+            end_line: node.last_line,
+            value: calculate(node.body)
+          )
         end
-        { "#{@path}": final_score }
+      end
+
+      private
+
+      # Kept identical to AbcMetric#method_nodes on purpose.
+      # Extract a shared method-scope enumerator when a third method-scope
+      # metric is added.
+      def method_nodes
+        @body.each_node(:def, :defs, :block, :numblock, :itblock).select do |node|
+          node.def_type? || node.defs_type? || ScopeName.define_method?(node)
+        end
+      end
+
+      def calculate(body)
+        RuboCopMetricCalculator.cyclomatic_complexity(body)
       end
     end
   end
