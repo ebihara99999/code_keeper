@@ -58,6 +58,15 @@ module CodeKeeper
         join_instance_method(owner_name(node), name)
       end
 
+      # Only a constant receiver or self in a class/module body identifies a
+      # singleton class statically; other receivers are runtime objects.
+      def dynamic_singleton?(node)
+        receiver = node.children.first
+        return !static_self_scope?(node) if receiver.self_type?
+
+        !receiver.const_type?
+      end
+
       # A def or define_method belongs to the singleton class only when it sits
       # directly in the sclass body; a def/defs/block in between changes self.
       def enclosing_sclass(node)
@@ -74,11 +83,12 @@ module CodeKeeper
         owner.empty? ? 'self' : owner
       end
 
-      # In method bodies and blocks, self is the runtime receiver, not the
-      # lexically enclosing constant, so it must not be resolved statically.
+      # Self identifies the enclosing constant only directly inside a class or
+      # module body. In method bodies, blocks, and at the top level, self is a
+      # runtime object, so it must not be resolved statically.
       def static_self_scope?(node)
         scope = node.each_ancestor(:def, :defs, :block, :numblock, :itblock, :sclass, :class, :module).first
-        scope.nil? || scope.class_type? || scope.module_type?
+        !scope.nil? && (scope.class_type? || scope.module_type?)
       end
 
       def owner_name(node)
@@ -108,7 +118,7 @@ module CodeKeeper
 
       def singleton_receiver_name(node)
         receiver = node.children.first
-        return owner_name(node) if receiver&.self_type? && !owner_name(node).empty?
+        return owner_name(node) if receiver&.self_type? && static_self_scope?(node) && !owner_name(node).empty?
 
         receiver&.source
       end

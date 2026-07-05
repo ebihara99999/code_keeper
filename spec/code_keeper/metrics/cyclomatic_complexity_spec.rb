@@ -29,7 +29,13 @@ RSpec.describe CodeKeeper::Metrics::CyclomaticComplexity do
           'SingletonScopeOwner.build_helper',
           'SingletonScopeOwner#built_instance_method',
           'SingletonScopeRuntime#attach',
-          'self.tag'
+          'self.tag',
+          'SingletonScopeRuntime#decorate',
+          'target.label',
+          'SingletonScopeRuntime#register',
+          'self.runtime_singleton',
+          'SingletonScopeOwner.const_singleton_method',
+          'self.top_level_singleton_method'
         ]
       )
     end

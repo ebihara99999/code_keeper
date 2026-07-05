@@ -42,11 +42,11 @@ module CodeKeeper
           elsif node.module_type?
             nodes << [node, :module, ScopeName.class_name(node)]
           elsif node.sclass_type?
-            next if node.each_ancestor(:class).any?
+            next if ScopeName.dynamic_singleton?(node)
 
             nodes << [node, :singleton_class, ScopeName.class_name(node)]
           elsif node.casgn_type?
-            expression = class_definition_expression(node)
+            expression = ConstantAssignment.assigned_expression(node)
             next unless class_definition?(expression)
 
             nodes << [expression, :class, ScopeName.const_assignment_name(node)]
@@ -58,22 +58,6 @@ module CodeKeeper
 
       def calculate(node)
         RuboCopMetricCalculator.class_length(node, @ps)
-      end
-
-      def class_definition_expression(node)
-        if node.respond_to?(:expression) && node.expression
-          node.expression
-        else
-          find_expression_within_parent(node.parent)
-        end
-      end
-
-      def find_expression_within_parent(parent)
-        if parent&.assignment?
-          parent.expression
-        elsif parent&.parent&.masgn_type?
-          parent.parent.expression
-        end
       end
 
       def class_definition?(node)

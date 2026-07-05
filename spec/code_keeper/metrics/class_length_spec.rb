@@ -48,9 +48,35 @@ RSpec.describe CodeKeeper::Metrics::ClassLength do
           [:module, 'SingletonScopeSample'],
           [:singleton_class, 'class << SingletonScopeSample'],
           [:class, 'SingletonScopeOwner'],
-          [:class, 'SingletonScopeRuntime']
+          [:singleton_class, 'class << SingletonScopeOwner'],
+          [:class, 'SingletonScopeRuntime'],
+          [:singleton_class, 'class << SingletonScopeOwner']
         ]
       )
+    end
+
+    it 'measures only constants actually assigned a class in multiple assignment' do
+      source_file = CodeKeeper::SourceFile.new('spec/fixtures/class_samples/struct.rb')
+
+      expect(CodeKeeper::Metrics::ClassLength.measure(source_file).map(&:scope_name)).to eq %w[A B]
+    end
+
+    it 'resolves nested multiple assignment by position' do
+      source_file = CodeKeeper::SourceFile.new('spec/fixtures/class_samples/nested_const_assignments.rb')
+
+      expect(CodeKeeper::Metrics::ClassLength.measure(source_file).map(&:scope_name)).to eq %w[B C E G K]
+    end
+
+    it 'locates duplicated constants in multiple assignment by position' do
+      source_file = CodeKeeper::SourceFile.new('spec/fixtures/class_samples/duplicated_const_assignments.rb')
+
+      expect(CodeKeeper::Metrics::ClassLength.measure(source_file).map(&:scope_name)).to eq %w[A B]
+    end
+
+    it 'measures a chained constant assignment once at the innermost constant' do
+      source_file = CodeKeeper::SourceFile.new('spec/fixtures/class_samples/overlapping_const_assignments.rb')
+
+      expect(CodeKeeper::Metrics::ClassLength.measure(source_file).map(&:scope_name)).to eq %w[C]
     end
   end
 end

@@ -14,3 +14,11 @@ end
 *F, G = Class.new do
   g = 1
 end
+
+H, I = *OTHERS, Class.new do
+  i = 1
+end
+
+*J, K = *OTHERS, Struct.new(:k) do
+  k = 1
+end

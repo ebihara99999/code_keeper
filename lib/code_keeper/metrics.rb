@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'code_keeper/metrics/scope_name'
+require 'code_keeper/metrics/constant_assignment'
 require 'code_keeper/metrics/rubocop_metric_calculator'
 require 'code_keeper/metrics/abc_metric'
 require 'code_keeper/metrics/cyclomatic_complexity'

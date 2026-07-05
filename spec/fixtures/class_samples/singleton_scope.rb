@@ -34,4 +34,30 @@ class SingletonScopeRuntime
       end
     end
   end
+
+  def decorate(target)
+    class << target
+      def label
+        :f
+      end
+    end
+  end
+
+  def register
+    def self.runtime_singleton
+      :h
+    end
+  end
+end
+
+class << SingletonScopeOwner
+  def const_singleton_method
+    :g
+  end
+end
+
+class << self
+  def top_level_singleton_method
+    :i
+  end
 end
