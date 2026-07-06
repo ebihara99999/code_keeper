@@ -1,0 +1,128 @@
+name: New metric proposal
+description: Propose a metric addition before implementation.
+title: "Add metric: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Metric additions start from an issue because the verification strategy is part of the design.
+        Complete the RuboCop-backed or custom-metric parts that match this proposal.
+        Use the accepted scope naming model from #40 and the verification model from #41.
+  - type: input
+    id: metric-name
+    attributes:
+      label: Metric name
+      description: Use the public metric key that would appear in `measurements[].metric`.
+      placeholder: "example: abc_metric"
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Explain what review signal this metric adds and why it belongs in CodeKeeper.
+      placeholder: "What code quality risk should this metric make visible?"
+    validations:
+      required: true
+  - type: dropdown
+    id: metric-source
+    attributes:
+      label: Metric source
+      description: Select whether the value definition follows an existing RuboCop Metrics cop.
+      options:
+        - RuboCop-backed
+        - Custom
+    validations:
+      required: true
+  - type: dropdown
+    id: natural-scope
+    attributes:
+      label: Natural scope
+      description: Select the scope enumeration this metric should use.
+      options:
+        - Reuse method-like scopes
+        - Reuse class-like scopes
+        - Introduce a new scope type
+    validations:
+      required: true
+  - type: textarea
+    id: scope-definition
+    attributes:
+      label: Scope definition
+      description: |
+        For an existing enumeration, name the enumeration and any scope-specific exclusions.
+        For a new scope type, specify target AST nodes, exclusion rules, start and end line rules, and `scope_name` rules following #40.
+      placeholder: |
+        Existing scope example:
+        - Reuses method-like scopes.
+        - Excludes dynamic `define_method` names for the same reason as abc_metric and cyclomatic_complexity.
+
+        New scope type example:
+        - Target AST nodes:
+        - Exclusion rules:
+        - Start/end line rules:
+        - `scope_name` rules, including namespace and static/dynamic `self` behavior:
+    validations:
+      required: true
+  - type: textarea
+    id: value-definition
+    attributes:
+      label: Value definition
+      description: |
+        For RuboCop-backed metrics, name the RuboCop cop and the exact calculation behavior to adopt.
+        For custom metrics, provide a precise self-contained definition.
+      placeholder: |
+        RuboCop-backed:
+        - Cop:
+        - Configuration or calculator behavior:
+        - Any intentional difference from RuboCop:
+
+        Custom:
+        - Definition:
+        - What increments or changes the value:
+        - What does not count:
+    validations:
+      required: true
+  - type: textarea
+    id: verification-strategy
+    attributes:
+      label: Verification strategy
+      description: |
+        RuboCop-backed metrics must extend the corpus differential comparison from #41.
+        Custom metrics must include a definition document, metamorphic properties, and golden snapshots because no external oracle exists.
+      placeholder: |
+        RuboCop-backed:
+        - Differential comparison changes:
+        - Corpus coverage to add:
+        - Accepted differences, if any:
+
+        Custom:
+        - Definition document location:
+        - Metamorphic properties:
+        - Golden snapshot coverage:
+    validations:
+      required: true
+  - type: checkboxes
+    id: summary-model-fit
+    attributes:
+      label: Summary-model fit
+      description: |
+        CodeKeeper summary hotspots sort measurements by descending numeric value.
+        A metric that does not satisfy this needs a summary design discussion before implementation.
+      options:
+        - label: The value is numeric.
+          required: true
+        - label: Larger values mean more review attention.
+          required: true
+        - label: "`top_hotspots` descending order is meaningful for this metric."
+          required: true
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open questions
+      description: List unresolved design or verification questions, or write `None`.
+      placeholder: "None"
+    validations:
+      required: true
