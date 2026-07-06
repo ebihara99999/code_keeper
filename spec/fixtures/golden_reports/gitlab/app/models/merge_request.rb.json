@@ -1,0 +1,5768 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 312,
+        "max": 55.16,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#predefined_variables",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 2225,
+            "end_line": 2247,
+            "value": 55.16
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#committer_emails_via_metadata_query",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 3037,
+            "end_line": 3054,
+            "value": 32.4
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#update_diff_discussion_positions",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 2489,
+            "end_line": 2525,
+            "value": 27.73
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#default_merge_commit_message",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 1970,
+            "end_line": 1992,
+            "value": 25.18
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#closes_issues",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 1880,
+            "end_line": 1892,
+            "value": 25.02
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 312,
+        "max": 12,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#update_diff_discussion_positions",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 2489,
+            "end_line": 2525,
+            "value": 12
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#merged_at",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 2469,
+            "end_line": 2478,
+            "value": 9
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#validate_branches",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 1361,
+            "end_line": 1381,
+            "value": 8
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#default_merge_commit_message",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 1970,
+            "end_line": 1992,
+            "value": 8
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequest#validate_branch_existence",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 1400,
+            "end_line": 1410,
+            "value": 7
+          }
+        ]
+      },
+      "class_length": {
+        "count": 2,
+        "max": 2370,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "MergeRequest",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 3,
+            "end_line": 3302,
+            "value": 2370
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "singleton_class",
+            "scope_name": "class << MergeRequest",
+            "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+            "start_line": 934,
+            "end_line": 938,
+            "value": 3
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#suggested_reviewer_users",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 87,
+      "end_line": 89,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_request_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 101,
+      "end_line": 105,
+      "value": 5.92
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.available_state_names",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 201,
+      "end_line": 203,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#check_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 321,
+      "end_line": 323,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.batch_mark_as_unchecked",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 337,
+      "end_line": 353,
+      "value": 11.58
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.batch_mark_as_checking",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 359,
+      "end_line": 371,
+      "value": 8.31
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.batch_clear_merge_error",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 373,
+      "end_line": 381,
+      "value": 6.4
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#public_merge_status",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 385,
+      "end_line": 387,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.total_time_to_merge",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 732,
+      "end_line": 741,
+      "value": 9.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reference_prefix",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 760,
+      "end_line": 762,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.order_by_metric_column",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 764,
+      "end_line": 785,
+      "value": 13.3
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.recent_target_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 795,
+      "end_line": 801,
+      "value": 9.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.recent_source_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 803,
+      "end_line": 809,
+      "value": 9.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.distinct_source_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 811,
+      "end_line": 813,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.sort_by_attribute",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 815,
+      "end_line": 824,
+      "value": 6.4
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reviewers_subquery",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 826,
+      "end_line": 830,
+      "value": 6.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#rebase_in_progress?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 832,
+      "end_line": 834,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#permits_force_push?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 836,
+      "end_line": 840,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 845,
+      "end_line": 847,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 849,
+      "end_line": 853,
+      "value": 4.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_pipeline_success?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 855,
+      "end_line": 857,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reference_pattern",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 862,
+      "end_line": 867,
+      "value": 4.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.link_reference_pattern",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 869,
+      "end_line": 871,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reference_valid?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 873,
+      "end_line": 875,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.project_foreign_key",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 877,
+      "end_line": 879,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.in_projects",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 891,
+      "end_line": 898,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.set_latest_merge_request_diff_ids!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 906,
+      "end_line": 918,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.draft?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 922,
+      "end_line": 924,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.draftless_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 926,
+      "end_line": 928,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.draft_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 930,
+      "end_line": 932,
+      "value": 1.41
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.participant_includes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 940,
+      "end_line": 942,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 944,
+      "end_line": 950,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#preload_commits_metadata",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 952,
+      "end_line": 961,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committers",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 963,
+      "end_line": 973,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_ids_to_filter_from_approvers",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 975,
+      "end_line": 981,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committers_to_filter_from_approvers",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 984,
+      "end_line": 990,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draftless_title_changed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 995,
+      "end_line": 997,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#hook_attrs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1000,
+      "end_line": 1002,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#to_reference",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1005,
+      "end_line": 1009,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#context_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1011,
+      "end_line": 1013,
+      "value": 4.9
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_context_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1015,
+      "end_line": 1017,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#context_commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1019,
+      "end_line": 1021,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1023,
+      "end_line": 1034,
+      "value": 11.87
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1036,
+      "end_line": 1044,
+      "value": 7.62
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1046,
+      "end_line": 1059,
+      "value": 13.56
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#supports_suggestion?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1061,
+      "end_line": 1063,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#supports_lock_on_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1065,
+      "end_line": 1069,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_async",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1074,
+      "end_line": 1081,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#rebase_async",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1085,
+      "end_line": 1103,
+      "value": 11.22
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_participants",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1105,
+      "end_line": 1113,
+      "value": 8.77
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1115,
+      "end_line": 1117,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#raw_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1119,
+      "end_line": 1121,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_for_streaming",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1123,
+      "end_line": 1132,
+      "value": 8.31
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_for_streaming_by_changed_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1134,
+      "end_line": 1137,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1139,
+      "end_line": 1148,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#non_latest_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1150,
+      "end_line": 1152,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#note_positions_for_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1154,
+      "end_line": 1169,
+      "value": 14.7
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#preloads_discussion_diff_highlighting?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1171,
+      "end_line": 1173,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#discussions_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1175,
+      "end_line": 1184,
+      "value": 9.06
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_stats",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1186,
+      "end_line": 1192,
+      "value": 9.06
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_size",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1194,
+      "end_line": 1198,
+      "value": 7.21
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#modified_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1200,
+      "end_line": 1208,
+      "value": 9.43
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#changed_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1210,
+      "end_line": 1212,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#new_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1215,
+      "end_line": 1217,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1219,
+      "end_line": 1225,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_start_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1227,
+      "end_line": 1233,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_base_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1235,
+      "end_line": 1241,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1243,
+      "end_line": 1249,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merged_in_repository?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1251,
+      "end_line": 1253,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_commit_reachable_from_target_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1255,
+      "end_line": 1272,
+      "value": 18.55
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_ref",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1280,
+      "end_line": 1285,
+      "value": 4.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_ref",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1287,
+      "end_line": 1292,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1294,
+      "end_line": 1300,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1302,
+      "end_line": 1306,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#branch_merge_base_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1308,
+      "end_line": 1315,
+      "value": 4.9
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1317,
+      "end_line": 1319,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1321,
+      "end_line": 1323,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1325,
+      "end_line": 1331,
+      "value": 5.83
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#repository_diff_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1337,
+      "end_line": 1343,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#branch_merge_base_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1345,
+      "end_line": 1347,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#existing_mrs_targeting_same_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1349,
+      "end_line": 1359,
+      "value": 11.22
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1361,
+      "end_line": 1381,
+      "value": 18.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#conflicting_mr_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1383,
+      "end_line": 1388,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_branch_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1390,
+      "end_line": 1398,
+      "value": 5.92
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_branch_existence",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1400,
+      "end_line": 1410,
+      "value": 17.09
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_target_project",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1412,
+      "end_line": 1416,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_fork",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1418,
+      "end_line": 1424,
+      "value": 8.6
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_reviewer_size_length",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1426,
+      "end_line": 1431,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_ongoing?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1433,
+      "end_line": 1439,
+      "value": 8.54
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#closed_or_merged_without_fork?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1441,
+      "end_line": 1443,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_missing?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1445,
+      "end_line": 1450,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ensure_merge_request_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1452,
+      "end_line": 1456,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#create_merge_request_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1458,
+      "end_line": 1473,
+      "value": 9.27
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_request_diff_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1475,
+      "end_line": 1490,
+      "value": 10.05
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#previous_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1492,
+      "end_line": 1494,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#version_params_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1496,
+      "end_line": 1505,
+      "value": 6.63
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#clear_memoized_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1507,
+      "end_line": 1513,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reload_diff_if_branch_changed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1515,
+      "end_line": 1520,
+      "value": 6.4
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reload_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1523,
+      "end_line": 1528,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#check_mergeability",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1530,
+      "end_line": 1540,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffable_merge_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1543,
+      "end_line": 1545,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recheck_merge_status?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1549,
+      "end_line": 1551,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_event",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1553,
+      "end_line": 1555,
+      "value": 5.48
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#closed_event",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1557,
+      "end_line": 1559,
+      "value": 5.48
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draft?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1561,
+      "end_line": 1563,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draftless_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1566,
+      "end_line": 1568,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draft_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1571,
+      "end_line": 1573,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#skipped_auto_merge_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1576,
+      "end_line": 1601,
+      "value": 3.74
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#auto_merge_eligible?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1607,
+      "end_line": 1613,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1627,
+      "end_line": 1634,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.mergeable_state_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1636,
+      "end_line": 1638,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.mergeable_state_checks_by_tier",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1650,
+      "end_line": 1666,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.mergeable_git_state_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1668,
+      "end_line": 1673,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.all_mergeability_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1675,
+      "end_line": 1677,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1688,
+      "end_line": 1695,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable_git_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1698,
+      "end_line": 1705,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeability_checks_pass?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1708,
+      "end_line": 1714,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_mergeability_checks_results",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1716,
+      "end_line": 1721,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ff_merge_possible?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1723,
+      "end_line": 1725,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#should_be_rebased?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1727,
+      "end_line": 1729,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_cancel_auto_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1731,
+      "end_line": 1733,
+      "value": 2.83
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1735,
+      "end_line": 1741,
+      "value": 14.87
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#should_remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1743,
+      "end_line": 1745,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#force_remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1747,
+      "end_line": 1749,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#auto_merge_strategy",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1751,
+      "end_line": 1755,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#default_auto_merge_strategy",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1757,
+      "end_line": 1759,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#auto_merge_strategy=",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1761,
+      "end_line": 1763,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1765,
+      "end_line": 1767,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#notify_conflict?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1769,
+      "end_line": 1778,
+      "value": 12.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#related_notes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1780,
+      "end_line": 1788,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_notes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1792,
+      "end_line": 1800,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#duo_code_review_progress_note",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1802,
+      "end_line": 1804,
+      "value": 0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable_discussions_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1806,
+      "end_line": 1810,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#for_fork?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1812,
+      "end_line": 1814,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#for_same_project?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1816,
+      "end_line": 1818,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#cache_closing_issues_after_merge!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1820,
+      "end_line": 1837,
+      "value": 21.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#cache_merge_request_closes_issues!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1844,
+      "end_line": 1858,
+      "value": 15.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#visible_closing_issues_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1860,
+      "end_line": 1877,
+      "value": 16.43
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#closes_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1880,
+      "end_line": 1892,
+      "value": 25.02
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#issues_mentioned_but_not_closing",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1894,
+      "end_line": 1901,
+      "value": 11.22
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#related_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1903,
+      "end_line": 1913,
+      "value": 17.97
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_project_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1915,
+      "end_line": 1921,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1923,
+      "end_line": 1929,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_namespace",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1931,
+      "end_line": 1937,
+      "value": 6.71
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_project_namespace",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1939,
+      "end_line": 1945,
+      "value": 6.71
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#preload_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1947,
+      "end_line": 1956,
+      "value": 10.2
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1958,
+      "end_line": 1962,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1964,
+      "end_line": 1968,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#default_merge_commit_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1970,
+      "end_line": 1992,
+      "value": 25.18
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#default_squash_commit_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1994,
+      "end_line": 1998,
+      "value": 4.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_multiline_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2001,
+      "end_line": 2005,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_multiline_commit_description",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2008,
+      "end_line": 2013,
+      "value": 3.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_on_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2015,
+      "end_line": 2020,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_ci?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2022,
+      "end_line": 2026,
+      "value": 8.94
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#branch_missing?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2028,
+      "end_line": 2030,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#broken?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2032,
+      "end_line": 2034,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_be_merged_by?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2036,
+      "end_line": 2039,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#only_allow_merge_if_pipeline_succeeds?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2041,
+      "end_line": 2043,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allow_merge_without_pipeline?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2045,
+      "end_line": 2047,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#only_allow_merge_if_all_discussions_are_resolved?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2049,
+      "end_line": 2051,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_ci_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2054,
+      "end_line": 2056,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#pipeline_creating?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2058,
+      "end_line": 2060,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#environments_in_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2062,
+      "end_line": 2064,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#fetch_ref!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2066,
+      "end_line": 2069,
+      "value": 8.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_ref_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2073,
+      "end_line": 2077,
+      "value": 9.06
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ref_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2079,
+      "end_line": 2081,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_ref_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2083,
+      "end_line": 2085,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#train_ref_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2087,
+      "end_line": 2089,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#rebase_on_merge_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2091,
+      "end_line": 2093,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#schedule_cleanup_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2095,
+      "end_line": 2103,
+      "value": 9.49
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#refs_to_cleanup",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2105,
+      "end_line": 2112,
+      "value": 12.69
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#cleanup_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2114,
+      "end_line": 2116,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#async_cleanup_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2118,
+      "end_line": 2120,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.merge_request_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2122,
+      "end_line": 2124,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.merge_train_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2126,
+      "end_line": 2128,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#in_locked_state",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2130,
+      "end_line": 2144,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#force_unlock_and_close",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2160,
+      "end_line": 2164,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_and_mark_in_progress_merge_commit_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2166,
+      "end_line": 2172,
+      "value": 6.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diverged_commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2174,
+      "end_line": 2187,
+      "value": 15.94
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compute_diverged_commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2189,
+      "end_line": 2194,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diverged_from_target_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2197,
+      "end_line": 2199,
+      "value": 1.41
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_pipelines",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2201,
+      "end_line": 2205,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2207,
+      "end_line": 2218,
+      "value": 7.35
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_test_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2220,
+      "end_line": 2222,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#predefined_variables",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2225,
+      "end_line": 2247,
+      "value": 55.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_test_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2250,
+      "end_line": 2256,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_accessibility_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2258,
+      "end_line": 2260,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_coverage_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2262,
+      "end_line": 2264,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_coverage_reports_for?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2266,
+      "end_line": 2268,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_terraform_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2270,
+      "end_line": 2272,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_accessibility_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2274,
+      "end_line": 2280,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_coverage_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2286,
+      "end_line": 2292,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_codequality_mr_diff_report?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2294,
+      "end_line": 2296,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_codequality_mr_diff_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2302,
+      "end_line": 2308,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_codequality_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2310,
+      "end_line": 2312,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_codequality_reports_for?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2314,
+      "end_line": 2316,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_codequality_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2318,
+      "end_line": 2326,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_terraform_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2328,
+      "end_line": 2334,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_exposed_artifacts?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2336,
+      "end_line": 2338,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_exposed_artifacts",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2344,
+      "end_line": 2350,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2355,
+      "end_line": 2364,
+      "value": 10.49
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_sast_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2366,
+      "end_line": 2369,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#calculate_reactive_cache",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2371,
+      "end_line": 2380,
+      "value": 9.43
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_diff_head_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2384,
+      "end_line": 2389,
+      "value": 11.18
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2391,
+      "end_line": 2399,
+      "value": 7.35
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_commit_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2403,
+      "end_line": 2407,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2410,
+      "end_line": 2412,
+      "value": 4.9
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2414,
+      "end_line": 2416,
+      "value": 4.9
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merged_commit_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2418,
+      "end_line": 2423,
+      "value": 6.48
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#short_merged_commit_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2425,
+      "end_line": 2429,
+      "value": 2.45
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_to_revert",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2432,
+      "end_line": 2446,
+      "value": 10.3
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_to_cherry_pick",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2448,
+      "end_line": 2450,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_be_reverted?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2452,
+      "end_line": 2467,
+      "value": 9.7
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merged_at",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2469,
+      "end_line": 2478,
+      "value": 16.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_be_cherry_picked?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2480,
+      "end_line": 2482,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_complete_diff_refs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2484,
+      "end_line": 2486,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_diff_discussion_positions",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2489,
+      "end_line": 2525,
+      "value": 27.73
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#keep_around_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2528,
+      "end_line": 2532,
+      "value": 7.07
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#enqueue_keep_around_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2534,
+      "end_line": 2543,
+      "value": 9.22
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#async_keep_around_refs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2545,
+      "end_line": 2549,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_commits?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2551,
+      "end_line": 2553,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_no_commits?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2555,
+      "end_line": 2557,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#pipeline_coverage_delta",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2559,
+      "end_line": 2563,
+      "value": 9.85
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#comparison_base_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2565,
+      "end_line": 2577,
+      "value": 10.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_base_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2579,
+      "end_line": 2585,
+      "value": 4.58
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#base_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2588,
+      "end_line": 2590,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#discussions_rendered_on_frontend?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2593,
+      "end_line": 2595,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#invalidate_project_counter_caches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2598,
+      "end_line": 2600,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_contribution?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2603,
+      "end_line": 2607,
+      "value": 11.18
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allow_collaboration",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2613,
+      "end_line": 2615,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#collaborative_push_possible?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2619,
+      "end_line": 2624,
+      "value": 12.53
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_allow_collaboration?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2626,
+      "end_line": 2629,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_diff_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2631,
+      "end_line": 2633,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#real_time_notes_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2635,
+      "end_line": 2637,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_visible_deployments",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2639,
+      "end_line": 2641,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#banzai_render_context",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2643,
+      "end_line": 2645,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ensure_metrics!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2647,
+      "end_line": 2649,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allows_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2651,
+      "end_line": 2653,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allows_multiple_assignees?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2655,
+      "end_line": 2657,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allows_multiple_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2659,
+      "end_line": 2661,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reviewer_auto_assignment_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2663,
+      "end_line": 2665,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#supports_assignee?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2667,
+      "end_line": 2669,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_reviewer",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2671,
+      "end_line": 2673,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_request_reviewers_with",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2675,
+      "end_line": 2677,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#create_requested_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2679,
+      "end_line": 2681,
+      "value": 0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#destroy_requested_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2683,
+      "end_line": 2685,
+      "value": 0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#batch_update_reviewer_state",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2687,
+      "end_line": 2689,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#enabled_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2691,
+      "end_line": 2696,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#includes_ci_config?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2698,
+      "end_line": 2702,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#context_commits_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2704,
+      "end_line": 2708,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_default_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2710,
+      "end_line": 2712,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_blocked_by_other_mrs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2714,
+      "end_line": 2716,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#execute_merge_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2718,
+      "end_line": 2724,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_suggest_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2726,
+      "end_line": 2728,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#hidden?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2730,
+      "end_line": 2732,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_batch_cache_with_max_age?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2734,
+      "end_line": 2736,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#prepared?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2738,
+      "end_line": 2740,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#initial_preparation?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2742,
+      "end_line": 2744,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#check_for_spam?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2746,
+      "end_line": 2748,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#missing_required_squash?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2750,
+      "end_line": 2752,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#current_patch_id_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2754,
+      "end_line": 2756,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_pipeline_considered_in_progress?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2758,
+      "end_line": 2774,
+      "value": 8.66
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#temporarily_unapproved?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2776,
+      "end_line": 2778,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_jira_issue_keys?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2780,
+      "end_line": 2788,
+      "value": 9.49
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_exclusive_lease",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2790,
+      "end_line": 2794,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_and_target_branches_exist?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2796,
+      "end_line": 2798,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_diffs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2800,
+      "end_line": 2806,
+      "value": 8.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#add_to_locked_set",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2808,
+      "end_line": 2810,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#remove_from_locked_set",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2812,
+      "end_line": 2814,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_diffs_slice",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2816,
+      "end_line": 2825,
+      "value": 8.31
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_option",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2827,
+      "end_line": 2829,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#log_approval_deletion_on_merged_or_locked_mr",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2833,
+      "end_line": 2847,
+      "value": 10.77
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reached_versions_limit?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2849,
+      "end_line": 2851,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reached_diff_commits_limit?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2853,
+      "end_line": 2860,
+      "value": 6.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_batch_cache_key",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2862,
+      "end_line": 2867,
+      "value": 7.21
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2869,
+      "end_line": 2890,
+      "value": 14.46
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#append_merge_params",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2917,
+      "end_line": 2922,
+      "value": 8.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#clear_merge_params",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2924,
+      "end_line": 2929,
+      "value": 8.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_merge_ref_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2931,
+      "end_line": 2943,
+      "value": 10.2
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_merge_jid",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2945,
+      "end_line": 2957,
+      "value": 10.2
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ensure_merge_data",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2959,
+      "end_line": 2969,
+      "value": 9.11
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#viewable_recent_merge_request_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2971,
+      "end_line": 2976,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#show_context_commits_diff?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2978,
+      "end_line": 2980,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_allow_broken",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2988,
+      "end_line": 2994,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#state_changed_since_load?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3002,
+      "end_line": 3008,
+      "value": 9.11
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#publish_code_conflict_event",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3010,
+      "end_line": 3013,
+      "value": 2.45
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_emails_from_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3015,
+      "end_line": 3034,
+      "value": 13.64
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_emails_via_metadata_query",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3037,
+      "end_line": 3054,
+      "value": 32.4
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_emails_via_direct_query",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3056,
+      "end_line": 3065,
+      "value": 20.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_cached_closing_issues_from_description!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3067,
+      "end_line": 3080,
+      "value": 7.14
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#bulk_insert_cached_closing_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3082,
+      "end_line": 3099,
+      "value": 6.78
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_data_attributes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3101,
+      "end_line": 3117,
+      "value": 13.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_merge_data_sync",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3119,
+      "end_line": 3140,
+      "value": 7.87
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_single_transaction_merge_data_sync",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3142,
+      "end_line": 3156,
+      "value": 6.63
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#save_merge_data_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3158,
+      "end_line": 3169,
+      "value": 13.6
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#dual_write_to_merge_data_ff_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3171,
+      "end_line": 3173,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#viewable_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3176,
+      "end_line": 3180,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_pipelines_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3182,
+      "end_line": 3185,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#set_draft_status",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3187,
+      "end_line": 3189,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#expire_ancestor_cache",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3191,
+      "end_line": 3193,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#missing_report_error",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3195,
+      "end_line": 3197,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_rebase_lock",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3199,
+      "end_line": 3201,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_retried_nowait_lock",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3207,
+      "end_line": 3217,
+      "value": 6.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_variables",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3219,
+      "end_line": 3229,
+      "value": 21.05
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#expire_etag_cache",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3231,
+      "end_line": 3236,
+      "value": 7.14
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#report_type_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3238,
+      "end_line": 3248,
+      "value": 11.22
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#truncate_mr_description",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3250,
+      "end_line": 3256,
+      "value": 7.21
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#pipeline_has_report_in_self_or_descendants?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3258,
+      "end_line": 3262,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_commit_shas_from_metadata",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3264,
+      "end_line": 3281,
+      "value": 14.35
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#resolve_diff_version",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3283,
+      "end_line": 3291,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#read_new_commits_table?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3293,
+      "end_line": 3295,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#project_id_pruning_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3298,
+      "end_line": 3300,
+      "value": 2.0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#suggested_reviewer_users",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 87,
+      "end_line": 89,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_request_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 101,
+      "end_line": 105,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.available_state_names",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 201,
+      "end_line": 203,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#check_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 321,
+      "end_line": 323,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.batch_mark_as_unchecked",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 337,
+      "end_line": 353,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.batch_mark_as_checking",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 359,
+      "end_line": 371,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.batch_clear_merge_error",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 373,
+      "end_line": 381,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#public_merge_status",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 385,
+      "end_line": 387,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.total_time_to_merge",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 732,
+      "end_line": 741,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reference_prefix",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 760,
+      "end_line": 762,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.order_by_metric_column",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 764,
+      "end_line": 785,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.recent_target_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 795,
+      "end_line": 801,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.recent_source_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 803,
+      "end_line": 809,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.distinct_source_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 811,
+      "end_line": 813,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.sort_by_attribute",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 815,
+      "end_line": 824,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reviewers_subquery",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 826,
+      "end_line": 830,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#rebase_in_progress?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 832,
+      "end_line": 834,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#permits_force_push?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 836,
+      "end_line": 840,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 845,
+      "end_line": 847,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 849,
+      "end_line": 853,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_pipeline_success?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 855,
+      "end_line": 857,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reference_pattern",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 862,
+      "end_line": 867,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.link_reference_pattern",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 869,
+      "end_line": 871,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.reference_valid?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 873,
+      "end_line": 875,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.project_foreign_key",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 877,
+      "end_line": 879,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.in_projects",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 891,
+      "end_line": 898,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.set_latest_merge_request_diff_ids!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 906,
+      "end_line": 918,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.draft?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 922,
+      "end_line": 924,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.draftless_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 926,
+      "end_line": 928,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.draft_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 930,
+      "end_line": 932,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.participant_includes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 940,
+      "end_line": 942,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 944,
+      "end_line": 950,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#preload_commits_metadata",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 952,
+      "end_line": 961,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committers",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 963,
+      "end_line": 973,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_ids_to_filter_from_approvers",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 975,
+      "end_line": 981,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committers_to_filter_from_approvers",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 984,
+      "end_line": 990,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draftless_title_changed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 995,
+      "end_line": 997,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#hook_attrs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1000,
+      "end_line": 1002,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#to_reference",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1005,
+      "end_line": 1009,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#context_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1011,
+      "end_line": 1013,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_context_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1015,
+      "end_line": 1017,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#context_commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1019,
+      "end_line": 1021,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1023,
+      "end_line": 1034,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1036,
+      "end_line": 1044,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1046,
+      "end_line": 1059,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#supports_suggestion?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1061,
+      "end_line": 1063,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#supports_lock_on_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1065,
+      "end_line": 1069,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_async",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1074,
+      "end_line": 1081,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#rebase_async",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1085,
+      "end_line": 1103,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_participants",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1105,
+      "end_line": 1113,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1115,
+      "end_line": 1117,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#raw_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1119,
+      "end_line": 1121,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_for_streaming",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1123,
+      "end_line": 1132,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_for_streaming_by_changed_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1134,
+      "end_line": 1137,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1139,
+      "end_line": 1148,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#non_latest_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1150,
+      "end_line": 1152,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#note_positions_for_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1154,
+      "end_line": 1169,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#preloads_discussion_diff_highlighting?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1171,
+      "end_line": 1173,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#discussions_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1175,
+      "end_line": 1184,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_stats",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1186,
+      "end_line": 1192,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_size",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1194,
+      "end_line": 1198,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#modified_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1200,
+      "end_line": 1208,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#changed_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1210,
+      "end_line": 1212,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#new_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1215,
+      "end_line": 1217,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1219,
+      "end_line": 1225,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_start_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1227,
+      "end_line": 1233,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_base_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1235,
+      "end_line": 1241,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1243,
+      "end_line": 1249,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merged_in_repository?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1251,
+      "end_line": 1253,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_commit_reachable_from_target_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1255,
+      "end_line": 1272,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_ref",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1280,
+      "end_line": 1285,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_ref",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1287,
+      "end_line": 1292,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1294,
+      "end_line": 1300,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1302,
+      "end_line": 1306,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#branch_merge_base_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1308,
+      "end_line": 1315,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1317,
+      "end_line": 1319,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1321,
+      "end_line": 1323,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1325,
+      "end_line": 1331,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#repository_diff_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1337,
+      "end_line": 1343,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#branch_merge_base_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1345,
+      "end_line": 1347,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#existing_mrs_targeting_same_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1349,
+      "end_line": 1359,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1361,
+      "end_line": 1381,
+      "value": 8
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#conflicting_mr_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1383,
+      "end_line": 1388,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_branch_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1390,
+      "end_line": 1398,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_branch_existence",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1400,
+      "end_line": 1410,
+      "value": 7
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_target_project",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1412,
+      "end_line": 1416,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_fork",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1418,
+      "end_line": 1424,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#validate_reviewer_size_length",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1426,
+      "end_line": 1431,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_ongoing?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1433,
+      "end_line": 1439,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#closed_or_merged_without_fork?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1441,
+      "end_line": 1443,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_missing?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1445,
+      "end_line": 1450,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ensure_merge_request_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1452,
+      "end_line": 1456,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#create_merge_request_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1458,
+      "end_line": 1473,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_request_diff_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1475,
+      "end_line": 1490,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#previous_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1492,
+      "end_line": 1494,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#version_params_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1496,
+      "end_line": 1505,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#clear_memoized_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1507,
+      "end_line": 1513,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reload_diff_if_branch_changed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1515,
+      "end_line": 1520,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reload_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1523,
+      "end_line": 1528,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#check_mergeability",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1530,
+      "end_line": 1540,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffable_merge_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1543,
+      "end_line": 1545,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recheck_merge_status?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1549,
+      "end_line": 1551,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_event",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1553,
+      "end_line": 1555,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#closed_event",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1557,
+      "end_line": 1559,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draft?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1561,
+      "end_line": 1563,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draftless_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1566,
+      "end_line": 1568,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#draft_title",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1571,
+      "end_line": 1573,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#skipped_auto_merge_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1576,
+      "end_line": 1601,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#auto_merge_eligible?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1607,
+      "end_line": 1613,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1627,
+      "end_line": 1634,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.mergeable_state_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1636,
+      "end_line": 1638,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.mergeable_state_checks_by_tier",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1650,
+      "end_line": 1666,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.mergeable_git_state_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1668,
+      "end_line": 1673,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.all_mergeability_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1675,
+      "end_line": 1677,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1688,
+      "end_line": 1695,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable_git_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1698,
+      "end_line": 1705,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeability_checks_pass?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1708,
+      "end_line": 1714,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_mergeability_checks_results",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1716,
+      "end_line": 1721,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ff_merge_possible?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1723,
+      "end_line": 1725,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#should_be_rebased?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1727,
+      "end_line": 1729,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_cancel_auto_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1731,
+      "end_line": 1733,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1735,
+      "end_line": 1741,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#should_remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1743,
+      "end_line": 1745,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#force_remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1747,
+      "end_line": 1749,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#auto_merge_strategy",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1751,
+      "end_line": 1755,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#default_auto_merge_strategy",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1757,
+      "end_line": 1759,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#auto_merge_strategy=",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1761,
+      "end_line": 1763,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#remove_source_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1765,
+      "end_line": 1767,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#notify_conflict?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1769,
+      "end_line": 1778,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#related_notes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1780,
+      "end_line": 1788,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_notes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1792,
+      "end_line": 1800,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#duo_code_review_progress_note",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1802,
+      "end_line": 1804,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#mergeable_discussions_state?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1806,
+      "end_line": 1810,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#for_fork?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1812,
+      "end_line": 1814,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#for_same_project?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1816,
+      "end_line": 1818,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#cache_closing_issues_after_merge!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1820,
+      "end_line": 1837,
+      "value": 7
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#cache_merge_request_closes_issues!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1844,
+      "end_line": 1858,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#visible_closing_issues_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1860,
+      "end_line": 1877,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#closes_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1880,
+      "end_line": 1892,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#issues_mentioned_but_not_closing",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1894,
+      "end_line": 1901,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#related_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1903,
+      "end_line": 1913,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_project_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1915,
+      "end_line": 1921,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1923,
+      "end_line": 1929,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_namespace",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1931,
+      "end_line": 1937,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_project_namespace",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1939,
+      "end_line": 1945,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#preload_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1947,
+      "end_line": 1956,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_branch_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1958,
+      "end_line": 1962,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1964,
+      "end_line": 1968,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#default_merge_commit_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1970,
+      "end_line": 1992,
+      "value": 8
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#default_squash_commit_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 1994,
+      "end_line": 1998,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_multiline_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2001,
+      "end_line": 2005,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_multiline_commit_description",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2008,
+      "end_line": 2013,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_on_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2015,
+      "end_line": 2020,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_ci?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2022,
+      "end_line": 2026,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#branch_missing?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2028,
+      "end_line": 2030,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#broken?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2032,
+      "end_line": 2034,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_be_merged_by?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2036,
+      "end_line": 2039,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#only_allow_merge_if_pipeline_succeeds?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2041,
+      "end_line": 2043,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allow_merge_without_pipeline?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2045,
+      "end_line": 2047,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#only_allow_merge_if_all_discussions_are_resolved?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2049,
+      "end_line": 2051,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_ci_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2054,
+      "end_line": 2056,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#pipeline_creating?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2058,
+      "end_line": 2060,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#environments_in_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2062,
+      "end_line": 2064,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#fetch_ref!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2066,
+      "end_line": 2069,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_ref_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2073,
+      "end_line": 2077,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ref_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2079,
+      "end_line": 2081,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_ref_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2083,
+      "end_line": 2085,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#train_ref_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2087,
+      "end_line": 2089,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#rebase_on_merge_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2091,
+      "end_line": 2093,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#schedule_cleanup_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2095,
+      "end_line": 2103,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#refs_to_cleanup",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2105,
+      "end_line": 2112,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#cleanup_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2114,
+      "end_line": 2116,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#async_cleanup_refs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2118,
+      "end_line": 2120,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.merge_request_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2122,
+      "end_line": 2124,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest.merge_train_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2126,
+      "end_line": 2128,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#in_locked_state",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2130,
+      "end_line": 2144,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#force_unlock_and_close",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2160,
+      "end_line": 2164,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_and_mark_in_progress_merge_commit_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2166,
+      "end_line": 2172,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diverged_commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2174,
+      "end_line": 2187,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compute_diverged_commits_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2189,
+      "end_line": 2194,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diverged_from_target_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2197,
+      "end_line": 2199,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_pipelines",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2201,
+      "end_line": 2205,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2207,
+      "end_line": 2218,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_test_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2220,
+      "end_line": 2222,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#predefined_variables",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2225,
+      "end_line": 2247,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_test_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2250,
+      "end_line": 2256,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_accessibility_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2258,
+      "end_line": 2260,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_coverage_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2262,
+      "end_line": 2264,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_coverage_reports_for?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2266,
+      "end_line": 2268,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_terraform_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2270,
+      "end_line": 2272,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_accessibility_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2274,
+      "end_line": 2280,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_coverage_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2286,
+      "end_line": 2292,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_codequality_mr_diff_report?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2294,
+      "end_line": 2296,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_codequality_mr_diff_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2302,
+      "end_line": 2308,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_codequality_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2310,
+      "end_line": 2312,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_codequality_reports_for?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2314,
+      "end_line": 2316,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_codequality_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2318,
+      "end_line": 2326,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_terraform_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2328,
+      "end_line": 2334,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_exposed_artifacts?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2336,
+      "end_line": 2338,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_exposed_artifacts",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2344,
+      "end_line": 2350,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#compare_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2355,
+      "end_line": 2364,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_sast_reports?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2366,
+      "end_line": 2369,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#calculate_reactive_cache",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2371,
+      "end_line": 2380,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_diff_head_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2384,
+      "end_line": 2389,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_commits",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2391,
+      "end_line": 2399,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_commit_shas",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2403,
+      "end_line": 2407,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2410,
+      "end_line": 2412,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2414,
+      "end_line": 2416,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merged_commit_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2418,
+      "end_line": 2423,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#short_merged_commit_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2425,
+      "end_line": 2429,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_to_revert",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2432,
+      "end_line": 2446,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_to_cherry_pick",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2448,
+      "end_line": 2450,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_be_reverted?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2452,
+      "end_line": 2467,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merged_at",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2469,
+      "end_line": 2478,
+      "value": 9
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_be_cherry_picked?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2480,
+      "end_line": 2482,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_complete_diff_refs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2484,
+      "end_line": 2486,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_diff_discussion_positions",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2489,
+      "end_line": 2525,
+      "value": 12
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#keep_around_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2528,
+      "end_line": 2532,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#enqueue_keep_around_commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2534,
+      "end_line": 2543,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#async_keep_around_refs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2545,
+      "end_line": 2549,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_commits?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2551,
+      "end_line": 2553,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_no_commits?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2555,
+      "end_line": 2557,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#pipeline_coverage_delta",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2559,
+      "end_line": 2563,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#comparison_base_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2565,
+      "end_line": 2577,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_base_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2579,
+      "end_line": 2585,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#base_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2588,
+      "end_line": 2590,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#discussions_rendered_on_frontend?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2593,
+      "end_line": 2595,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#invalidate_project_counter_caches",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2598,
+      "end_line": 2600,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_contribution?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2603,
+      "end_line": 2607,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allow_collaboration",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2613,
+      "end_line": 2615,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#collaborative_push_possible?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2619,
+      "end_line": 2624,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_allow_collaboration?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2626,
+      "end_line": 2629,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_diff_head_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2631,
+      "end_line": 2633,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#real_time_notes_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2635,
+      "end_line": 2637,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#recent_visible_deployments",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2639,
+      "end_line": 2641,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#banzai_render_context",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2643,
+      "end_line": 2645,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ensure_metrics!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2647,
+      "end_line": 2649,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allows_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2651,
+      "end_line": 2653,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allows_multiple_assignees?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2655,
+      "end_line": 2657,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#allows_multiple_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2659,
+      "end_line": 2661,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reviewer_auto_assignment_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2663,
+      "end_line": 2665,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#supports_assignee?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2667,
+      "end_line": 2669,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#find_reviewer",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2671,
+      "end_line": 2673,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_request_reviewers_with",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2675,
+      "end_line": 2677,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#create_requested_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2679,
+      "end_line": 2681,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#destroy_requested_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2683,
+      "end_line": 2685,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#batch_update_reviewer_state",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2687,
+      "end_line": 2689,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#enabled_reports",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2691,
+      "end_line": 2696,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#includes_ci_config?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2698,
+      "end_line": 2702,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#context_commits_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2704,
+      "end_line": 2708,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_default_branch?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2710,
+      "end_line": 2712,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_blocked_by_other_mrs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2714,
+      "end_line": 2716,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#execute_merge_checks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2718,
+      "end_line": 2724,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#can_suggest_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2726,
+      "end_line": 2728,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#hidden?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2730,
+      "end_line": 2732,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_batch_cache_with_max_age?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2734,
+      "end_line": 2736,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#prepared?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2738,
+      "end_line": 2740,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#initial_preparation?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2742,
+      "end_line": 2744,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#check_for_spam?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2746,
+      "end_line": 2748,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#missing_required_squash?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2750,
+      "end_line": 2752,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#current_patch_id_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2754,
+      "end_line": 2756,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diff_head_pipeline_considered_in_progress?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2758,
+      "end_line": 2774,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#temporarily_unapproved?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2776,
+      "end_line": 2778,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_jira_issue_keys?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2780,
+      "end_line": 2788,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_exclusive_lease",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2790,
+      "end_line": 2794,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_and_target_branches_exist?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2796,
+      "end_line": 2798,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#has_diffs?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2800,
+      "end_line": 2806,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#add_to_locked_set",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2808,
+      "end_line": 2810,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#remove_from_locked_set",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2812,
+      "end_line": 2814,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#first_diffs_slice",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2816,
+      "end_line": 2825,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#squash_option",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2827,
+      "end_line": 2829,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#log_approval_deletion_on_merged_or_locked_mr",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2833,
+      "end_line": 2847,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reached_versions_limit?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2849,
+      "end_line": 2851,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#reached_diff_commits_limit?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2853,
+      "end_line": 2860,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#diffs_batch_cache_key",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2862,
+      "end_line": 2867,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#commit_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2869,
+      "end_line": 2890,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#append_merge_params",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2917,
+      "end_line": 2922,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#clear_merge_params",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2924,
+      "end_line": 2929,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_merge_ref_sha",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2931,
+      "end_line": 2943,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_merge_jid",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2945,
+      "end_line": 2957,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#ensure_merge_data",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2959,
+      "end_line": 2969,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#viewable_recent_merge_request_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2971,
+      "end_line": 2976,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#show_context_commits_diff?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2978,
+      "end_line": 2980,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_allow_broken",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 2988,
+      "end_line": 2994,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#state_changed_since_load?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3002,
+      "end_line": 3008,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#publish_code_conflict_event",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3010,
+      "end_line": 3013,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_emails_from_diff",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3015,
+      "end_line": 3034,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_emails_via_metadata_query",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3037,
+      "end_line": 3054,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#committer_emails_via_direct_query",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3056,
+      "end_line": 3065,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#update_cached_closing_issues_from_description!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3067,
+      "end_line": 3080,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#bulk_insert_cached_closing_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3082,
+      "end_line": 3099,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#merge_data_attributes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3101,
+      "end_line": 3117,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_merge_data_sync",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3119,
+      "end_line": 3140,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_single_transaction_merge_data_sync",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3142,
+      "end_line": 3156,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#save_merge_data_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3158,
+      "end_line": 3169,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#dual_write_to_merge_data_ff_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3171,
+      "end_line": 3173,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#viewable_diffs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3176,
+      "end_line": 3180,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#target_branch_pipelines_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3182,
+      "end_line": 3185,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#set_draft_status",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3187,
+      "end_line": 3189,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#expire_ancestor_cache",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3191,
+      "end_line": 3193,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#missing_report_error",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3195,
+      "end_line": 3197,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_rebase_lock",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3199,
+      "end_line": 3201,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#with_retried_nowait_lock",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3207,
+      "end_line": 3217,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#source_project_variables",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3219,
+      "end_line": 3229,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#expire_etag_cache",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3231,
+      "end_line": 3236,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#report_type_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3238,
+      "end_line": 3248,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#truncate_mr_description",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3250,
+      "end_line": 3256,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#pipeline_has_report_in_self_or_descendants?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3258,
+      "end_line": 3262,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#all_commit_shas_from_metadata",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3264,
+      "end_line": 3281,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#resolve_diff_version",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3283,
+      "end_line": 3291,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#read_new_commits_table?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3293,
+      "end_line": 3295,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequest#project_id_pruning_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3298,
+      "end_line": 3300,
+      "value": 1
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "MergeRequest",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 3,
+      "end_line": 3302,
+      "value": 2370
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "singleton_class",
+      "scope_name": "class << MergeRequest",
+      "path": "spec/fixtures/corpus/gitlab/app/models/merge_request.rb",
+      "start_line": 934,
+      "end_line": 938,
+      "value": 3
+    }
+  ]
+}

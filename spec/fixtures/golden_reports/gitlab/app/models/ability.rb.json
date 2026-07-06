@@ -1,0 +1,476 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 18,
+        "max": 23.17,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ability.allowed?",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 79,
+            "end_line": 111,
+            "value": 23.17
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ability.forget_all_but",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 164,
+            "end_line": 171,
+            "value": 9.43
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ability.forgetting",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 147,
+            "end_line": 156,
+            "value": 8.06
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ability.find_user_for_composite_identity_check",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 200,
+            "end_line": 207,
+            "value": 6.78
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ability.apply_filters_if_needed",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 179,
+            "end_line": 185,
+            "value": 4.69
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 18,
+        "max": 11,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ability.allowed?",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 79,
+            "end_line": 111,
+            "value": 11
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ability.forget_all_but",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 164,
+            "end_line": 171,
+            "value": 5
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ability.find_user_for_composite_identity_check",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 200,
+            "end_line": 207,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ability.apply_filters_if_needed",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 179,
+            "end_line": 185,
+            "value": 3
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ability.users_that_can_read_project",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 7,
+            "end_line": 11,
+            "value": 2
+          }
+        ]
+      },
+      "class_length": {
+        "count": 2,
+        "max": 121,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Ability",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 3,
+            "end_line": 209,
+            "value": 121
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "singleton_class",
+            "scope_name": "class << Ability",
+            "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+            "start_line": 4,
+            "end_line": 208,
+            "value": 119
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_project",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 7,
+      "end_line": 11,
+      "value": 3.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_group",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 15,
+      "end_line": 19,
+      "value": 3.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_personal_snippet",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 23,
+      "end_line": 27,
+      "value": 3.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_internal_notes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 30,
+      "end_line": 34,
+      "value": 3.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_confidential_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 36,
+      "end_line": 40,
+      "value": 3.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.issues_readable_by_user",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 48,
+      "end_line": 54,
+      "value": 4.58
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.merge_requests_readable_by_user",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 63,
+      "end_line": 69,
+      "value": 4.58
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.feature_flags_readable_by_user",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 71,
+      "end_line": 77,
+      "value": 4.58
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.allowed?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 79,
+      "end_line": 111,
+      "value": 23.17
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.before_check",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 114,
+      "end_line": 116,
+      "value": 0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.policy_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 122,
+      "end_line": 126,
+      "value": 2.45
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.forgetting",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 147,
+      "end_line": 156,
+      "value": 8.06
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.ability_forgetting?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 160,
+      "end_line": 162,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.forget_all_but",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 164,
+      "end_line": 171,
+      "value": 9.43
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.forget_runner_result",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 173,
+      "end_line": 177,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.apply_filters_if_needed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 179,
+      "end_line": 185,
+      "value": 4.69
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.with_composite_identity_check",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 187,
+      "end_line": 198,
+      "value": 4.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ability.find_user_for_composite_identity_check",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 200,
+      "end_line": 207,
+      "value": 6.78
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_project",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 7,
+      "end_line": 11,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_group",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 15,
+      "end_line": 19,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_personal_snippet",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 23,
+      "end_line": 27,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_internal_notes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 30,
+      "end_line": 34,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.users_that_can_read_confidential_issues",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 36,
+      "end_line": 40,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.issues_readable_by_user",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 48,
+      "end_line": 54,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.merge_requests_readable_by_user",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 63,
+      "end_line": 69,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.feature_flags_readable_by_user",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 71,
+      "end_line": 77,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.allowed?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 79,
+      "end_line": 111,
+      "value": 11
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.before_check",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 114,
+      "end_line": 116,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.policy_for",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 122,
+      "end_line": 126,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.forgetting",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 147,
+      "end_line": 156,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.ability_forgetting?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 160,
+      "end_line": 162,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.forget_all_but",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 164,
+      "end_line": 171,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.forget_runner_result",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 173,
+      "end_line": 177,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.apply_filters_if_needed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 179,
+      "end_line": 185,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.with_composite_identity_check",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 187,
+      "end_line": 198,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ability.find_user_for_composite_identity_check",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 200,
+      "end_line": 207,
+      "value": 4
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Ability",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 3,
+      "end_line": 209,
+      "value": 121
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "singleton_class",
+      "scope_name": "class << Ability",
+      "path": "spec/fixtures/corpus/gitlab/app/models/ability.rb",
+      "start_line": 4,
+      "end_line": 208,
+      "value": 119
+    }
+  ]
+}

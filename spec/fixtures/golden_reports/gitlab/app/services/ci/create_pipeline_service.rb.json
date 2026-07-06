@@ -1,0 +1,296 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 8,
+        "max": 83.17,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#execute",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 67,
+            "end_line": 144,
+            "value": 83.17
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#execute_async",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 147,
+            "end_line": 157,
+            "value": 17.12
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#build_logger",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 186,
+            "end_line": 209,
+            "value": 16.03
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#recover_pipeline_iid",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 169,
+            "end_line": 172,
+            "value": 4.12
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#validate_options!",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 176,
+            "end_line": 178,
+            "value": 3.16
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 8,
+        "max": 12,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#execute",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 67,
+            "end_line": 144,
+            "value": 12
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#build_logger",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 186,
+            "end_line": 209,
+            "value": 5
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#recover_pipeline_iid",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 169,
+            "end_line": 172,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#validate_options!",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 176,
+            "end_line": 178,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::CreatePipelineService#execute_async",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 147,
+            "end_line": 157,
+            "value": 1
+          }
+        ]
+      },
+      "class_length": {
+        "count": 2,
+        "max": 152,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Ci::CreatePipelineService",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 4,
+            "end_line": 210,
+            "value": 152
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Ci",
+            "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+            "start_line": 3,
+            "end_line": 211,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#execute",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 67,
+      "end_line": 144,
+      "value": 83.17
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#execute_async",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 147,
+      "end_line": 157,
+      "value": 17.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#yaml_processor_result",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 159,
+      "end_line": 161,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#after_successful_creation_hook",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 165,
+      "end_line": 167,
+      "value": 0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#recover_pipeline_iid",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 169,
+      "end_line": 172,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#validate_options!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 176,
+      "end_line": 178,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#extra_options",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 182,
+      "end_line": 184,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#build_logger",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 186,
+      "end_line": 209,
+      "value": 16.03
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#execute",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 67,
+      "end_line": 144,
+      "value": 12
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#execute_async",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 147,
+      "end_line": 157,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#yaml_processor_result",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 159,
+      "end_line": 161,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#after_successful_creation_hook",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 165,
+      "end_line": 167,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#recover_pipeline_iid",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 169,
+      "end_line": 172,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#validate_options!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 176,
+      "end_line": 178,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#extra_options",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 182,
+      "end_line": 184,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::CreatePipelineService#build_logger",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 186,
+      "end_line": 209,
+      "value": 5
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Ci",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 3,
+      "end_line": 211,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Ci::CreatePipelineService",
+      "path": "spec/fixtures/corpus/gitlab/app/services/ci/create_pipeline_service.rb",
+      "start_line": 4,
+      "end_line": 210,
+      "value": 152
+    }
+  ]
+}

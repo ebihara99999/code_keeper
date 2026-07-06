@@ -1,0 +1,278 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 7,
+        "max": 14.46,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#set_projects!",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 58,
+            "end_line": 76,
+            "value": 14.46
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#execute",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 5,
+            "end_line": 21,
+            "value": 14.32
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#set_default_attributes!",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 78,
+            "end_line": 81,
+            "value": 9.49
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#after_create",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 23,
+            "end_line": 37,
+            "value": 7.07
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#before_create",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 45,
+            "end_line": 56,
+            "value": 5.1
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 7,
+        "max": 4,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#set_projects!",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 58,
+            "end_line": 76,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#set_default_attributes!",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 78,
+            "end_line": 81,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#execute",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 5,
+            "end_line": 21,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#after_create",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 23,
+            "end_line": 37,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "MergeRequests::CreateService#before_create",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 45,
+            "end_line": 56,
+            "value": 1
+          }
+        ]
+      },
+      "class_length": {
+        "count": 2,
+        "max": 49,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "MergeRequests::CreateService",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 4,
+            "end_line": 90,
+            "value": 49
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "MergeRequests",
+            "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+            "start_line": 3,
+            "end_line": 91,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#execute",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 5,
+      "end_line": 21,
+      "value": 14.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#after_create",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 23,
+      "end_line": 37,
+      "value": 7.07
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#before_create",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 45,
+      "end_line": 56,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_projects!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 58,
+      "end_line": 76,
+      "value": 14.46
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_default_attributes!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 78,
+      "end_line": 81,
+      "value": 9.49
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_default_force_remove_source_branch!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 83,
+      "end_line": 85,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_default_squash!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 87,
+      "end_line": 89,
+      "value": 3.16
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#execute",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 5,
+      "end_line": 21,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#after_create",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 23,
+      "end_line": 37,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#before_create",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 45,
+      "end_line": 56,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_projects!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 58,
+      "end_line": 76,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_default_attributes!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 78,
+      "end_line": 81,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_default_force_remove_source_branch!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 83,
+      "end_line": 85,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "MergeRequests::CreateService#set_default_squash!",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 87,
+      "end_line": 89,
+      "value": 1
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "MergeRequests",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 3,
+      "end_line": 91,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "MergeRequests::CreateService",
+      "path": "spec/fixtures/corpus/gitlab/app/services/merge_requests/create_service.rb",
+      "start_line": 4,
+      "end_line": 90,
+      "value": 49
+    }
+  ]
+}

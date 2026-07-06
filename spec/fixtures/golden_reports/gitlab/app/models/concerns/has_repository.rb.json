@@ -1,0 +1,656 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 29,
+        "max": 12.69,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "HasRepository#apply_desired_default_branch",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 99,
+            "end_line": 113,
+            "value": 12.69
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "HasRepository#default_branch_from_group_preferences",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 120,
+            "end_line": 125,
+            "value": 7.62
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "HasRepository#after_repository_change_head",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 158,
+            "end_line": 167,
+            "value": 7.07
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "HasRepository#after_create_repository",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 169,
+            "end_line": 178,
+            "value": 6.32
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "HasRepository#default_branch",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 81,
+            "end_line": 83,
+            "value": 5.48
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 29,
+        "max": 6,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "HasRepository#apply_desired_default_branch",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 99,
+            "end_line": 113,
+            "value": 6
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "HasRepository#default_branch=",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 85,
+            "end_line": 96,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "HasRepository#default_branch_from_group_preferences",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 120,
+            "end_line": 125,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "HasRepository#default_branch",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 81,
+            "end_line": 83,
+            "value": 3
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "HasRepository#valid_repo?",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 19,
+            "end_line": 24,
+            "value": 2
+          }
+        ]
+      },
+      "class_length": {
+        "count": 1,
+        "max": 124,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "HasRepository",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+            "start_line": 10,
+            "end_line": 183,
+            "value": 124
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#valid_repo?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 19,
+      "end_line": 24,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repo_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 26,
+      "end_line": 30,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repository_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 33,
+      "end_line": 35,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#root_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 37,
+      "end_line": 39,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 41,
+      "end_line": 43,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#branch_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 45,
+      "end_line": 47,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#ref_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 49,
+      "end_line": 51,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#commit_by",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 53,
+      "end_line": 55,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#commits_by",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 57,
+      "end_line": 59,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repository",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 61,
+      "end_line": 63,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#storage",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 65,
+      "end_line": 67,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#full_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 69,
+      "end_line": 71,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#lfs_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 73,
+      "end_line": 75,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#empty_repo?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 77,
+      "end_line": 79,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 81,
+      "end_line": 83,
+      "value": 5.48
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch=",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 85,
+      "end_line": 96,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#apply_desired_default_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 99,
+      "end_line": 113,
+      "value": 12.69
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch_from_preferences",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 116,
+      "end_line": 118,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch_from_group_preferences",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 120,
+      "end_line": 125,
+      "value": 7.62
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#reload_default_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 127,
+      "end_line": 131,
+      "value": 1.41
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 133,
+      "end_line": 135,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#ssh_url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 137,
+      "end_line": 139,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#http_url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 141,
+      "end_line": 143,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#lfs_http_url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 146,
+      "end_line": 148,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#web_url",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 150,
+      "end_line": 152,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repository_size_checker",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 154,
+      "end_line": 156,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#after_repository_change_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 158,
+      "end_line": 167,
+      "value": 7.07
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#after_create_repository",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 169,
+      "end_line": 178,
+      "value": 6.32
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "HasRepository#after_change_head_branch_does_not_exist",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 180,
+      "end_line": 182,
+      "value": 0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#valid_repo?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 19,
+      "end_line": 24,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repo_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 26,
+      "end_line": 30,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repository_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 33,
+      "end_line": 35,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#root_ref?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 37,
+      "end_line": 39,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#commit",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 41,
+      "end_line": 43,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#branch_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 45,
+      "end_line": 47,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#ref_exists?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 49,
+      "end_line": 51,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#commit_by",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 53,
+      "end_line": 55,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#commits_by",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 57,
+      "end_line": 59,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repository",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 61,
+      "end_line": 63,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#storage",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 65,
+      "end_line": 67,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#full_path",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 69,
+      "end_line": 71,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#lfs_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 73,
+      "end_line": 75,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#empty_repo?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 77,
+      "end_line": 79,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 81,
+      "end_line": 83,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch=",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 85,
+      "end_line": 96,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#apply_desired_default_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 99,
+      "end_line": 113,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch_from_preferences",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 116,
+      "end_line": 118,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#default_branch_from_group_preferences",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 120,
+      "end_line": 125,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#reload_default_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 127,
+      "end_line": 131,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 133,
+      "end_line": 135,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#ssh_url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 137,
+      "end_line": 139,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#http_url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 141,
+      "end_line": 143,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#lfs_http_url_to_repo",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 146,
+      "end_line": 148,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#web_url",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 150,
+      "end_line": 152,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#repository_size_checker",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 154,
+      "end_line": 156,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#after_repository_change_head",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 158,
+      "end_line": 167,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#after_create_repository",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 169,
+      "end_line": 178,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "HasRepository#after_change_head_branch_does_not_exist",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 180,
+      "end_line": 182,
+      "value": 1
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "HasRepository",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/has_repository.rb",
+      "start_line": 10,
+      "end_line": 183,
+      "value": 124
+    }
+  ]
+}

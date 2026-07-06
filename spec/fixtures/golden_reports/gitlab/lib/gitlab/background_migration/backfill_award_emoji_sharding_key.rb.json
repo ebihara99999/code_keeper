@@ -1,0 +1,332 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 9,
+        "max": 9.0,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#delete_and_archive_award_emoji_with_no_sharding_key",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 112,
+            "end_line": 126,
+            "value": 9.0
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#perform",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 9,
+            "end_line": 18,
+            "value": 7.07
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#common_query",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 22,
+            "end_line": 31,
+            "value": 5.0
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_note_related_records",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 87,
+            "end_line": 110,
+            "value": 4.0
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_issue_related_records",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 33,
+            "end_line": 44,
+            "value": 3.0
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 9,
+        "max": 2,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#award_emoji_columns_for_archive",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 128,
+            "end_line": 132,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#perform",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 9,
+            "end_line": 18,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#common_query",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 22,
+            "end_line": 31,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_issue_related_records",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 33,
+            "end_line": 44,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_merge_request_related_records",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 46,
+            "end_line": 58,
+            "value": 1
+          }
+        ]
+      },
+      "class_length": {
+        "count": 3,
+        "max": 114,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 5,
+            "end_line": 133,
+            "value": 114
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 3,
+            "end_line": 135,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::BackgroundMigration",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+            "start_line": 4,
+            "end_line": 134,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#perform",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 9,
+      "end_line": 18,
+      "value": 7.07
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#common_query",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 22,
+      "end_line": 31,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_issue_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 33,
+      "end_line": 44,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_merge_request_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 46,
+      "end_line": 58,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_epic_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 60,
+      "end_line": 71,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_snippet_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 73,
+      "end_line": 85,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_note_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 87,
+      "end_line": 110,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#delete_and_archive_award_emoji_with_no_sharding_key",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 112,
+      "end_line": 126,
+      "value": 9.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#award_emoji_columns_for_archive",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 128,
+      "end_line": 132,
+      "value": 2.45
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#perform",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 9,
+      "end_line": 18,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#common_query",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 22,
+      "end_line": 31,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_issue_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 33,
+      "end_line": 44,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_merge_request_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 46,
+      "end_line": 58,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_epic_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 60,
+      "end_line": 71,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_snippet_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 73,
+      "end_line": 85,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#handle_note_related_records",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 87,
+      "end_line": 110,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#delete_and_archive_award_emoji_with_no_sharding_key",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 112,
+      "end_line": 126,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey#award_emoji_columns_for_archive",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 128,
+      "end_line": 132,
+      "value": 2
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 3,
+      "end_line": 135,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::BackgroundMigration",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 4,
+      "end_line": 134,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Gitlab::BackgroundMigration::BackfillAwardEmojiShardingKey",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/background_migration/backfill_award_emoji_sharding_key.rb",
+      "start_line": 5,
+      "end_line": 133,
+      "value": 114
+    }
+  ]
+}

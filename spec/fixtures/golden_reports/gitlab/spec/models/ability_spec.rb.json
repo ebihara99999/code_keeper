@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 2,
+        "max": 6.0,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "check_ability",
+            "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+            "start_line": 638,
+            "end_line": 640,
+            "value": 6.0
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "users_for_snippet",
+            "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+            "start_line": 167,
+            "end_line": 169,
+            "value": 3.0
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 2,
+        "max": 1,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "users_for_snippet",
+            "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+            "start_line": 167,
+            "end_line": 169,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "check_ability",
+            "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+            "start_line": 638,
+            "end_line": 640,
+            "value": 1
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "users_for_snippet",
+      "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+      "start_line": 167,
+      "end_line": 169,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "check_ability",
+      "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+      "start_line": 638,
+      "end_line": 640,
+      "value": 6.0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "users_for_snippet",
+      "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+      "start_line": 167,
+      "end_line": 169,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "check_ability",
+      "path": "spec/fixtures/corpus/gitlab/spec/models/ability_spec.rb",
+      "start_line": 638,
+      "end_line": 640,
+      "value": 1
+    }
+  ]
+}

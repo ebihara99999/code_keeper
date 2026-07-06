@@ -1,0 +1,332 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 11,
+        "max": 15.26,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#team_member?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 966,
+            "end_line": 991,
+            "value": 15.26
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#access_allowed_to?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 1024,
+            "end_line": 1039,
+            "value": 12.21
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#project_group_requester?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 1001,
+            "end_line": 1006,
+            "value": 9.49
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#project_group_member?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 993,
+            "end_line": 998,
+            "value": 7.62
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#cross_project_push_allowed_for_job_token?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 1057,
+            "end_line": 1061,
+            "value": 7.28
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 11,
+        "max": 7,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#access_allowed_to?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 1024,
+            "end_line": 1039,
+            "value": 7
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#team_member?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 966,
+            "end_line": 991,
+            "value": 6
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#project_group_member?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 993,
+            "end_line": 998,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#project_group_requester?",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 1001,
+            "end_line": 1006,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "ProjectPolicy#team_access_level",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 1009,
+            "end_line": 1014,
+            "value": 4
+          }
+        ]
+      },
+      "class_length": {
+        "count": 1,
+        "max": 802,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "ProjectPolicy",
+            "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+            "start_line": 3,
+            "end_line": 1066,
+            "value": 802
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#team_member?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 966,
+      "end_line": 991,
+      "value": 15.26
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#project_group_member?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 993,
+      "end_line": 998,
+      "value": 7.62
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#project_group_requester?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1001,
+      "end_line": 1006,
+      "value": 9.49
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#team_access_level",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1009,
+      "end_line": 1014,
+      "value": 4.69
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#lookup_access_level!",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1017,
+      "end_line": 1022,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#access_allowed_to?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1024,
+      "end_line": 1039,
+      "value": 12.21
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#resource_access_token_feature_available?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1041,
+      "end_line": 1043,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#resource_access_token_create_feature_available?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1045,
+      "end_line": 1047,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#resource_access_token_creation_allowed?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1049,
+      "end_line": 1055,
+      "value": 6.4
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#cross_project_push_allowed_for_job_token?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1057,
+      "end_line": 1061,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#project",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1063,
+      "end_line": 1065,
+      "value": 0.0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#team_member?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 966,
+      "end_line": 991,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#project_group_member?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 993,
+      "end_line": 998,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#project_group_requester?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1001,
+      "end_line": 1006,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#team_access_level",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1009,
+      "end_line": 1014,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#lookup_access_level!",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1017,
+      "end_line": 1022,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#access_allowed_to?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1024,
+      "end_line": 1039,
+      "value": 7
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#resource_access_token_feature_available?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1041,
+      "end_line": 1043,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#resource_access_token_create_feature_available?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1045,
+      "end_line": 1047,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#resource_access_token_creation_allowed?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1049,
+      "end_line": 1055,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#cross_project_push_allowed_for_job_token?",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1057,
+      "end_line": 1061,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "ProjectPolicy#project",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 1063,
+      "end_line": 1065,
+      "value": 1
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "ProjectPolicy",
+      "path": "spec/fixtures/corpus/gitlab/app/policies/project_policy.rb",
+      "start_line": 3,
+      "end_line": 1066,
+      "value": 802
+    }
+  ]
+}

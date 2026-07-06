@@ -1,0 +1,170 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 3,
+        "max": 15.17,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "IgnorableColumns#ignore_columns",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 18,
+            "end_line": 30,
+            "value": 15.17
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "IgnorableColumns#ignored_columns_details",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 34,
+            "end_line": 40,
+            "value": 5.74
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "IgnorableColumns#safe_to_remove?",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 7,
+            "end_line": 11,
+            "value": 3.61
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 3,
+        "max": 7,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "IgnorableColumns#ignore_columns",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 18,
+            "end_line": 30,
+            "value": 7
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "IgnorableColumns#ignored_columns_details",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 34,
+            "end_line": 40,
+            "value": 5
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "IgnorableColumns#safe_to_remove?",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 7,
+            "end_line": 11,
+            "value": 2
+          }
+        ]
+      },
+      "class_length": {
+        "count": 2,
+        "max": 28,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "IgnorableColumns",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 3,
+            "end_line": 44,
+            "value": 28
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "IgnorableColumns::ColumnIgnore",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+            "start_line": 6,
+            "end_line": 12,
+            "value": 4
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "IgnorableColumns#safe_to_remove?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 7,
+      "end_line": 11,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "IgnorableColumns#ignore_columns",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 18,
+      "end_line": 30,
+      "value": 15.17
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "IgnorableColumns#ignored_columns_details",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 34,
+      "end_line": 40,
+      "value": 5.74
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "IgnorableColumns#safe_to_remove?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 7,
+      "end_line": 11,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "IgnorableColumns#ignore_columns",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 18,
+      "end_line": 30,
+      "value": 7
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "IgnorableColumns#ignored_columns_details",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 34,
+      "end_line": 40,
+      "value": 5
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "IgnorableColumns",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 3,
+      "end_line": 44,
+      "value": 28
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "IgnorableColumns::ColumnIgnore",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ignorable_columns.rb",
+      "start_line": 6,
+      "end_line": 12,
+      "value": 4
+    }
+  ]
+}

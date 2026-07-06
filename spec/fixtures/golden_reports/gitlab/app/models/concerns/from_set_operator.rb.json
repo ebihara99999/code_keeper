@@ -1,0 +1,116 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 2,
+        "max": 31.26,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "FromSetOperator#define_set_operator",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+            "start_line": 7,
+            "end_line": 46,
+            "value": 31.26
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "FromSetOperator#flatten_ar_array",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+            "start_line": 29,
+            "end_line": 43,
+            "value": 8.19
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 2,
+        "max": 6,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "FromSetOperator#define_set_operator",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+            "start_line": 7,
+            "end_line": 46,
+            "value": 6
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "FromSetOperator#flatten_ar_array",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+            "start_line": 29,
+            "end_line": 43,
+            "value": 3
+          }
+        ]
+      },
+      "class_length": {
+        "count": 1,
+        "max": 32,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "FromSetOperator",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+            "start_line": 3,
+            "end_line": 47,
+            "value": 32
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "FromSetOperator#define_set_operator",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+      "start_line": 7,
+      "end_line": 46,
+      "value": 31.26
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "FromSetOperator#flatten_ar_array",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+      "start_line": 29,
+      "end_line": 43,
+      "value": 8.19
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "FromSetOperator#define_set_operator",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+      "start_line": 7,
+      "end_line": 46,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "FromSetOperator#flatten_ar_array",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+      "start_line": 29,
+      "end_line": 43,
+      "value": 3
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "FromSetOperator",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/from_set_operator.rb",
+      "start_line": 3,
+      "end_line": 47,
+      "value": 32
+    }
+  ]
+}

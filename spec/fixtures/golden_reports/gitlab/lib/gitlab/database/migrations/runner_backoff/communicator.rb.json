@@ -1,0 +1,368 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 9,
+        "max": 5.1,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#execute_with_lock",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 26,
+            "end_line": 33,
+            "value": 5.1
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#set_lock",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 39,
+            "end_line": 43,
+            "value": 4.12
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#log",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 55,
+            "end_line": 57,
+            "value": 4.0
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator.backoff_runner?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 15,
+            "end_line": 19,
+            "value": 3.16
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#remove_lock",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 45,
+            "end_line": 49,
+            "value": 3.0
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 9,
+        "max": 2,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator.backoff_runner?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 15,
+            "end_line": 19,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#execute_with_lock",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 26,
+            "end_line": 33,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#set_lock",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 39,
+            "end_line": 43,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#exclusive_lease",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 51,
+            "end_line": 53,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator.execute_with_lock",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 11,
+            "end_line": 13,
+            "value": 1
+          }
+        ]
+      },
+      "class_length": {
+        "count": 5,
+        "max": 39,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 7,
+            "end_line": 62,
+            "value": 39
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 3,
+            "end_line": 66,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Database",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 4,
+            "end_line": 65,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Database::Migrations",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 5,
+            "end_line": 64,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Database::Migrations::RunnerBackoff",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+            "start_line": 6,
+            "end_line": 63,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator.execute_with_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 11,
+      "end_line": 13,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator.backoff_runner?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 15,
+      "end_line": 19,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#initialize",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 21,
+      "end_line": 24,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#execute_with_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 26,
+      "end_line": 33,
+      "value": 5.1
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#set_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 39,
+      "end_line": 43,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#remove_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 45,
+      "end_line": 49,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#exclusive_lease",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 51,
+      "end_line": 53,
+      "value": 2.45
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#log",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 55,
+      "end_line": 57,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#log_params",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 59,
+      "end_line": 61,
+      "value": 2.0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator.execute_with_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 11,
+      "end_line": 13,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator.backoff_runner?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 15,
+      "end_line": 19,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#initialize",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 21,
+      "end_line": 24,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#execute_with_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 26,
+      "end_line": 33,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#set_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 39,
+      "end_line": 43,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#remove_lock",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 45,
+      "end_line": 49,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#exclusive_lease",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 51,
+      "end_line": 53,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#log",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 55,
+      "end_line": 57,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator#log_params",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 59,
+      "end_line": 61,
+      "value": 1
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 3,
+      "end_line": 66,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Database",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 4,
+      "end_line": 65,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Database::Migrations",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 5,
+      "end_line": 64,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 6,
+      "end_line": 63,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Gitlab::Database::Migrations::RunnerBackoff::Communicator",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/database/migrations/runner_backoff/communicator.rb",
+      "start_line": 7,
+      "end_line": 62,
+      "value": 39
+    }
+  ]
+}

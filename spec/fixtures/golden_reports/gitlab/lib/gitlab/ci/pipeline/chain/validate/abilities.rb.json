@@ -1,0 +1,341 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 7,
+        "max": 23.77,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#perform!",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 15,
+            "end_line": 44,
+            "value": 23.77
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_write_ref?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 60,
+            "end_line": 77,
+            "value": 20.12
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#push_from_ci?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 84,
+            "end_line": 86,
+            "value": 4.12
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_create_pipeline?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 52,
+            "end_line": 54,
+            "value": 3.0
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#user_access",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 79,
+            "end_line": 81,
+            "value": 3.0
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 7,
+        "max": 9,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_write_ref?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 60,
+            "end_line": 77,
+            "value": 9
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#perform!",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 15,
+            "end_line": 44,
+            "value": 7
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#push_from_ci?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 84,
+            "end_line": 86,
+            "value": 2
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#break?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 46,
+            "end_line": 48,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_create_pipeline?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 52,
+            "end_line": 54,
+            "value": 1
+          }
+        ]
+      },
+      "class_length": {
+        "count": 6,
+        "max": 59,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 8,
+            "end_line": 87,
+            "value": 59
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 3,
+            "end_line": 92,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Ci",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 4,
+            "end_line": 91,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Ci::Pipeline",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 5,
+            "end_line": 90,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Ci::Pipeline::Chain",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+            "start_line": 6,
+            "end_line": 89,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#perform!",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 15,
+      "end_line": 44,
+      "value": 23.77
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#break?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 46,
+      "end_line": 48,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_create_pipeline?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 52,
+      "end_line": 54,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_run_pipeline?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 56,
+      "end_line": 58,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_write_ref?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 60,
+      "end_line": 77,
+      "value": 20.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#user_access",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 79,
+      "end_line": 81,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#push_from_ci?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 84,
+      "end_line": 86,
+      "value": 4.12
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#perform!",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 15,
+      "end_line": 44,
+      "value": 7
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#break?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 46,
+      "end_line": 48,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_create_pipeline?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 52,
+      "end_line": 54,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_run_pipeline?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 56,
+      "end_line": 58,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#allowed_to_write_ref?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 60,
+      "end_line": 77,
+      "value": 9
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#user_access",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 79,
+      "end_line": 81,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities#push_from_ci?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 84,
+      "end_line": 86,
+      "value": 2
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 3,
+      "end_line": 92,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 4,
+      "end_line": 91,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci::Pipeline",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 5,
+      "end_line": 90,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 6,
+      "end_line": 89,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 7,
+      "end_line": 88,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Gitlab::Ci::Pipeline::Chain::Validate::Abilities",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/pipeline/chain/validate/abilities.rb",
+      "start_line": 8,
+      "end_line": 87,
+      "value": 59
+    }
+  ]
+}
