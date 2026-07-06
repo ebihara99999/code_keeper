@@ -104,7 +104,7 @@ body:
         - Golden snapshot coverage:
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: summary-model-fit
     attributes:
       label: Summary-model fit
@@ -112,12 +112,28 @@ body:
         CodeKeeper summary hotspots sort measurements by descending numeric value.
         A metric that does not satisfy this needs a summary design discussion before implementation.
       options:
-        - label: The value is numeric.
-          required: true
-        - label: Larger values mean more review attention.
-          required: true
-        - label: "`top_hotspots` descending order is meaningful for this metric."
-          required: true
+        - Fits the current summary model
+        - Needs summary design discussion before implementation
+    validations:
+      required: true
+  - type: textarea
+    id: summary-model-details
+    attributes:
+      label: Summary-model details
+      description: |
+        If the metric fits the current summary model, confirm that the value is numeric, larger values mean more review attention, and descending `top_hotspots` is meaningful.
+        If it does not fit, describe the summary behavior that needs design discussion before implementation.
+      placeholder: |
+        Fits current model:
+        - Value is numeric:
+        - Larger values mean more review attention:
+        - Descending `top_hotspots` is meaningful:
+
+        Needs design discussion:
+        - Why the current summary model does not fit:
+        - Proposed summary behavior:
+    validations:
+      required: true
   - type: textarea
     id: open-questions
     attributes:
