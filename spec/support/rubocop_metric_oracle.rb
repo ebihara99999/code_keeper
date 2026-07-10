@@ -58,6 +58,7 @@ module RuboCopMetricOracle
   class CapturedAbcSize < RuboCop::Cop::Metrics::AbcSize
     extend CopIdentity
     include CapturesMeasurements
+    exclude_from_registry
 
     def self.rubocop_cop_name
       "Metrics/AbcSize"
@@ -82,6 +83,7 @@ module RuboCopMetricOracle
   class CapturedCyclomaticComplexity < RuboCop::Cop::Metrics::CyclomaticComplexity
     extend CopIdentity
     include CapturesMeasurements
+    exclude_from_registry
 
     def self.rubocop_cop_name
       "Metrics/CyclomaticComplexity"
@@ -105,6 +107,7 @@ module RuboCopMetricOracle
   class CapturedClassLength < RuboCop::Cop::Metrics::ClassLength
     extend CopIdentity
     include CapturesMeasurements
+    exclude_from_registry
 
     def self.rubocop_cop_name
       "Metrics/ClassLength"
@@ -123,6 +126,7 @@ module RuboCopMetricOracle
   class CapturedModuleLength < RuboCop::Cop::Metrics::ModuleLength
     extend CopIdentity
     include CapturesMeasurements
+    exclude_from_registry
 
     def self.rubocop_cop_name
       "Metrics/ModuleLength"
