@@ -1,0 +1,22 @@
+---
+accepted_differences:
+  - metric: class_length
+    path: spec/fixtures/corpus/gitlab/app/models/project.rb
+    line: 1243
+    side: code_keeper
+    reason: CodeKeeper measures class-body class << self as a statically resolved singleton class; RuboCop Metrics/ClassLength skips singleton classes inside class bodies.
+  - metric: class_length
+    path: spec/fixtures/corpus/gitlab/app/models/merge_request.rb
+    line: 934
+    side: code_keeper
+    reason: CodeKeeper measures class-body class << self as a statically resolved singleton class; RuboCop Metrics/ClassLength skips singleton classes inside class bodies.
+  - metric: class_length
+    path: spec/fixtures/corpus/gitlab/app/models/ability.rb
+    line: 4
+    side: code_keeper
+    reason: CodeKeeper measures class-body class << self as a statically resolved singleton class; RuboCop Metrics/ClassLength skips singleton classes inside class bodies.
+  - metric: class_length
+    path: spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb
+    line: 154
+    side: rubocop
+    reason: RuboCop Metrics/ClassLength measures class << self inside the included do DSL block, while CodeKeeper skips dynamic self singleton classes.
