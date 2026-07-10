@@ -1,0 +1,422 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 12,
+        "max": 33.38,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#value",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 186,
+            "end_line": 216,
+            "value": 33.38
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#artifacts_with_pages_publish_path",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 234,
+            "end_line": 243,
+            "value": 11.87
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_publish_path",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 263,
+            "end_line": 269,
+            "value": 7.68
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_job?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 228,
+            "end_line": 232,
+            "value": 7.21
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job.matching?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 174,
+            "end_line": 176,
+            "value": 6.71
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 12,
+        "max": 6,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#value",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 186,
+            "end_line": 216,
+            "value": 6
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#artifacts_with_pages_publish_path",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 234,
+            "end_line": 243,
+            "value": 5
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job.matching?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 174,
+            "end_line": 176,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_publish_path",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 263,
+            "end_line": 269,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_job?",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 228,
+            "end_line": 232,
+            "value": 3
+          }
+        ]
+      },
+      "class_length": {
+        "count": 5,
+        "max": 201,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Gitlab::Ci::Config::Entry::Job",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 10,
+            "end_line": 270,
+            "value": 201
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 3,
+            "end_line": 274,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Ci",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 4,
+            "end_line": 273,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Gitlab::Ci::Config",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 5,
+            "end_line": 272,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Ci::Config::Entry",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+            "start_line": 6,
+            "end_line": 271,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job.matching?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 174,
+      "end_line": 176,
+      "value": 6.71
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job.visible?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 178,
+      "end_line": 180,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#delayed?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 182,
+      "end_line": 184,
+      "value": 1.41
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#value",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 186,
+      "end_line": 216,
+      "value": 33.38
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#parsed_timeout",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 218,
+      "end_line": 222,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#ignored?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 224,
+      "end_line": 226,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_job?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 228,
+      "end_line": 232,
+      "value": 7.21
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#artifacts_with_pages_publish_path",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 234,
+      "end_line": 243,
+      "value": 11.87
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job.allowed_keys",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 245,
+      "end_line": 247,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#allow_failure_criteria",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 251,
+      "end_line": 255,
+      "value": 4.47
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#static_allow_failure",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 257,
+      "end_line": 261,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_publish_path",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 263,
+      "end_line": 269,
+      "value": 7.68
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job.matching?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 174,
+      "end_line": 176,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job.visible?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 178,
+      "end_line": 180,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#delayed?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 182,
+      "end_line": 184,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#value",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 186,
+      "end_line": 216,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#parsed_timeout",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 218,
+      "end_line": 222,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#ignored?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 224,
+      "end_line": 226,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_job?",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 228,
+      "end_line": 232,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#artifacts_with_pages_publish_path",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 234,
+      "end_line": 243,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job.allowed_keys",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 245,
+      "end_line": 247,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#allow_failure_criteria",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 251,
+      "end_line": 255,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#static_allow_failure",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 257,
+      "end_line": 261,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job#pages_publish_path",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 263,
+      "end_line": 269,
+      "value": 4
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 3,
+      "end_line": 274,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 4,
+      "end_line": 273,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Gitlab::Ci::Config",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 5,
+      "end_line": 272,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci::Config::Entry",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 6,
+      "end_line": 271,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Gitlab::Ci::Config::Entry::Job",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/job.rb",
+      "start_line": 10,
+      "end_line": 270,
+      "value": 201
+    }
+  ]
+}

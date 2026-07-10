@@ -1,0 +1,314 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 9,
+        "max": 9.54,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#handle_partitionable_scope",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 75,
+            "end_line": 84,
+            "value": 9.54
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#partition_scope_value",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 76,
+            "end_line": 83,
+            "value": 8.6
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#handle_partitionable_ddl",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 86,
+            "end_line": 98,
+            "value": 7.35
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#handle_partitionable_through",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 65,
+            "end_line": 73,
+            "value": 7.28
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#set_partition_id",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 38,
+            "end_line": 43,
+            "value": 6.78
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 9,
+        "max": 4,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#set_partition_id",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 38,
+            "end_line": 43,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#handle_partitionable_scope",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 75,
+            "end_line": 84,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#partition_scope_value",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 76,
+            "end_line": 83,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable.registered_models",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 50,
+            "end_line": 54,
+            "value": 3
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Ci::Partitionable#handle_partitionable_through",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 65,
+            "end_line": 73,
+            "value": 3
+          }
+        ]
+      },
+      "class_length": {
+        "count": 2,
+        "max": 66,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Ci::Partitionable",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 18,
+            "end_line": 106,
+            "value": 66
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Ci",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+            "start_line": 3,
+            "end_line": 107,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#set_partition_id",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 38,
+      "end_line": 43,
+      "value": 6.78
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#id_and_partition_pair",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 45,
+      "end_line": 47,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable.registered_models",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 50,
+      "end_line": 54,
+      "value": 4.58
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#partitionable",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 57,
+      "end_line": 61,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#handle_partitionable_through",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 65,
+      "end_line": 73,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#handle_partitionable_scope",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 75,
+      "end_line": 84,
+      "value": 9.54
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#partition_scope_value",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 76,
+      "end_line": 83,
+      "value": 8.6
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#handle_partitionable_ddl",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 86,
+      "end_line": 98,
+      "value": 7.35
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#create_database_partition?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 100,
+      "end_line": 104,
+      "value": 5.1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#set_partition_id",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 38,
+      "end_line": 43,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#id_and_partition_pair",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 45,
+      "end_line": 47,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable.registered_models",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 50,
+      "end_line": 54,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#partitionable",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 57,
+      "end_line": 61,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#handle_partitionable_through",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 65,
+      "end_line": 73,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#handle_partitionable_scope",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 75,
+      "end_line": 84,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#partition_scope_value",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 76,
+      "end_line": 83,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#handle_partitionable_ddl",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 86,
+      "end_line": 98,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Ci::Partitionable#create_database_partition?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 100,
+      "end_line": 104,
+      "value": 2
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Ci",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 3,
+      "end_line": 107,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Ci::Partitionable",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/ci/partitionable.rb",
+      "start_line": 18,
+      "end_line": 106,
+      "value": 66
+    }
+  ]
+}

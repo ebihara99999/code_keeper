@@ -36,3 +36,18 @@ MIT Expat license notice included here.
 - `app/models/concerns/from_set_operator.rb`
 - `app/models/concerns/ci/partitionable.rb`
 - `spec/models/ability_spec.rb`
+
+## Golden Reports
+
+Committed golden reports live under `spec/fixtures/golden_reports/gitlab/`.
+There is one pretty-printed JSON report per corpus file, and report paths are
+recorded with repository-relative corpus paths.
+
+Regenerate them only as an explicit out-of-band maintenance task:
+
+```bash
+bundle exec rake corpus:regenerate_golden_reports
+```
+
+This regeneration task is not part of CI. Review the resulting JSON diff before
+committing it.

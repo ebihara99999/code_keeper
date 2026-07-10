@@ -1,0 +1,1448 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 73,
+        "max": 49.41,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Issuable#hook_association_changes",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 542,
+            "end_line": 572,
+            "value": 49.41
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Issuable#grouping_columns",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 438,
+            "end_line": 464,
+            "value": 28.91
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Issuable#order_labels_priority",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 390,
+            "end_line": 414,
+            "value": 25.02
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Issuable#gfm_autocomplete_search",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 276,
+            "end_line": 295,
+            "value": 20.25
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Issuable#sort_by_attribute",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 334,
+            "end_line": 364,
+            "value": 19.44
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 73,
+        "max": 16,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Issuable#hook_association_changes",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 542,
+            "end_line": 572,
+            "value": 16
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Issuable#sort_by_attribute",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 334,
+            "end_line": 364,
+            "value": 12
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Issuable#grouping_columns",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 438,
+            "end_line": 464,
+            "value": 6
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Issuable#notes_with_associations",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 662,
+            "end_line": 678,
+            "value": 5
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Issuable#severity",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 222,
+            "end_line": 226,
+            "value": 4
+          }
+        ]
+      },
+      "class_length": {
+        "count": 1,
+        "max": 513,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Issuable",
+            "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+            "start_line": 9,
+            "end_line": 741,
+            "value": 513
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "self.labels_hash",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 155,
+      "end_line": 164,
+      "value": 13.19
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "self.locking_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 166,
+      "end_line": 168,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "self.max_number_of_assignees_or_reviewers_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 170,
+      "end_line": 173,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#issuable_type",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 176,
+      "end_line": 178,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#locking_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 182,
+      "end_line": 184,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#allows_multiple_assignees?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 186,
+      "end_line": 188,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#allows_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 190,
+      "end_line": 192,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_time_tracking?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 194,
+      "end_line": 196,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_severity?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 198,
+      "end_line": 200,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_escalation?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 202,
+      "end_line": 204,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#incident_type_issue?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 206,
+      "end_line": 208,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_assignee?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 210,
+      "end_line": 212,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_confidentiality?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 214,
+      "end_line": 216,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_lock_on_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 218,
+      "end_line": 220,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#severity",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 222,
+      "end_line": 226,
+      "value": 4.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#exportable_restricted_associations",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 228,
+      "end_line": 230,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#importing_or_transitioning?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 232,
+      "end_line": 234,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#validate_description_length?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 238,
+      "end_line": 246,
+      "value": 7.68
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#truncate_description_on_import!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 248,
+      "end_line": 250,
+      "value": 5.48
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#validate_assignee_size_length",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 252,
+      "end_line": 257,
+      "value": 7.28
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#participant_includes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 261,
+      "end_line": 263,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#search",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 272,
+      "end_line": 274,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#gfm_autocomplete_search",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 276,
+      "end_line": 295,
+      "value": 20.25
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#available_states",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 297,
+      "end_line": 299,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#available_state_names",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 306,
+      "end_line": 308,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#full_search",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 318,
+      "end_line": 328,
+      "value": 6.56
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#simple_sorts",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 330,
+      "end_line": 332,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#sort_by_attribute",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 334,
+      "end_line": 364,
+      "value": 19.44
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#order_due_date_and_labels_priority",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 366,
+      "end_line": 388,
+      "value": 14.18
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#order_labels_priority",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 390,
+      "end_line": 414,
+      "value": 25.02
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#with_label",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 416,
+      "end_line": 423,
+      "value": 10.77
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#any_label",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 425,
+      "end_line": 431,
+      "value": 5.39
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#grouping_columns",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 438,
+      "end_line": 464,
+      "value": 28.91
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#issue_grouping_columns",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 471,
+      "end_line": 477,
+      "value": 7.68
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#to_ability_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 479,
+      "end_line": 481,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#parent_class",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 483,
+      "end_line": 485,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_association_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 487,
+      "end_line": 489,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#state",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 492,
+      "end_line": 494,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#state=",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 496,
+      "end_line": 498,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#resource_parent",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 500,
+      "end_line": 502,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_or_author?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 504,
+      "end_line": 506,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 508,
+      "end_line": 515,
+      "value": 8.25
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#open?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 517,
+      "end_line": 519,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#overdue?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 521,
+      "end_line": 525,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#user_notes_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 527,
+      "end_line": 535,
+      "value": 10.49
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#subscribed_without_subscriptions?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 537,
+      "end_line": 539,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#hook_association_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 542,
+      "end_line": 572,
+      "value": 49.41
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#reviewers_hook_attrs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 575,
+      "end_line": 583,
+      "value": 13.93
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#hook_reviewer_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 585,
+      "end_line": 595,
+      "value": 6.71
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#to_hook_data",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 597,
+      "end_line": 610,
+      "value": 9.27
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#labels_array",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 612,
+      "end_line": 614,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#label_names",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 616,
+      "end_line": 618,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#labels_hook_attrs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 620,
+      "end_line": 622,
+      "value": 2.24
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#allows_scoped_labels?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 624,
+      "end_line": 626,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#to_ability_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 634,
+      "end_line": 636,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#card_attributes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 639,
+      "end_line": 644,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_list",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 646,
+      "end_line": 648,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_username_list",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 650,
+      "end_line": 652,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#system_note_authors",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 654,
+      "end_line": 656,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#notes_for_participants",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 658,
+      "end_line": 660,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#notes_with_associations",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 662,
+      "end_line": 678,
+      "value": 8.66
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#updated_tasks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 680,
+      "end_line": 685,
+      "value": 5.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#can_move?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 692,
+      "end_line": 694,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#first_contribution?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 699,
+      "end_line": 701,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#draftless_title_changed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 706,
+      "end_line": 708,
+      "value": 1.41
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_health_status?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 710,
+      "end_line": 712,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_assignees",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 714,
+      "end_line": 716,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_labels",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 718,
+      "end_line": 720,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_severity",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 722,
+      "end_line": 724,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_target_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 726,
+      "end_line": 728,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_escalation_status",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 730,
+      "end_line": 732,
+      "value": 3.74
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_total_time_spent",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 734,
+      "end_line": 736,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_time_change",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 738,
+      "end_line": 740,
+      "value": 3.0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "self.labels_hash",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 155,
+      "end_line": 164,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "self.locking_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 166,
+      "end_line": 168,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "self.max_number_of_assignees_or_reviewers_message",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 170,
+      "end_line": 173,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#issuable_type",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 176,
+      "end_line": 178,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#locking_enabled?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 182,
+      "end_line": 184,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#allows_multiple_assignees?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 186,
+      "end_line": 188,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#allows_reviewers?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 190,
+      "end_line": 192,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_time_tracking?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 194,
+      "end_line": 196,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_severity?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 198,
+      "end_line": 200,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_escalation?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 202,
+      "end_line": 204,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#incident_type_issue?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 206,
+      "end_line": 208,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_assignee?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 210,
+      "end_line": 212,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_confidentiality?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 214,
+      "end_line": 216,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_lock_on_merge?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 218,
+      "end_line": 220,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#severity",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 222,
+      "end_line": 226,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#exportable_restricted_associations",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 228,
+      "end_line": 230,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#importing_or_transitioning?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 232,
+      "end_line": 234,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#validate_description_length?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 238,
+      "end_line": 246,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#truncate_description_on_import!",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 248,
+      "end_line": 250,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#validate_assignee_size_length",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 252,
+      "end_line": 257,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#participant_includes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 261,
+      "end_line": 263,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#search",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 272,
+      "end_line": 274,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#gfm_autocomplete_search",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 276,
+      "end_line": 295,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#available_states",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 297,
+      "end_line": 299,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#available_state_names",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 306,
+      "end_line": 308,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#full_search",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 318,
+      "end_line": 328,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#simple_sorts",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 330,
+      "end_line": 332,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#sort_by_attribute",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 334,
+      "end_line": 364,
+      "value": 12
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#order_due_date_and_labels_priority",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 366,
+      "end_line": 388,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#order_labels_priority",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 390,
+      "end_line": 414,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#with_label",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 416,
+      "end_line": 423,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#any_label",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 425,
+      "end_line": 431,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#grouping_columns",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 438,
+      "end_line": 464,
+      "value": 6
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#issue_grouping_columns",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 471,
+      "end_line": 477,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#to_ability_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 479,
+      "end_line": 481,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#parent_class",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 483,
+      "end_line": 485,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_association_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 487,
+      "end_line": 489,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#state",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 492,
+      "end_line": 494,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#state=",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 496,
+      "end_line": 498,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#resource_parent",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 500,
+      "end_line": 502,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_or_author?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 504,
+      "end_line": 506,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 508,
+      "end_line": 515,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#open?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 517,
+      "end_line": 519,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#overdue?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 521,
+      "end_line": 525,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#user_notes_count",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 527,
+      "end_line": 535,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#subscribed_without_subscriptions?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 537,
+      "end_line": 539,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#hook_association_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 542,
+      "end_line": 572,
+      "value": 16
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#reviewers_hook_attrs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 575,
+      "end_line": 583,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#hook_reviewer_changes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 585,
+      "end_line": 595,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#to_hook_data",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 597,
+      "end_line": 610,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#labels_array",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 612,
+      "end_line": 614,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#label_names",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 616,
+      "end_line": 618,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#labels_hook_attrs",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 620,
+      "end_line": 622,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#allows_scoped_labels?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 624,
+      "end_line": 626,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#to_ability_name",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 634,
+      "end_line": 636,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#card_attributes",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 639,
+      "end_line": 644,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_list",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 646,
+      "end_line": 648,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#assignee_username_list",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 650,
+      "end_line": 652,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#system_note_authors",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 654,
+      "end_line": 656,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#notes_for_participants",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 658,
+      "end_line": 660,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#notes_with_associations",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 662,
+      "end_line": 678,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#updated_tasks",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 680,
+      "end_line": 685,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#can_move?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 692,
+      "end_line": 694,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#first_contribution?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 699,
+      "end_line": 701,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#draftless_title_changed",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 706,
+      "end_line": 708,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#supports_health_status?",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 710,
+      "end_line": 712,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_assignees",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 714,
+      "end_line": 716,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_labels",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 718,
+      "end_line": 720,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_severity",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 722,
+      "end_line": 724,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_target_branch",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 726,
+      "end_line": 728,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_escalation_status",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 730,
+      "end_line": 732,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_total_time_spent",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 734,
+      "end_line": 736,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Issuable#old_time_change",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 738,
+      "end_line": 740,
+      "value": 2
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Issuable",
+      "path": "spec/fixtures/corpus/gitlab/app/models/concerns/issuable.rb",
+      "start_line": 9,
+      "end_line": 741,
+      "value": 513
+    }
+  ]
+}

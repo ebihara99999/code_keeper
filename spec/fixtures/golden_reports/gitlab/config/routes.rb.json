@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 1,
+        "max": 217.26,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "draw_all_routes",
+            "path": "spec/fixtures/corpus/gitlab/config/routes.rb",
+            "start_line": 9,
+            "end_line": 375,
+            "value": 217.26
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 1,
+        "max": 7,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "draw_all_routes",
+            "path": "spec/fixtures/corpus/gitlab/config/routes.rb",
+            "start_line": 9,
+            "end_line": 375,
+            "value": 7
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "draw_all_routes",
+      "path": "spec/fixtures/corpus/gitlab/config/routes.rb",
+      "start_line": 9,
+      "end_line": 375,
+      "value": 217.26
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "draw_all_routes",
+      "path": "spec/fixtures/corpus/gitlab/config/routes.rb",
+      "start_line": 9,
+      "end_line": 375,
+      "value": 7
+    }
+  ]
+}

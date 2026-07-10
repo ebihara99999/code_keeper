@@ -1,0 +1,872 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 40,
+        "max": 23.04,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#statistics_details_paths",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1163,
+            "end_line": 1174,
+            "value": 23.04
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#ci_pipeline_creation_inputs",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1068,
+            "end_line": 1094,
+            "value": 22.45
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#sast_ci_configuration",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1126,
+            "end_line": 1137,
+            "value": 14.14
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#pages_use_unique_domain",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 958,
+            "end_line": 968,
+            "value": 13.15
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#ci_config_variables",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1096,
+            "end_line": 1110,
+            "value": 12.88
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 40,
+        "max": 7,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#ci_config_variables",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1096,
+            "end_line": 1110,
+            "value": 7
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#ci_pipeline_creation_inputs",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1068,
+            "end_line": 1094,
+            "value": 5
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#ref_belongs_to_project?",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1112,
+            "end_line": 1119,
+            "value": 4
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#pages_use_unique_domain",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 958,
+            "end_line": 968,
+            "value": 3
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Types::ProjectType#is_published",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 1056,
+            "end_line": 1058,
+            "value": 3
+          }
+        ]
+      },
+      "class_length": {
+        "count": 2,
+        "max": 1004,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Types::ProjectType",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 4,
+            "end_line": 1252,
+            "value": 1004
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Types",
+            "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+            "start_line": 3,
+            "end_line": 1253,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType.authorization_scopes",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 15,
+      "end_line": 17,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ci_pipeline_creation_request",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 950,
+      "end_line": 952,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#pages_force_https",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 954,
+      "end_line": 956,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#pages_use_unique_domain",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 958,
+      "end_line": 968,
+      "value": 13.15
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#protectable_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 970,
+      "end_line": 972,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#timelog_categories",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 974,
+      "end_line": 976,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#label",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 978,
+      "end_line": 985,
+      "value": 10.82
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#container_protection_tag_rules",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 987,
+      "end_line": 990,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#jobs_enabled",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1022,
+      "end_line": 1024,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#open_issues_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1026,
+      "end_line": 1028,
+      "value": 7.07
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#open_merge_requests_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1030,
+      "end_line": 1034,
+      "value": 7.07
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#forks_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1036,
+      "end_line": 1038,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#is_catalog_resource",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1040,
+      "end_line": 1048,
+      "value": 9.9
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#explore_catalog_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1050,
+      "end_line": 1054,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#is_published",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1056,
+      "end_line": 1058,
+      "value": 3.61
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#statistics",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1060,
+      "end_line": 1062,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#container_repositories_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1064,
+      "end_line": 1066,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ci_pipeline_creation_inputs",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1068,
+      "end_line": 1094,
+      "value": 22.45
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ci_config_variables",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1096,
+      "end_line": 1110,
+      "value": 12.88
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ref_belongs_to_project?",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1112,
+      "end_line": 1119,
+      "value": 11.45
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#job",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1121,
+      "end_line": 1124,
+      "value": 4.12
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#sast_ci_configuration",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1126,
+      "end_line": 1137,
+      "value": 14.14
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#service_desk_address",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1139,
+      "end_line": 1143,
+      "value": 6.08
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#service_desk_enabled",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1145,
+      "end_line": 1147,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#languages",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1149,
+      "end_line": 1151,
+      "value": 4.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#visible_forks",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1153,
+      "end_line": 1161,
+      "value": 11.4
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#statistics_details_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1163,
+      "end_line": 1174,
+      "value": 23.04
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#max_access_level",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1176,
+      "end_line": 1184,
+      "value": 10.95
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#organization_edit_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1186,
+      "end_line": 1194,
+      "value": 12.04
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#marked_for_deletion_on",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1198,
+      "end_line": 1200,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#permanent_deletion_date",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1202,
+      "end_line": 1204,
+      "value": 3.16
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#web_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1206,
+      "end_line": 1208,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#edit_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1210,
+      "end_line": 1212,
+      "value": 3.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#admin_show_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1214,
+      "end_line": 1218,
+      "value": 7.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#admin_edit_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1220,
+      "end_line": 1224,
+      "value": 7.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#grafana_integration",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1226,
+      "end_line": 1228,
+      "value": 0.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#only_allow_merge_if_pipeline_succeeds",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1230,
+      "end_line": 1232,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#allow_merge_on_skipped_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1234,
+      "end_line": 1236,
+      "value": 2.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#project",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1240,
+      "end_line": 1242,
+      "value": 5.48
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#add_file_docs_link",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1244,
+      "end_line": 1251,
+      "value": 7.0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType.authorization_scopes",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 15,
+      "end_line": 17,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ci_pipeline_creation_request",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 950,
+      "end_line": 952,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#pages_force_https",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 954,
+      "end_line": 956,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#pages_use_unique_domain",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 958,
+      "end_line": 968,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#protectable_branches",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 970,
+      "end_line": 972,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#timelog_categories",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 974,
+      "end_line": 976,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#label",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 978,
+      "end_line": 985,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#container_protection_tag_rules",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 987,
+      "end_line": 990,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#jobs_enabled",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1022,
+      "end_line": 1024,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#open_issues_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1026,
+      "end_line": 1028,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#open_merge_requests_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1030,
+      "end_line": 1034,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#forks_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1036,
+      "end_line": 1038,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#is_catalog_resource",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1040,
+      "end_line": 1048,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#explore_catalog_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1050,
+      "end_line": 1054,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#is_published",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1056,
+      "end_line": 1058,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#statistics",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1060,
+      "end_line": 1062,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#container_repositories_count",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1064,
+      "end_line": 1066,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ci_pipeline_creation_inputs",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1068,
+      "end_line": 1094,
+      "value": 5
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ci_config_variables",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1096,
+      "end_line": 1110,
+      "value": 7
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#ref_belongs_to_project?",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1112,
+      "end_line": 1119,
+      "value": 4
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#job",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1121,
+      "end_line": 1124,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#sast_ci_configuration",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1126,
+      "end_line": 1137,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#service_desk_address",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1139,
+      "end_line": 1143,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#service_desk_enabled",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1145,
+      "end_line": 1147,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#languages",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1149,
+      "end_line": 1151,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#visible_forks",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1153,
+      "end_line": 1161,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#statistics_details_paths",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1163,
+      "end_line": 1174,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#max_access_level",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1176,
+      "end_line": 1184,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#organization_edit_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1186,
+      "end_line": 1194,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#marked_for_deletion_on",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1198,
+      "end_line": 1200,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#permanent_deletion_date",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1202,
+      "end_line": 1204,
+      "value": 2
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#web_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1206,
+      "end_line": 1208,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#edit_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1210,
+      "end_line": 1212,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#admin_show_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1214,
+      "end_line": 1218,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#admin_edit_path",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1220,
+      "end_line": 1224,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#grafana_integration",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1226,
+      "end_line": 1228,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#only_allow_merge_if_pipeline_succeeds",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1230,
+      "end_line": 1232,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#allow_merge_on_skipped_pipeline",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1234,
+      "end_line": 1236,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#project",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1240,
+      "end_line": 1242,
+      "value": 3
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Types::ProjectType#add_file_docs_link",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 1244,
+      "end_line": 1251,
+      "value": 1
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Types",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 3,
+      "end_line": 1253,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Types::ProjectType",
+      "path": "spec/fixtures/corpus/gitlab/app/graphql/types/project_type.rb",
+      "start_line": 4,
+      "end_line": 1252,
+      "value": 1004
+    }
+  ]
+}

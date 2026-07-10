@@ -1,0 +1,188 @@
+{
+  "summary": {
+    "metrics": {
+      "abc_metric": {
+        "count": 2,
+        "max": 1.0,
+        "top_hotspots": [
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Rules#value",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 15,
+            "end_line": 17,
+            "value": 1.0
+          },
+          {
+            "metric": "abc_metric",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Rules#composable_class",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 19,
+            "end_line": 21,
+            "value": 0.0
+          }
+        ]
+      },
+      "cyclomatic_complexity": {
+        "count": 2,
+        "max": 1,
+        "top_hotspots": [
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Rules#value",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 15,
+            "end_line": 17,
+            "value": 1
+          },
+          {
+            "metric": "cyclomatic_complexity",
+            "scope_type": "method",
+            "scope_name": "Gitlab::Ci::Config::Entry::Rules#composable_class",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 19,
+            "end_line": 21,
+            "value": 1
+          }
+        ]
+      },
+      "class_length": {
+        "count": 5,
+        "max": 11,
+        "top_hotspots": [
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Gitlab::Ci::Config::Entry::Rules",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 7,
+            "end_line": 22,
+            "value": 11
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 3,
+            "end_line": 26,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Ci",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 4,
+            "end_line": 25,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "class",
+            "scope_name": "Gitlab::Ci::Config",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 5,
+            "end_line": 24,
+            "value": 0
+          },
+          {
+            "metric": "class_length",
+            "scope_type": "module",
+            "scope_name": "Gitlab::Ci::Config::Entry",
+            "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+            "start_line": 6,
+            "end_line": 23,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "measurements": [
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Rules#value",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 15,
+      "end_line": 17,
+      "value": 1.0
+    },
+    {
+      "metric": "abc_metric",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Rules#composable_class",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 19,
+      "end_line": 21,
+      "value": 0.0
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Rules#value",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 15,
+      "end_line": 17,
+      "value": 1
+    },
+    {
+      "metric": "cyclomatic_complexity",
+      "scope_type": "method",
+      "scope_name": "Gitlab::Ci::Config::Entry::Rules#composable_class",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 19,
+      "end_line": 21,
+      "value": 1
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 3,
+      "end_line": 26,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 4,
+      "end_line": 25,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Gitlab::Ci::Config",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 5,
+      "end_line": 24,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "module",
+      "scope_name": "Gitlab::Ci::Config::Entry",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 6,
+      "end_line": 23,
+      "value": 0
+    },
+    {
+      "metric": "class_length",
+      "scope_type": "class",
+      "scope_name": "Gitlab::Ci::Config::Entry::Rules",
+      "path": "spec/fixtures/corpus/gitlab/lib/gitlab/ci/config/entry/rules.rb",
+      "start_line": 7,
+      "end_line": 22,
+      "value": 11
+    }
+  ]
+}
