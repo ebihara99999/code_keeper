@@ -140,6 +140,12 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ebihara99999/code_keeper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ebihara99999/code_keeper/blob/master/CODE_OF_CONDUCT.md).
 
+### Adding a metric
+
+Metric additions start from a GitHub issue using the new metric proposal template. Open the issue before implementation so the metric name, natural scope, value definition, verification strategy, and summary-model fit can be agreed first.
+
+For RuboCop-backed metrics, the issue should describe how the corpus differential check will be extended. For custom metrics, the issue should define the metric precisely and describe the metamorphic properties and golden snapshots that will verify it.
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
